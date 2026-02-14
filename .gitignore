@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Models
+models/
+*.bin
+*.pt
+*.ckpt
+
+# Data (optional – depends if you want to share it)
+data/
+experiments/

@@ -168,6 +168,35 @@ experiments/plots/
 
 ---
 
+### 5️⃣ Cross-Domain Generalization Heatmap (Macro-F1)
+
+Generate a **cross-domain generalization heatmap** summarizing how well each fine-tuned model transfers across datasets.
+
+This script reads the per-run logs saved by `src/train.py`:
+
+
+It uses the **last epoch** of each run and constructs a Macro-F1 matrix where:
+
+- Rows = training dataset  
+- Columns = evaluation dataset  
+- Diagonal cells = in-domain `in_test_f1`  
+- Off-diagonal cells = out-of-domain `ood_<dataset>_f1`  
+
+Run:
+
+```bash
+python -m src.cross_domain_heatmaps
+```
+
+Results are saved to:
+
+```
+experiments/results/
+experiments/plots/
+```
+
+---
+
 ## 🧠 Label Space
 
 Evaluation is performed in the **12 coarse SVS categories**:

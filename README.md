@@ -78,7 +78,7 @@ ValueDetection/
 
 ---
 
-## 🚀 Experimental Pipeline
+## Experimental Pipeline
 
 The project follows a structured experimental workflow:
 
@@ -197,7 +197,7 @@ experiments/plots/
 
 ---
 
-## 🧠 Label Space
+## Label Space
 
 Evaluation is performed in the **12 coarse SVS categories**:
 

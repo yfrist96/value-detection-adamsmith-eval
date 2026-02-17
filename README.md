@@ -141,8 +141,14 @@ Training details:
 Results are saved to:
 
 ```
-experiments/results/
-experiments/plots/
+experiments/results/<dataset>
+experiments/plots/<dataset>_f1_plot.png
+```
+
+To produce plots that include epoch 0 (pre-fine-tunning), execute:
+
+```bash
+python -c "from src.plotting import plot_f1_curve; plot_f1_curve('<ds_name>')"
 ```
 
 ---
@@ -162,8 +168,11 @@ python -m src.run_merged_base_adamsmith_eval \
 Results are saved to:
 
 ```
-experiments/results/
-experiments/plots/
+experiments/results/merged_base_adamsmith_eval_rows.csv
+experiments/results/merged_base_adamsmith_predictions.csv
+experiments/results/merged_base_adamsmith_metrics.json
+experiments/results/merged_base_adamsmith_metrics.txt
+experiments/plots/merged_...png
 ```
 
 ---
@@ -191,8 +200,39 @@ python -m src.cross_domain_heatmaps
 Results are saved to:
 
 ```
-experiments/results/
-experiments/plots/
+experiments/results/cross_domain_macro_f1_matrix.csv
+experiments/results/cross_domain_macro_f1_matrix.json
+experiments/plots/cross_domain_macro_f1_heatmap.png
+```
+
+---
+
+### 6️⃣ Misclassification Analysis (Joint Test Set)
+
+Run a focused **in-domain misclassification analysis** on the **Joint test set** to better understand *what confuses the model* beyond aggregate F1 scores.
+
+This script:
+
+- Loads a fine-tuned Joint checkpoint (by default, the **latest** `epoch_*` under `experiments/results/joint/`)
+- Runs inference on `data/joint/test.csv`
+- Converts fine-grained predictions into **coarse labels** (`SD/ST/HE/.../UN`) using `src/label_map.py` (`COARSE_TO_FINE`)
+- Builds a **coarse-level confusion matrix**
+- Extracts misclassified examples and highlights **high-confidence mistakes**
+- Computes lightweight **writing-style signals** (length, punctuation, capitalization) to compare correct vs. incorrect predictions
+
+Run:
+
+```bash
+python -m src.misclassification_joint_test
+```
+
+Results are saved to:
+
+```
+experiments/results/misclf_joint_test_predictions.csv
+experiments/results/misclf_joint_test_misclassified.csv
+experiments/results/misclf_joint_test_confusion_matrix.csv
+experiments/plots/misclf_joint_test_confusion_matrix.png
 ```
 
 ---

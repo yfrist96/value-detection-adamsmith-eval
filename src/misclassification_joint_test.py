@@ -2,27 +2,15 @@
 """
 Focused misclassification analysis for the in-domain JOINT test set.
 
-Outputs:
+Outputs (same as before):
 - experiments/results/misclf_joint_test_predictions.csv
 - experiments/results/misclf_joint_test_misclassified.csv
 - experiments/results/misclf_joint_test_confusion_matrix.csv
 - experiments/plots/misclf_joint_test_confusion_matrix.png
 
-What it does:
-1) Loads a fine-tuned checkpoint (default: latest epoch under experiments/results/joint/)
-2) Runs inference on data/joint/test.csv
-3) Predicts *coarse* label by:
-     - sigmoid(logits) over 20 fine labels
-     - sum probabilities within each coarse group (COARSE_TO_FINE)
-     - argmax over coarse groups
-4) Confusion matrix is COARSE x COARSE (SD/ST/..UN)
-5) Saves misclassified examples with confidence and some style features
-
-Important implementation detail:
-- Your saved epoch directories do NOT include modeling_deberta_arg_classifier.py, so
-  AutoModelForSequenceClassification cannot load directly from the checkpoint folder.
-- We therefore instantiate the architecture from --base_model_dir (default models/adam-smith),
-  then load the fine-tuned weights from checkpoint/model.safetensors.
+Key detail:
+- Adam-Smith returns dict outputs like {"loss": ..., "output": ...}
+  where logits live under "output" (possibly nested).
 """
 
 from __future__ import annotations
@@ -30,7 +18,7 @@ from __future__ import annotations
 import argparse
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 import numpy as np
 import pandas as pd
@@ -38,7 +26,6 @@ import torch
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, classification_report
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
-
 from safetensors.torch import load_file as safetensors_load_file
 
 from src.data_loader import load_dataset
@@ -50,10 +37,6 @@ from src.label_map import COARSE_TO_FINE
 # Helpers: checkpoint pick
 # -----------------------
 def find_latest_epoch_dir(run_dir: Path) -> Path:
-    """
-    Given experiments/results/<dataset>/, find the highest epoch_<N> subdir.
-    If none exist, return run_dir itself (allows passing a direct checkpoint dir).
-    """
     if not run_dir.exists():
         raise FileNotFoundError(f"Run dir not found: {run_dir}")
 
@@ -74,7 +57,7 @@ def find_latest_epoch_dir(run_dir: Path) -> Path:
 
 
 # -----------------------
-# Style features (lightweight)
+# Style features
 # -----------------------
 _punct_re = re.compile(r"[^\w\s]", re.UNICODE)
 
@@ -95,14 +78,9 @@ def style_features(text: str) -> Dict[str, float]:
 
 
 # -----------------------
-# Coarse prediction logic
+# Coarse mapping
 # -----------------------
 def build_coarse_index() -> Tuple[List[str], np.ndarray]:
-    """
-    Returns:
-      coarse_labels: list like ["SD","ST",...]
-      coarse_mask:   shape (n_coarse, 20) mask where mask[i,f]=1 if fine f belongs to coarse i
-    """
     coarse_labels = list(COARSE_TO_FINE.keys())
     coarse_mask = np.zeros((len(coarse_labels), 20), dtype=np.float32)
     for i, c in enumerate(coarse_labels):
@@ -111,6 +89,56 @@ def build_coarse_index() -> Tuple[List[str], np.ndarray]:
     return coarse_labels, coarse_mask
 
 
+# -----------------------
+# Logits extraction (ROBUST)
+# -----------------------
+def _extract_logits(x: Any) -> torch.Tensor:
+    """
+    Handles outputs that are:
+    - HF ModelOutput (has .logits)
+    - dict with keys like: loss/output/logits/...
+    - tuple/list (logits at [0])
+    - Tensor (already logits)
+    """
+    if x is None:
+        raise KeyError("Cannot extract logits from None")
+
+    # HF style
+    if hasattr(x, "logits"):
+        return x.logits
+
+    # Tensor
+    if isinstance(x, torch.Tensor):
+        return x
+
+    # Tuple/list
+    if isinstance(x, (tuple, list)) and len(x) > 0:
+        return _extract_logits(x[0])
+
+    # Dict
+    if isinstance(x, dict):
+        # Your case: {"loss": ..., "output": ...}
+        if "output" in x:
+            return _extract_logits(x["output"])
+
+        # Other common keys
+        for k in ["logits", "pred_logits", "scores", "score", "outputs"]:
+            if k in x:
+                return _extract_logits(x[k])
+
+        # If it's basically {"loss": ..., "<only_one_other_key>": ...}
+        non_loss = [k for k in x.keys() if k != "loss"]
+        if len(non_loss) == 1:
+            return _extract_logits(x[non_loss[0]])
+
+        raise KeyError(f"Could not find logits. Dict keys: {list(x.keys())}")
+
+    raise TypeError(f"Unsupported output type for logits extraction: {type(x)}")
+
+
+# -----------------------
+# Inference
+# -----------------------
 @torch.no_grad()
 def predict_coarse(
     model,
@@ -121,12 +149,6 @@ def predict_coarse(
     max_length: int = 256,
     batch_size: int = 16,
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """
-    Returns:
-      pred_coarse_ids: (N,)
-      coarse_scores:   (N, n_coarse) where score = sum of probs in each coarse group
-      fine_probs:      (N, 20)
-    """
     model.eval()
     all_fine_probs = []
 
@@ -144,36 +166,28 @@ def predict_coarse(
         enc = {k: v.to(device) for k, v in enc.items()}
 
         out = model(**enc)
-        logits = out.logits if hasattr(out, "logits") else out[0]
+        logits = _extract_logits(out)  # <-- THIS now handles {"loss","output"}
+
         probs = torch.sigmoid(logits).detach().cpu().numpy()  # (B, 20)
         all_fine_probs.append(probs)
 
     fine_probs = np.vstack(all_fine_probs)  # (N, 20)
+    # average instead of sum
+    group_sizes = coarse_mask.sum(axis=1, keepdims=True).T  # (1, n_coarse)
+    coarse_scores = (fine_probs @ coarse_mask.T) / group_sizes
 
-    # coarse_score[n, c] = sum_{f in coarse(c)} fine_probs[n, f]
-    coarse_scores = fine_probs @ coarse_mask.T  # (N, n_coarse)
-    pred_coarse_ids = coarse_scores.argmax(axis=1)
-
-    return pred_coarse_ids, coarse_scores, fine_probs
+    pred_ids = coarse_scores.argmax(axis=1)
+    return pred_ids, coarse_scores, fine_probs
 
 
-def load_model_and_tokenizer(
-    ckpt_dir: Path,
-    base_model_dir: Path,
-    device,
-):
-    """
-    Tokenizer: load from checkpoint if possible (keeps exact vocab/merges).
-    Model: instantiate architecture from base_model_dir (contains remote code),
-           then load weights from ckpt_dir/model.safetensors.
-    """
-    # Tokenizer (prefer checkpoint; fallback to base)
+def load_model_and_tokenizer(ckpt_dir: Path, base_model_dir: Path, device):
+    # Tokenizer: load from checkpoint if possible
     try:
         tokenizer = AutoTokenizer.from_pretrained(str(ckpt_dir))
     except Exception:
         tokenizer = AutoTokenizer.from_pretrained(str(base_model_dir))
 
-    # Instantiate architecture from base model dir (has custom modeling code)
+    # Model architecture from base dir (has the custom code)
     model = AutoModelForSequenceClassification.from_pretrained(
         str(base_model_dir), trust_remote_code=True
     ).to(device)
@@ -182,20 +196,15 @@ def load_model_and_tokenizer(
     if hasattr(model, "criterion") and not hasattr(model, "cirterion"):
         model.cirterion = model.criterion
 
-    # Load fine-tuned weights
+    # Load weights from checkpoint
     weights_path = ckpt_dir / "model.safetensors"
     if not weights_path.exists():
         raise FileNotFoundError(f"Missing weights: {weights_path}")
 
     state = safetensors_load_file(str(weights_path))
-    missing, unexpected = model.load_state_dict(state, strict=False)
+    model.load_state_dict(state, strict=False)
 
     print(f"[INFO] loaded weights from: {weights_path}")
-    if missing:
-        print(f"[WARN] missing keys (showing up to 10): {missing[:10]}")
-    if unexpected:
-        print(f"[WARN] unexpected keys (showing up to 10): {unexpected[:10]}")
-
     return model, tokenizer
 
 
@@ -203,24 +212,14 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", type=str, default="joint")
     ap.add_argument("--split", type=str, default="test", choices=["train", "test"])
-    ap.add_argument(
-        "--model_dir",
-        type=str,
-        default="experiments/results/joint",
-        help="Either a checkpoint dir, or a run dir containing epoch_<N>/ subfolders.",
-    )
-    ap.add_argument(
-        "--base_model_dir",
-        type=str,
-        default="models/adam-smith",
-        help="Directory of the base model (contains the custom modeling code).",
-    )
+    ap.add_argument("--model_dir", type=str, default="experiments/results/joint")
+    ap.add_argument("--base_model_dir", type=str, default="models/adam-smith")
     ap.add_argument("--data_root", type=str, default="data")
     ap.add_argument("--out_dir", type=str, default="experiments/results")
     ap.add_argument("--plots_dir", type=str, default="experiments/plots")
     ap.add_argument("--max_length", type=int, default=256)
     ap.add_argument("--batch_size", type=int, default=16)
-    ap.add_argument("--hi_conf", type=float, default=0.90, help="Threshold for high-confidence mistakes")
+    ap.add_argument("--hi_conf", type=float, default=0.90)
     args = ap.parse_args()
 
     device = pick_device()
@@ -231,11 +230,7 @@ def main() -> None:
     print(f"[INFO] using checkpoint: {ckpt_dir}")
     print(f"[INFO] base model dir: {base_model_dir}")
 
-    model, tokenizer = load_model_and_tokenizer(
-        ckpt_dir=ckpt_dir,
-        base_model_dir=base_model_dir,
-        device=device,
-    )
+    model, tokenizer = load_model_and_tokenizer(ckpt_dir, base_model_dir, device)
 
     data_path = Path(args.data_root) / args.dataset / f"{args.split}.csv"
     if not data_path.exists():
@@ -249,7 +244,7 @@ def main() -> None:
     if len(true_coarse) == 0:
         raise ValueError("Empty dataset.")
 
-    # true_coarse can be strings ("SD") or ids
+    # Normalize true labels to ids
     if isinstance(true_coarse[0], str):
         true_ids = np.array([coarse_to_id[x] for x in true_coarse], dtype=int)
     else:
@@ -265,18 +260,17 @@ def main() -> None:
         batch_size=args.batch_size,
     )
 
-    # confidence = normalized top coarse score
-    denom = coarse_scores.sum(axis=1, keepdims=True)
-    denom = np.maximum(denom, 1e-8)
+    # Normalize coarse scores to pseudo-probs (for confidence)
+    denom = np.maximum(coarse_scores.sum(axis=1, keepdims=True), 1e-8)
     coarse_probs = coarse_scores / denom
     conf = coarse_probs.max(axis=1)
 
+    # Build per-example table
     rows = []
     for i, (t, y, yhat, cmax) in enumerate(zip(texts, true_ids, pred_ids, conf)):
         feats = style_features(t)
         top3 = np.argsort(-coarse_probs[i])[:3]
         top3_str = ";".join([f"{coarse_labels[j]}:{coarse_probs[i, j]:.3f}" for j in top3])
-
         rows.append(
             {
                 "idx": i,
@@ -292,15 +286,13 @@ def main() -> None:
 
     df = pd.DataFrame(rows)
 
-    out_dir = Path(args.out_dir)
-    plots_dir = Path(args.plots_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    plots_dir.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out_dir); out_dir.mkdir(parents=True, exist_ok=True)
+    plots_dir = Path(args.plots_dir); plots_dir.mkdir(parents=True, exist_ok=True)
 
     pred_csv = out_dir / f"misclf_{args.dataset}_{args.split}_predictions.csv"
-    mis_csv = out_dir / f"misclf_{args.dataset}_{args.split}_misclassified.csv"
-    cm_csv = out_dir / f"misclf_{args.dataset}_{args.split}_confusion_matrix.csv"
-    cm_png = plots_dir / f"misclf_{args.dataset}_{args.split}_confusion_matrix.png"
+    mis_csv  = out_dir / f"misclf_{args.dataset}_{args.split}_misclassified.csv"
+    cm_csv   = out_dir / f"misclf_{args.dataset}_{args.split}_confusion_matrix.csv"
+    cm_png   = plots_dir / f"misclf_{args.dataset}_{args.split}_confusion_matrix.png"
 
     df.to_csv(pred_csv, index=False)
 
@@ -310,29 +302,23 @@ def main() -> None:
     print(f"[OK] saved predictions:   {pred_csv}")
     print(f"[OK] saved misclassified: {mis_csv} (n={len(mis)}/{len(df)})")
 
-    # Confusion matrix (coarse x coarse, fixed label order)
+    # Confusion matrix
     labels = list(range(len(coarse_labels)))
     cm = confusion_matrix(true_ids, pred_ids, labels=labels)
-    cm_df = pd.DataFrame(cm, index=coarse_labels, columns=coarse_labels)
-    cm_df.to_csv(cm_csv)
+    pd.DataFrame(cm, index=coarse_labels, columns=coarse_labels).to_csv(cm_csv)
     print(f"[OK] saved confusion matrix CSV: {cm_csv}")
 
-    # Plot confusion matrix (matplotlib only)
     plt.figure(figsize=(9.5, 7.5))
     plt.imshow(cm, aspect="auto")
     plt.title(f"Confusion Matrix (Coarse) — {args.dataset} {args.split} | {ckpt_dir.name}")
-    plt.xlabel("Predicted")
-    plt.ylabel("True")
+    plt.xlabel("Predicted"); plt.ylabel("True")
     plt.xticks(range(len(coarse_labels)), coarse_labels, rotation=0)
     plt.yticks(range(len(coarse_labels)), coarse_labels)
     plt.colorbar(fraction=0.046, pad=0.04)
-
     for i in range(cm.shape[0]):
         for j in range(cm.shape[1]):
-            v = cm[i, j]
-            if v != 0:
-                plt.text(j, i, str(v), ha="center", va="center", fontsize=8)
-
+            if cm[i, j] != 0:
+                plt.text(j, i, str(cm[i, j]), ha="center", va="center", fontsize=8)
     plt.tight_layout()
     plt.savefig(cm_png, dpi=200)
     plt.close()
@@ -341,7 +327,7 @@ def main() -> None:
     print("\n[REPORT] classification_report (coarse):")
     print(classification_report(true_ids, pred_ids, labels=labels, target_names=coarse_labels, digits=3))
 
-    # Top confusion pairs (exclude diagonal)
+    # Confusion pairs
     cm_no_diag = cm.copy()
     np.fill_diagonal(cm_no_diag, 0)
     pairs = []
@@ -355,24 +341,17 @@ def main() -> None:
     for k, (count, y, yhat) in enumerate(pairs[:10], start=1):
         print(f"  {k:02d}. {y} -> {yhat}: {count}")
 
-    # High-confidence mistakes
     hi = mis[mis["pred_conf"] >= args.hi_conf]
     print(f"\n[QUAL] High-confidence mistakes (pred_conf >= {args.hi_conf:.2f}): {len(hi)}")
     if len(hi) > 0:
         for _, r in hi.head(10).iterrows():
             snippet = str(r["text"]).replace("\n", " ")[:140]
-            print(
-                f"  true={r['true_coarse']} pred={r['pred_coarse']} "
-                f"conf={r['pred_conf']:.3f} | {snippet}{'...' if len(str(r['text'])) > 140 else ''}"
-            )
+            print(f"  true={r['true_coarse']} pred={r['pred_coarse']} conf={r['pred_conf']:.3f} | {snippet}")
 
-    # Writing-style summaries (correct vs wrong)
+    # Style summary
     corr = df[df["correct"] == True]
     wrong = df[df["correct"] == False]
-
-    def _summ(group: pd.DataFrame, col: str) -> str:
-        return f"mean={group[col].mean():.2f}  median={group[col].median():.2f}"
-
+    def _summ(g, col): return f"mean={g[col].mean():.2f} median={g[col].median():.2f}"
     print("\n[QUAL] Writing-style summary (correct vs wrong):")
     for col in ["n_words", "n_chars", "punct_per_100_chars", "upper_ratio"]:
         print(f"  {col}: correct({_summ(corr, col)}) | wrong({_summ(wrong, col)})")

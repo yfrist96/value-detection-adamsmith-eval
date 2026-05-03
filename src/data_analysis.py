@@ -32,6 +32,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from src.utils import save_fig
+
 
 def _safe_mkdir(p: Path) -> None:
     p.mkdir(parents=True, exist_ok=True)
@@ -39,7 +41,7 @@ def _safe_mkdir(p: Path) -> None:
 
 def _save_fig(fig, outpath: Path) -> None:
     fig.tight_layout()
-    fig.savefig(outpath, dpi=200, bbox_inches="tight")
+    save_fig(fig, outpath, bbox_inches="tight")
     plt.close(fig)
 
 

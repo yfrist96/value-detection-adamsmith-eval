@@ -14,6 +14,7 @@ from tqdm import tqdm
 
 # Uses your project-wide mapping
 from src.label_map import LABELS, COARSE_TO_FINE, FINE_TO_COARSE
+from src.utils import save_fig
 
 
 # Force stable order (matches SVS-style order)
@@ -124,23 +125,37 @@ def plot_bar_counts(out_png: str, title: str, x_label: str, y_label: str, labels
     ax.set_xticks(range(len(labels)))
     ax.set_xticklabels(labels, rotation=45, ha="right")
     fig.tight_layout()
-    fig.savefig(out_png)
+    save_fig(fig, out_png)
     plt.close(fig)
 
 
 def plot_confusion(out_png: str, title: str, classes: List[str], cm: np.ndarray):
+    cm = np.asarray(cm, dtype=int)
+    row_sums = cm.sum(axis=1, keepdims=True)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        cm_norm = np.where(row_sums > 0, cm / np.maximum(row_sums, 1), 0.0)
+
     fig, ax = plt.subplots(figsize=(11, 9))
-    im = ax.imshow(cm, aspect="auto")
+    im = ax.imshow(cm_norm, aspect="auto", vmin=0.0, vmax=1.0)
     ax.set_title(title)
     ax.set_xlabel("Predicted label (coarse)")
     ax.set_ylabel("Annotated label (coarse)")
     ax.set_xticks(range(len(classes)))
     ax.set_yticks(range(len(classes)))
     ax.set_xticklabels(classes, rotation=45, ha="right")
-    ax.set_yticklabels(classes)
-    plt.colorbar(im, ax=ax)
+    ax.set_yticklabels([f"{c} (n={int(row_sums[i, 0])})" for i, c in enumerate(classes)])
+    cbar = plt.colorbar(im, ax=ax)
+    cbar.set_label("Fraction of true-class rows (row-normalized)")
+    for i in range(cm.shape[0]):
+        for j in range(cm.shape[1]):
+            if cm[i, j] != 0:
+                ax.text(
+                    j, i, str(int(cm[i, j])),
+                    ha="center", va="center", fontsize=8,
+                    color="white" if cm_norm[i, j] >= 0.5 else "black",
+                )
     fig.tight_layout()
-    fig.savefig(out_png)
+    save_fig(fig, out_png)
     plt.close(fig)
 
 
@@ -154,7 +169,7 @@ def plot_bar_float(out_png: str, title: str, x_label: str, y_label: str, labels:
     ax.set_xticklabels(labels, rotation=45, ha="right")
     ax.set_ylim(0.0, 1.0)
     fig.tight_layout()
-    fig.savefig(out_png)
+    save_fig(fig, out_png)
     plt.close(fig)
 
 
@@ -520,6 +535,28 @@ def main():
         classes=classes,
         cm=cm,
     )
+
+    # Per-source-dataset confusion matrices (slices of the same base-model run)
+    for ds_name, df_ds in df.groupby(args.dataset_col):
+        idxs = df_ds.index.tolist()
+        ann_ds = [ann_coarse_all[i] for i in idxs]
+        top1_ds = [top1_coarse_all[i] for i in idxs]
+
+        cm_ds = np.zeros((len(classes), len(classes)), dtype=int)
+        for a, t in zip(ann_ds, top1_ds):
+            if a in idx and t in idx:
+                cm_ds[idx[a], idx[t]] += 1
+
+        safe_name = "".join(ch if ch.isalnum() or ch in ("-", "_") else "_" for ch in str(ds_name))
+        plot_confusion(
+            out_png=os.path.join(
+                plots_dir,
+                f"merged__{safe_name}__confusion_matrix__annotated_coarse_vs_predicted_top1_coarse.png",
+            ),
+            title=f"Confusion matrix ({ds_name}): Annotated coarse vs Predicted TOP-1 coarse",
+            classes=classes,
+            cm=cm_ds,
+        )
 
     # Top-1 by dataset
     ds_names = sorted(metrics_by_dataset.keys())

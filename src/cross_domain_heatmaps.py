@@ -41,6 +41,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+from src.utils import save_fig
+
 
 def _read_last_epoch_row(csv_path: Path) -> Optional[pd.Series]:
     try:
@@ -215,7 +217,7 @@ def plot_heatmap(out_path: Path, row_labels: List[str], col_labels: List[str], m
 
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
     plt.tight_layout()
-    fig.savefig(out_path, dpi=200)
+    save_fig(fig, out_path)
     plt.close(fig)
 
 

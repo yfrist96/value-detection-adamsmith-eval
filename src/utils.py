@@ -1,5 +1,23 @@
+import os
 import torch
 import numpy as np
+
+
+def save_fig(fig, out_path, *, dpi=300, bbox_inches=None):
+    """Save a matplotlib figure as both a 300 DPI PNG and a vector PDF.
+
+    `out_path` may carry a .png/.pdf extension or none — both forms are
+    written next to each other with matching basenames.
+    """
+    base, ext = os.path.splitext(str(out_path))
+    if ext.lower() not in (".png", ".pdf", ""):
+        base = str(out_path)
+    os.makedirs(os.path.dirname(base) or ".", exist_ok=True)
+    save_kwargs = {}
+    if bbox_inches is not None:
+        save_kwargs["bbox_inches"] = bbox_inches
+    fig.savefig(f"{base}.png", dpi=dpi, **save_kwargs)
+    fig.savefig(f"{base}.pdf", **save_kwargs)
 
 
 def pick_device():

@@ -29,8 +29,8 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from safetensors.torch import load_file as safetensors_load_file
 
 from src.data_loader import load_dataset
-from src.utils import pick_device
-from src.label_map import COARSE_TO_FINE
+from src.utils import pick_device, save_fig
+from src.label_map import COARSE_TO_FINE, LABELS
 
 
 # -----------------------
@@ -265,19 +265,31 @@ def main() -> None:
     coarse_probs = coarse_scores / denom
     conf = coarse_probs.max(axis=1)
 
+    # Top-1 fine prediction underneath the coarse decision
+    pred_fine_ids = fine_probs.argmax(axis=1)
+
     # Build per-example table
     rows = []
     for i, (t, y, yhat, cmax) in enumerate(zip(texts, true_ids, pred_ids, conf)):
         feats = style_features(t)
-        top3 = np.argsort(-coarse_probs[i])[:3]
+        order = np.argsort(-coarse_probs[i])
+        top3 = order[:3]
         top3_str = ";".join([f"{coarse_labels[j]}:{coarse_probs[i, j]:.3f}" for j in top3])
+        top2_gap = float(coarse_probs[i, order[0]] - coarse_probs[i, order[1]]) if len(order) >= 2 else 0.0
+
+        pred_fine_id = int(pred_fine_ids[i])
+        pred_fine_name = LABELS[pred_fine_id] if 0 <= pred_fine_id < len(LABELS) else ""
+
         rows.append(
             {
                 "idx": i,
                 "text": t,
                 "true_coarse": coarse_labels[int(y)],
                 "pred_coarse": coarse_labels[int(yhat)],
+                "confusion_pair": f"{coarse_labels[int(y)]}->{coarse_labels[int(yhat)]}",
+                "pred_fine_top1": pred_fine_name,
                 "pred_conf": float(cmax),
+                "top2_gap": top2_gap,
                 "correct": bool(y == yhat),
                 "top3_coarse": top3_str,
                 **feats,
@@ -308,21 +320,34 @@ def main() -> None:
     pd.DataFrame(cm, index=coarse_labels, columns=coarse_labels).to_csv(cm_csv)
     print(f"[OK] saved confusion matrix CSV: {cm_csv}")
 
-    plt.figure(figsize=(9.5, 7.5))
-    plt.imshow(cm, aspect="auto")
+    cm_int = np.asarray(cm, dtype=int)
+    row_sums = cm_int.sum(axis=1, keepdims=True)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        cm_norm = np.where(row_sums > 0, cm_int / np.maximum(row_sums, 1), 0.0)
+
+    fig = plt.figure(figsize=(9.5, 7.5))
+    plt.imshow(cm_norm, aspect="auto", vmin=0.0, vmax=1.0)
     plt.title(f"Confusion Matrix (Coarse) — {args.dataset} {args.split} | {ckpt_dir.name}")
     plt.xlabel("Predicted"); plt.ylabel("True")
     plt.xticks(range(len(coarse_labels)), coarse_labels, rotation=0)
-    plt.yticks(range(len(coarse_labels)), coarse_labels)
-    plt.colorbar(fraction=0.046, pad=0.04)
-    for i in range(cm.shape[0]):
-        for j in range(cm.shape[1]):
-            if cm[i, j] != 0:
-                plt.text(j, i, str(cm[i, j]), ha="center", va="center", fontsize=8)
+    plt.yticks(
+        range(len(coarse_labels)),
+        [f"{c} (n={int(row_sums[i, 0])})" for i, c in enumerate(coarse_labels)],
+    )
+    cbar = plt.colorbar(fraction=0.046, pad=0.04)
+    cbar.set_label("Fraction of true-class rows (row-normalized)")
+    for i in range(cm_int.shape[0]):
+        for j in range(cm_int.shape[1]):
+            if cm_int[i, j] != 0:
+                plt.text(
+                    j, i, str(cm_int[i, j]),
+                    ha="center", va="center", fontsize=8,
+                    color="white" if cm_norm[i, j] >= 0.5 else "black",
+                )
     plt.tight_layout()
-    plt.savefig(cm_png, dpi=200)
-    plt.close()
-    print(f"[OK] saved confusion matrix PNG: {cm_png}")
+    save_fig(fig, cm_png)
+    plt.close(fig)
+    print(f"[OK] saved confusion matrix PNG/PDF: {cm_png}")
 
     print("\n[REPORT] classification_report (coarse):")
     print(classification_report(true_ids, pred_ids, labels=labels, target_names=coarse_labels, digits=3))

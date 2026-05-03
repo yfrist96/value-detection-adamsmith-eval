@@ -24,3 +24,6 @@ models/
 # Data (optional – depends if you want to share it)
 data/
 experiments/
+
+# Paper draft (managed separately)
+Paper/

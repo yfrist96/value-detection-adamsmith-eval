@@ -20,6 +20,8 @@ The project supports:
 - Hit@k and Hit@Any metrics  
 - Distribution-level evaluation (MSE, KL divergence)  
 
+> **Plot outputs.** Every plot in this pipeline is written as both a 300 DPI PNG and a vector PDF (matching basenames, side by side). PDF output is produced via the shared `save_fig` helper in `src/utils.py` and is suitable for direct inclusion in academic papers.
+
 ---
 
 ## 📂 Project Structure
@@ -137,12 +139,13 @@ Training details:
 - Evaluation after each epoch  
 - In-domain testing  
 - Out-of-domain testing across other datasets  
+- F1 curves are reported in **macro F1** only: the merged corpus is heavily class-imbalanced (AC ≈ 952 rows vs. ST ≈ 60), so micro F1 collapses toward accuracy on the dominant classes. Macro weights every Schwartz value equally, which is what we actually care about, and matches the cross-domain heatmap below.
 
 Results are saved to:
 
 ```
 experiments/results/<dataset>
-experiments/plots/<dataset>_f1_plot.png
+experiments/plots/<dataset>_f1_plot.{png,pdf}
 ```
 
 To produce plots that include epoch 0 (pre-fine-tunning), execute:
@@ -168,11 +171,10 @@ python -m src.run_merged_base_adamsmith_eval \
 Results are saved to:
 
 ```
-experiments/results/merged_base_adamsmith_eval_rows.csv
-experiments/results/merged_base_adamsmith_predictions.csv
-experiments/results/merged_base_adamsmith_metrics.json
-experiments/results/merged_base_adamsmith_metrics.txt
-experiments/plots/merged_...png
+experiments/results/merged__base_adamsmith__eval_rows.csv
+experiments/results/merged__base_adamsmith__predictions.csv
+experiments/results/merged__base_adamsmith__metrics.json
+experiments/plots/merged__*.{png,pdf}
 ```
 
 ---
@@ -202,7 +204,7 @@ Results are saved to:
 ```
 experiments/results/cross_domain_macro_f1_matrix.csv
 experiments/results/cross_domain_macro_f1_matrix.json
-experiments/plots/cross_domain_macro_f1_heatmap.png
+experiments/plots/cross_domain_macro_f1_heatmap.{png,pdf}
 ```
 
 ---
@@ -232,7 +234,7 @@ Results are saved to:
 experiments/results/misclf_joint_test_predictions.csv
 experiments/results/misclf_joint_test_misclassified.csv
 experiments/results/misclf_joint_test_confusion_matrix.csv
-experiments/plots/misclf_joint_test_confusion_matrix.png
+experiments/plots/misclf_joint_test_confusion_matrix.{png,pdf}
 ```
 
 ---

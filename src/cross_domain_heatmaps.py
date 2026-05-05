@@ -44,6 +44,36 @@ import pandas as pd
 from src.utils import save_fig
 
 
+def _resolve_metrics_path(results_root: Path, dataset_name: str, seed: int = 42) -> Path:
+    """Return the metrics.csv path for a dataset.
+
+    Prefers the seed-aware layout (seed_<seed>/metrics.csv) introduced for the
+    multi-seed campaign; falls back to the legacy flat layout (metrics.csv at
+    the dataset root) if the seeded directory does not exist. This keeps the
+    heatmap working for both the multi-seeded runs (Joint, Combined) and the
+    untouched single-seed runs (Asian, Indian, Ultra).
+    """
+    seeded = results_root / dataset_name / f"seed_{seed}" / "metrics.csv"
+    if seeded.exists():
+        return seeded
+    return results_root / dataset_name / "metrics.csv"
+
+
+def _resolve_epoch0_path(results_root: Path, dataset_name: str, seed: int = 42) -> Path:
+    """Return a metrics.csv path that contains the epoch-0 (pre-fine-tuning) row.
+
+    The seed-aware metrics.csv layout only logs epochs 1..N, so the flat
+    (legacy) metrics.csv is the canonical source for epoch 0. Epoch 0 is the
+    un-tuned base model's evaluation and is therefore independent of the
+    training encoding, so reusing the legacy epoch-0 row is safe even after a
+    multi-positive retraining campaign.
+    """
+    flat = results_root / dataset_name / "metrics.csv"
+    if flat.exists():
+        return flat
+    return results_root / dataset_name / f"seed_{seed}" / "metrics.csv"
+
+
 def _read_last_epoch_row(csv_path: Path) -> Optional[pd.Series]:
     try:
         df = pd.read_csv(csv_path)
@@ -130,9 +160,12 @@ def build_macro_matrix(results_root: Path, datasets: List[str]) -> Tuple[np.ndar
     # -------------------------
     base_scores: Dict[str, float] = {}
 
-    # First, fill diagonal base scores (each dataset's in_test_f1 at epoch 0)
+    # First, fill diagonal base scores (each dataset's in_test_f1 at epoch 0).
+    # Epoch 0 is only logged by the legacy (flat) metrics.csv layout; the
+    # seed-aware multi-seed runs start at epoch 1, so we resolve epoch-0 reads
+    # against the flat path (which is encoding-independent).
     for ds in datasets:
-        csv_path = results_root / ds / "metrics.csv"
+        csv_path = _resolve_epoch0_path(results_root, ds)
         if not csv_path.exists():
             continue
         r0 = _read_epoch_row(csv_path, epoch=0)
@@ -144,7 +177,7 @@ def build_macro_matrix(results_root: Path, datasets: List[str]) -> Tuple[np.ndar
     # Next, try to fill off-diagonals using any available ood_* columns from epoch 0 rows
     # We'll scan epoch0 rows from all runs and keep the max coverage we can.
     for src_ds in datasets:
-        csv_path = results_root / src_ds / "metrics.csv"
+        csv_path = _resolve_epoch0_path(results_root, src_ds)
         if not csv_path.exists():
             continue
         r0 = _read_epoch_row(csv_path, epoch=0)
@@ -165,7 +198,7 @@ def build_macro_matrix(results_root: Path, datasets: List[str]) -> Tuple[np.ndar
     # Fine-tuned rows: last epoch per run
     # ----------------------------------
     for train_ds in datasets:
-        csv_path = results_root / train_ds / "metrics.csv"
+        csv_path = _resolve_metrics_path(results_root, train_ds)
         if not csv_path.exists():
             continue
 

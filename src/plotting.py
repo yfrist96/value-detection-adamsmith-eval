@@ -5,10 +5,30 @@ import matplotlib.pyplot as plt
 from src.utils import save_fig
 
 
-def plot_f1_curve(dataset_name):
+def plot_f1_curve(dataset_name, seed=None):
+    """Plot fine-tuning macro-F1 curves for a single run.
+
+    If `seed` is provided, reads from
+        experiments/results/<dataset>/seed_<seed>/metrics.csv
+    and writes
+        experiments/plots/<dataset>_seed_<seed>_f1_plot.{png,pdf}.
+
+    If `seed` is None, falls back to the legacy flat layout
+        experiments/results/<dataset>/metrics.csv
+        experiments/plots/<dataset>_f1_plot.{png,pdf}.
+    """
     os.makedirs("experiments/plots", exist_ok=True)
 
-    df = pd.read_csv(f"experiments/results/{dataset_name}/metrics.csv")
+    if seed is None:
+        metrics_path = f"experiments/results/{dataset_name}/metrics.csv"
+        plot_basename = f"experiments/plots/{dataset_name}_f1_plot"
+        title = f"Fine-tuning results for {dataset_name} (macro F1)"
+    else:
+        metrics_path = f"experiments/results/{dataset_name}/seed_{seed}/metrics.csv"
+        plot_basename = f"experiments/plots/{dataset_name}_seed_{seed}_f1_plot"
+        title = f"Fine-tuning results for {dataset_name} (macro F1, seed={seed})"
+
+    df = pd.read_csv(metrics_path)
 
     fig = plt.figure(figsize=(10, 5))
     plt.plot(df["epoch"], df["in_train_f1"], label="Train F1 (macro)")
@@ -25,7 +45,7 @@ def plot_f1_curve(dataset_name):
 
     plt.xlabel("Epoch")
     plt.ylabel("F1 (macro)")
-    plt.title(f"Fine-tuning results for {dataset_name} (macro F1)")
+    plt.title(title)
     plt.legend()
-    save_fig(fig, f"experiments/plots/{dataset_name}_f1_plot")
+    save_fig(fig, plot_basename)
     plt.close(fig)

@@ -95,7 +95,9 @@ def fine_tune_dataset(
         out_of_domain = [d for d in base_datasets if d != dataset_name]
 
 
-    save_dir = f"experiments/results/{dataset_name}"
+    # Seed-aware output path: lets us run multi-seed without overwriting.
+    # Layout: experiments/results/<dataset>/seed_<seed>/{metrics.csv,run_config.json,epoch_*}
+    save_dir = f"experiments/results/{dataset_name}/seed_{seed}"
     os.makedirs(save_dir, exist_ok=True)
     os.makedirs("experiments/plots", exist_ok=True)
 
@@ -207,12 +209,13 @@ def fine_tune_dataset(
         )
 
     # Plot once at the end
-    plot_f1_curve(dataset_name)
+    plot_f1_curve(dataset_name, seed=seed)
     print(f"[{dataset_name}] Complete! Saved results to: {save_dir}")
 
 
 if __name__ == "__main__":
-    # Runs all single-dataset fine-tunes
+    # Single-seed (seed=42) convenience entry point: runs all five fine-tunes.
+    # For multi-seed runs use:  python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44
     for d in ["joint", "asian", "indian", "ultra"]:
         fine_tune_dataset(d)
 

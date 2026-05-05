@@ -212,7 +212,9 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", type=str, default="joint")
     ap.add_argument("--split", type=str, default="test", choices=["train", "test"])
-    ap.add_argument("--model_dir", type=str, default="experiments/results/joint")
+    ap.add_argument("--model_dir", type=str, default="experiments/results/joint/seed_42",
+                    help="Run directory containing the epoch_<N>/ subdirs to inspect; "
+                         "defaults to the seed-42 run from the multi-seed campaign.")
     ap.add_argument("--base_model_dir", type=str, default="models/adam-smith")
     ap.add_argument("--data_root", type=str, default="data")
     ap.add_argument("--out_dir", type=str, default="experiments/results")

@@ -30,6 +30,20 @@ def plot_f1_curve(dataset_name, seed=None):
 
     df = pd.read_csv(metrics_path)
 
+    # Seeded runs log epochs 1..N. Splice in the epoch-0 (un-tuned base model)
+    # row from the legacy flat metrics.csv so the curve starts at the
+    # pre-fine-tuning baseline. Epoch 0 is encoding-independent, so reusing it
+    # across single-positive and multi-positive runs is safe.
+    if seed is not None:
+        flat_path = f"experiments/results/{dataset_name}/metrics.csv"
+        if os.path.exists(flat_path):
+            flat_df = pd.read_csv(flat_path)
+            e0 = flat_df[flat_df["epoch"] == 0]
+            if not e0.empty:
+                common = [c for c in e0.columns if c in df.columns]
+                df = pd.concat([e0[common], df[common]], ignore_index=True)
+                df = df.sort_values("epoch").reset_index(drop=True)
+
     fig = plt.figure(figsize=(10, 5))
     plt.plot(df["epoch"], df["in_train_f1"], label="Train F1 (macro)")
     plt.plot(df["epoch"], df["in_test_f1"], label="In-domain Test F1 (macro)")

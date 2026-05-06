@@ -50,9 +50,13 @@ ValueDetection/
 │   │   ├── train.csv
 │   │   └── test.csv
 │   │
-│   └── ultra/
-│       ├── train.csv        
-│       └── test.csv         
+│   ├── ultra/
+│   │   ├── train.csv
+│   │   └── test.csv
+│   │
+│   └── combined/
+│       ├── train.csv         # union of the four per-population train sets
+│       └── test.csv          # union of the four per-population test sets
 │
 ├── models/
 │   └── adam-smith/
@@ -66,6 +70,7 @@ ValueDetection/
 │   ├── plotting.py
 │   ├── cross_domain_heatmaps.py
 │   ├── misclassification_joint_test.py
+│   ├── ablate_achievement_vocab.py
 │   ├── split_datasets.py
 │   ├── data_analysis.py
 │   ├── run_merged_base_adamsmith_eval.py
@@ -80,7 +85,10 @@ ValueDetection/
 │   │   │   └── seed_<seed>/        # one subdir per training seed
 │   │   │       ├── metrics.csv     #   per-epoch in/OOD F1 for that seed
 │   │   │       └── epoch_<N>/      #   model checkpoint per epoch
-│   │   └── <dataset>_seed_summary.csv   # mean ± std across seeds
+│   │   ├── <dataset>_seed_summary.csv   # mean ± std across seeds
+│   │   ├── ablation_achievement/                    # base model, full corpus
+│   │   ├── ablation_achievement_joint_finetuned/    # Joint epoch-10, test split
+│   │   └── ablation_achievement_joint_finetuned_train/  # Joint epoch-10, train split
 │   ├── train.txt     # Training CLI output
 │   └── plots/        # Evaluation plots and charts
 │
@@ -294,6 +302,55 @@ experiments/results/misclf_joint_test_misclassified.csv
 experiments/results/misclf_joint_test_confusion_matrix.csv
 experiments/plots/misclf_joint_test_confusion_matrix.{png,pdf}
 ```
+
+---
+
+### 7️⃣ Achievement-Vocabulary Ablation
+
+Test directly whether a small set of achievement-coded tokens (`achieve`, `impact`,
+`improve`, `advance`, with morphological variants; 22 tokens total) causally drives
+the model's over-prediction of Achievement. The script masks those tokens with
+`[MASK]` and re-runs predictions, comparing original vs. masked along three axes:
+AC prediction frequency (and AC P/R/F1), macro-F1 across the 12 coarse classes, and
+per-cell shifts in the row-normalized confusion matrix.
+
+Three runs are reported in the paper:
+
+```bash
+# 1. Base Adam-Smith on the full 2,699-instance corpus.
+python -m src.ablate_achievement_vocab \
+  --model_dir models/adam-smith \
+  --input_csv data/merged.csv \
+  --output_label ablation_achievement
+
+# 2. Joint epoch-10 fine-tuned checkpoint, evaluated on the Joint test split.
+python -m src.ablate_achievement_vocab \
+  --model_dir models/adam-smith \
+  --checkpoint_dir experiments/results/joint/seed_42 \
+  --input_csv data/joint/test.csv \
+  --output_label ablation_achievement_joint_finetuned
+
+# 3. Same checkpoint, evaluated on the Joint train split.
+python -m src.ablate_achievement_vocab \
+  --model_dir models/adam-smith \
+  --checkpoint_dir experiments/results/joint/seed_42 \
+  --input_csv data/joint/train.csv \
+  --output_label ablation_achievement_joint_finetuned_train
+```
+
+Each run writes:
+
+```
+experiments/results/<output_label>/predictions.csv
+experiments/results/<output_label>/summary.json
+experiments/results/<output_label>/summary.txt
+experiments/plots/<output_label>/global_cm_diff.{png,pdf}
+experiments/plots/<output_label>/<dataset>_cm_diff.{png,pdf}
+```
+
+The headline result is the negative one: across all three settings, masking this
+vocabulary shifts AC-prediction share by only `|Δ| ≤ 1.4`pp globally, indicating
+that AC over-prediction is not primarily driven by this lexical set.
 
 ---
 

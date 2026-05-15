@@ -69,7 +69,9 @@ ValueDetection/
 │   ├── eval.py
 │   ├── plotting.py
 │   ├── cross_domain_heatmaps.py
-│   ├── misclassification_joint_test.py
+│   ├── misclassification_joint_test.py     # per-population error analysis (Joint, Ultra, ...)
+│   ├── circumplex_error_analysis.py        # Schwartz circumplex distance scoring
+│   ├── lexical_exhibits.py                 # log-odds distinctive vocabulary per cell
 │   ├── ablate_achievement_vocab.py
 │   ├── split_datasets.py
 │   ├── data_analysis.py
@@ -85,10 +87,18 @@ ValueDetection/
 │   │   │   └── seed_<seed>/        # one subdir per training seed
 │   │   │       ├── metrics.csv     #   per-epoch in/OOD F1 for that seed
 │   │   │       └── epoch_<N>/      #   model checkpoint per epoch
-│   │   ├── <dataset>_seed_summary.csv   # mean ± std across seeds
+│   │   ├── <dataset>_seed_summary.csv         # mean ± std across seeds
+│   │   ├── misclf_<dataset>_test_*.csv        # per-population error tables + confusion matrices
+│   │   ├── misclf_<dataset>_test_misclassified_scored.csv  # + Schwartz circumplex distance
+│   │   ├── misclf_<dataset>_test_attractor_summary.csv     # per-class attractor counts
+│   │   ├── circumplex_summary.csv             # cross-population circumplex overview
+│   │   ├── lexical_distinctive_by_pop_value.csv  # full distinctive-vocabulary table
+│   │   ├── lexical_<pop>_<value>_top.csv          # per-cell highlights (Ultra-BE, Joint-UN, ...)
 │   │   ├── ablation_achievement/                    # base model, full corpus
-│   │   ├── ablation_achievement_joint_finetuned/    # Joint epoch-10, test split
-│   │   └── ablation_achievement_joint_finetuned_train/  # Joint epoch-10, train split
+│   │   ├── ablation_achievement_<dataset>_finetuned/   # per-population epoch-10, full corpus
+│   │   ├── ablation_achievement_joint_finetuned/    # Joint epoch-10, Joint test split
+│   │   ├── ablation_achievement_joint_finetuned_train/  # Joint epoch-10, Joint train split
+│   │   └── ablation_summary_per_setting.csv         # cross-setting AC-share / F1 deltas
 │   ├── train.txt     # Training CLI output
 │   └── plots/        # Evaluation plots and charts
 │
@@ -271,71 +281,127 @@ experiments/plots/cross_domain_macro_f1_heatmap.{png,pdf}
 
 ---
 
-### 6️⃣ Misclassification Analysis (Joint Test Set)
+### 6️⃣ Misclassification Analysis (per-population)
 
-Run a focused **in-domain misclassification analysis** on the **Joint test set** to better understand *what confuses the model* beyond aggregate F1 scores.
+Run a focused **in-domain misclassification analysis** on a population's test set
+to understand *what confuses the model* beyond aggregate F1 scores.
 
-This script:
+The script:
 
-- Loads a fine-tuned Joint checkpoint (by default, the latest `epoch_*` under
-  `experiments/results/joint/seed_42/`; pass `--model_dir <path>` to point at a
-  different seed or run)
-- Runs inference on `data/joint/test.csv`
-- Converts fine-grained predictions into **coarse labels** (`SD/ST/HE/.../UN`) using `src/label_map.py` (`COARSE_TO_FINE`)
+- Loads a fine-tuned per-population checkpoint (by default, the latest `epoch_*`
+  under `experiments/results/<dataset>/seed_42/`; pass `--model_dir <path>` to
+  point at a different seed or run)
+- Runs inference on `data/<dataset>/test.csv`
+- Converts fine-grained predictions to **coarse labels** (`SD/ST/HE/.../UN`) via `src/label_map.py`
 - Builds a **coarse-level confusion matrix**
 - Extracts misclassified examples and highlights **high-confidence mistakes**
-- Computes lightweight **writing-style signals** (length, punctuation, capitalization) to compare correct vs. incorrect predictions
+- Computes lightweight **writing-style signals** (length, punctuation, capitalization)
 
-Run:
+Run for each population:
 
 ```bash
+# Joint (default)
 python -m src.misclassification_joint_test
-# or, to inspect a different seed:
-python -m src.misclassification_joint_test --model_dir experiments/results/joint/seed_43
+
+# Ultra (mirror population — produces the dual-class TR + BE attractor)
+python -m src.misclassification_joint_test \
+  --dataset ultra --model_dir experiments/results/ultra/seed_42
 ```
 
 Results are saved to:
 
 ```
-experiments/results/misclf_joint_test_predictions.csv
-experiments/results/misclf_joint_test_misclassified.csv
-experiments/results/misclf_joint_test_confusion_matrix.csv
-experiments/plots/misclf_joint_test_confusion_matrix.{png,pdf}
+experiments/results/misclf_<dataset>_test_predictions.csv
+experiments/results/misclf_<dataset>_test_misclassified.csv
+experiments/results/misclf_<dataset>_test_confusion_matrix.csv
+experiments/plots/misclf_<dataset>_test_confusion_matrix.{png,pdf}
 ```
 
 ---
 
-### 7️⃣ Achievement-Vocabulary Ablation
+### 7️⃣ Schwartz Circumplex Distance Scoring
+
+Tag every misclassification by its **modular distance on the Schwartz coarse
+circumplex** (`SD → ST → HE → AC → PO → FA → SE → TR → CO → HU → BE → UN → SD`),
+so that errors crossing a higher-order axis (self-enhancement ↔ self-transcendence;
+openness ↔ conservation) can be distinguished from local adjacency confusions.
+
+Run after step 6 has produced misclassified CSVs for the relevant populations:
+
+```bash
+python -m src.circumplex_error_analysis --datasets joint ultra
+```
+
+Outputs:
+
+```
+experiments/results/misclf_<dataset>_test_misclassified_scored.csv  # + distance, bucket, axis_pair
+experiments/results/misclf_<dataset>_test_attractor_summary.csv     # per-class attractor counts
+experiments/results/circumplex_summary.csv                          # cross-population overview
+```
+
+Distance buckets: `1` adjacent (weakest evidence), `2-3` near, `4-5` cross-axis
+(strong evidence), `6` diametric (strongest). The paper reports Joint at mean
+distance 3.6 (92.6% cross-axis) and Ultra at 3.3 (85.2% cross-axis).
+
+---
+
+### 8️⃣ Population-Typical Distinctive Vocabulary
+
+For each (population, value) cell, compute the most distinctive content tokens
+relative to the **same value class in the other populations**. Distinctiveness is
+measured by log-odds-ratio with an informative Dirichlet prior built from the
+overall corpus background ([Monroe, Colaresi, Quinn 2008](https://doi.org/10.1093/pan/mpn018)).
+
+This is the empirical mechanism behind the population-typical "lexical register"
+finding: e.g., Ultra-BE and Ultra-TR share five distinctive content tokens
+(*children, education, love, students, values*), which is what drives the BE→TR
+misclassification pattern.
+
+Run:
+
+```bash
+python -m src.lexical_exhibits --input data/merged.csv
+```
+
+Outputs:
+
+```
+experiments/results/lexical_distinctive_by_pop_value.csv  # full table, top-20 per cell
+experiments/results/lexical_ultra_BE_top.csv              # Ultra communal-attractor
+experiments/results/lexical_ultra_AC_top.csv
+experiments/results/lexical_joint_UN_top.csv              # Joint achievement-attractor source
+experiments/results/lexical_joint_AC_top.csv
+```
+
+---
+
+### 9️⃣ Achievement-Vocabulary Ablation
 
 Test directly whether a small set of achievement-coded tokens (`achieve`, `impact`,
 `improve`, `advance`, with morphological variants; 22 tokens total) causally drives
 the model's over-prediction of Achievement. The script masks those tokens with
 `[MASK]` and re-runs predictions, comparing original vs. masked along three axes:
-AC prediction frequency (and AC P/R/F1), macro-F1 across the 12 coarse classes, and
-per-cell shifts in the row-normalized confusion matrix.
+AC prediction frequency (and AC P/R/F1), macro-F1 across the 12 coarse classes,
+and per-cell shifts in the row-normalized confusion matrix.
 
-Three runs are reported in the paper:
+Five settings are reported in the paper (base + each per-population fine-tuned
+checkpoint), all evaluated on the full merged corpus:
 
 ```bash
-# 1. Base Adam-Smith on the full 2,699-instance corpus.
+# 1. Base Adam-Smith.
 python -m src.ablate_achievement_vocab \
   --model_dir models/adam-smith \
   --input_csv data/merged.csv \
   --output_label ablation_achievement
 
-# 2. Joint epoch-10 fine-tuned checkpoint, evaluated on the Joint test split.
-python -m src.ablate_achievement_vocab \
-  --model_dir models/adam-smith \
-  --checkpoint_dir experiments/results/joint/seed_42 \
-  --input_csv data/joint/test.csv \
-  --output_label ablation_achievement_joint_finetuned
-
-# 3. Same checkpoint, evaluated on the Joint train split.
-python -m src.ablate_achievement_vocab \
-  --model_dir models/adam-smith \
-  --checkpoint_dir experiments/results/joint/seed_42 \
-  --input_csv data/joint/train.csv \
-  --output_label ablation_achievement_joint_finetuned_train
+# 2-5. Per-population fine-tuned checkpoints (Asian / Indian / Joint / Ultra).
+for ds in asian indian joint ultra; do
+  python -m src.ablate_achievement_vocab \
+    --checkpoint_dir experiments/results/${ds}/seed_42 \
+    --input_csv data/merged.csv \
+    --output_label ablation_achievement_${ds}_finetuned
+done
 ```
 
 Each run writes:
@@ -348,9 +414,11 @@ experiments/plots/<output_label>/global_cm_diff.{png,pdf}
 experiments/plots/<output_label>/<dataset>_cm_diff.{png,pdf}
 ```
 
-The headline result is the negative one: across all three settings, masking this
-vocabulary shifts AC-prediction share by only `|Δ| ≤ 1.4`pp globally, indicating
-that AC over-prediction is not primarily driven by this lexical set.
+The headline result is the negative one: across all five settings, masking this
+vocabulary shifts AC-prediction share by only `|Δ| ≤ 2.1`pp (base −1.4, Asian
+−0.9, Indian −0.6, Joint −0.1, Ultra −2.1), indicating that AC over-prediction is
+not primarily driven by this lexical set. The cross-setting deltas are also
+summarized in `experiments/results/ablation_summary_per_setting.csv`.
 
 ---
 

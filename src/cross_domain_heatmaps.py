@@ -134,6 +134,39 @@ def _extract_ood_macro_scores_from_row(row: pd.Series, datasets: List[str]) -> D
     return out
 
 
+def _read_seed_summary_means(path: Path) -> Optional[Dict[str, float]]:
+    """Read a `<dataset>_seed_summary.csv` (multi-seed mean/std) and return metric -> mean.
+
+    The summary CSV has columns: metric, mean, std, n_seeds, seeds. We pull only
+    the `mean` column, keyed by metric name (e.g. `in_test_f1`, `ood_asian_f1`).
+    Returns None if the file is missing or malformed so callers can fall back to
+    the single-seed last-epoch path.
+    """
+    if not path.exists():
+        return None
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return None
+    if "metric" not in df.columns or "mean" not in df.columns:
+        return None
+    return {str(m): float(v) for m, v in zip(df["metric"], df["mean"]) if pd.notna(v)}
+
+
+def _scores_from_means(train_ds: str, means: Dict[str, float], datasets: List[str]) -> Dict[str, float]:
+    """Translate seed-summary means {in_test_f1: ..., ood_asian_f1: ...} into eval_ds -> macro_f1."""
+    out: Dict[str, float] = {}
+    if train_ds in datasets and "in_test_f1" in means:
+        out[train_ds] = means["in_test_f1"]
+    for d in datasets:
+        if d == train_ds:
+            continue
+        key = f"ood_{d}_f1"
+        if key in means:
+            out[d] = means[key]
+    return out
+
+
 def build_macro_matrix(results_root: Path, datasets: List[str]) -> Tuple[np.ndarray, Dict[str, Dict[str, float]], List[str]]:
     """
     Builds matrix M where:
@@ -195,24 +228,48 @@ def build_macro_matrix(results_root: Path, datasets: List[str]) -> Tuple[np.ndar
             mat[i_base, col_idx[eval_ds]] = f1
 
     # ----------------------------------
-    # Fine-tuned rows: last epoch per run
+    # Fine-tuned rows: prefer multi-seed mean from <dataset>_seed_summary.csv,
+    # fall back to last-epoch row of seed_42/metrics.csv otherwise.
     # ----------------------------------
     for train_ds in datasets:
-        csv_path = _resolve_metrics_path(results_root, train_ds)
-        if not csv_path.exists():
-            continue
+        summary_means = _read_seed_summary_means(results_root / f"{train_ds}_seed_summary.csv")
+        if summary_means is not None:
+            scores = _scores_from_means(train_ds, summary_means, datasets)
+        else:
+            csv_path = _resolve_metrics_path(results_root, train_ds)
+            if not csv_path.exists():
+                continue
+            last = _read_last_epoch_row(csv_path)
+            if last is None:
+                continue
+            scores = _extract_macro_scores_from_row(train_ds, last, datasets)
 
-        last = _read_last_epoch_row(csv_path)
-        if last is None:
-            continue
-
-        scores = _extract_macro_scores_from_row(train_ds, last, datasets)
         raw[train_ds] = scores
-
         i = row_idx[train_ds]
         for eval_ds, f1 in scores.items():
             j = col_idx[eval_ds]
             mat[i, j] = f1
+
+    # ----------------------------------
+    # Optional extra "combined" row: union-trained model evaluated on all four
+    # per-population test sets. Sourced from combined_seed_summary.csv (multi-seed).
+    # Appended after the four per-population fine-tuned rows so it sits at the
+    # bottom of the heatmap.
+    # ----------------------------------
+    combined_means = _read_seed_summary_means(results_root / "combined_seed_summary.csv")
+    if combined_means is not None:
+        combined_scores: Dict[str, float] = {}
+        for d in datasets:
+            key = f"ood_{d}_f1"
+            if key in combined_means:
+                combined_scores[d] = combined_means[key]
+        if combined_scores:
+            new_row = np.full((1, mat.shape[1]), np.nan, dtype=float)
+            for eval_ds, f1 in combined_scores.items():
+                new_row[0, col_idx[eval_ds]] = f1
+            mat = np.vstack([mat, new_row])
+            row_labels = row_labels + ["combined"]
+            raw["combined"] = combined_scores
 
     return mat, raw, row_labels
 
@@ -317,9 +374,12 @@ def main() -> None:
                 "macro_f1_matrix": [[None if np.isnan(x) else float(x) for x in row] for row in mat],
                 "raw_scores": raw,
                 "note": (
-                    "Rows=[base + train datasets], Cols=eval datasets. "
+                    "Rows=[base + train datasets (+ combined if available)], Cols=eval datasets. "
                     "base row uses epoch 0 (no fine-tuning). "
-                    "Other rows use LAST epoch of each experiments/results/<train>/metrics.csv."
+                    "Fine-tuned rows prefer multi-seed mean from "
+                    "experiments/results/<train>_seed_summary.csv when present, "
+                    "and fall back to the LAST epoch of "
+                    "experiments/results/<train>/seed_42/metrics.csv otherwise."
                 ),
             },
             indent=2,

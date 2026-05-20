@@ -230,25 +230,26 @@ def save_matrix_csv(path: Path, row_labels: List[str], col_labels: List[str], ma
 def plot_heatmap(out_path: Path, row_labels: List[str], col_labels: List[str], mat: np.ndarray, title: str) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
-    fig = plt.figure(figsize=(8.8, 7.2))
+    fig = plt.figure(figsize=(5.0, 4.2))
     ax = plt.gca()
 
     im = ax.imshow(mat, vmin=0.0, vmax=1.0, aspect="auto")
     ax.set_xticks(range(len(col_labels)))
     ax.set_yticks(range(len(row_labels)))
-    ax.set_xticklabels(col_labels, rotation=45, ha="right")
-    ax.set_yticklabels(row_labels)
-    ax.set_xlabel("Evaluation dataset")
-    ax.set_ylabel("Train dataset")
-    ax.set_title(title)
+    ax.set_xticklabels(col_labels, rotation=45, ha="right", fontsize=13)
+    ax.set_yticklabels(row_labels, fontsize=13)
+    ax.set_xlabel("Evaluation dataset", fontsize=14)
+    ax.set_ylabel("Train dataset", fontsize=14)
+    ax.set_title(title, fontsize=12)
 
     for i in range(mat.shape[0]):
         for j in range(mat.shape[1]):
             val = mat[i, j]
             if np.isfinite(val):
-                ax.text(j, i, f"{val:.2f}", ha="center", va="center", fontsize=9)
+                ax.text(j, i, f"{val:.2f}", ha="center", va="center", fontsize=13)
 
-    plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.ax.tick_params(labelsize=11)
     plt.tight_layout()
     save_fig(fig, out_path)
     plt.close(fig)
@@ -326,7 +327,7 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    plot_heatmap(plot_png, row_labels, datasets, mat, "Cross-Domain Generalization (Macro-F1) — Base + Last Epoch")
+    plot_heatmap(plot_png, row_labels, datasets, mat, "Cross-Domain Generalization (Macro-F1)")
 
     print(f"[OK] Saved heatmap: {plot_png}")
     print(f"[OK] Saved matrix CSV: {out_csv}")

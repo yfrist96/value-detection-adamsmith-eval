@@ -6,7 +6,7 @@ This repository implements a full experimental pipeline for evaluating and fine-
 
 - Asians  
 - Indians  
-- Joint Org. Employees
+- IJH
 - Ultra Orthodox Female Teachers
 
 The project supports:
@@ -69,7 +69,7 @@ ValueDetection/
 │   ├── eval.py
 │   ├── plotting.py
 │   ├── cross_domain_heatmaps.py
-│   ├── misclassification_joint_test.py     # per-population error analysis (Joint, Ultra, ...)
+│   ├── misclassification_joint_test.py     # per-population error analysis (IJH, Ultra, ...)
 │   ├── circumplex_error_analysis.py        # Schwartz circumplex distance scoring
 │   ├── lexical_exhibits.py                 # log-odds distinctive vocabulary per cell
 │   ├── ablate_achievement_vocab.py
@@ -93,11 +93,11 @@ ValueDetection/
 │   │   ├── misclf_<dataset>_test_attractor_summary.csv     # per-class attractor counts
 │   │   ├── circumplex_summary.csv             # cross-population circumplex overview
 │   │   ├── lexical_distinctive_by_pop_value.csv  # full distinctive-vocabulary table
-│   │   ├── lexical_<pop>_<value>_top.csv          # per-cell highlights (Ultra-BE, Joint-UN, ...)
+│   │   ├── lexical_<pop>_<value>_top.csv          # per-cell highlights (Ultra-BE, IJH-UN, ...)
 │   │   ├── ablation_achievement/                    # base model, full corpus
 │   │   ├── ablation_achievement_<dataset>_finetuned/   # per-population epoch-10, full corpus
-│   │   ├── ablation_achievement_joint_finetuned/    # Joint epoch-10, Joint test split
-│   │   ├── ablation_achievement_joint_finetuned_train/  # Joint epoch-10, Joint train split
+│   │   ├── ablation_achievement_joint_finetuned/    # IJH epoch-10, IJH test split
+│   │   ├── ablation_achievement_joint_finetuned_train/  # IJH epoch-10, IJH train split
 │   │   └── ablation_summary_per_setting.csv         # cross-setting AC-share / F1 deltas
 │   ├── train.txt     # Training CLI output
 │   └── plots/        # Evaluation plots and charts
@@ -146,7 +146,7 @@ data/<dataset>/test.csv
 
 Splits are created for:
 
-- Joint  
+- IJH  
 - Asian  
 - Indian  
 - Ultra  
@@ -205,11 +205,11 @@ python -c "from src.plotting import plot_f1_curve; plot_f1_curve('<ds_name>', se
 #### Multi-seed runs (variance reporting)
 
 To produce mean ± std for the headline numbers, run additional seeds for the
-configurations that matter most (Combined and Joint, per the paper) and
+configurations that matter most (Combined and IJH, per the paper) and
 aggregate:
 
 ```bash
-# 1. Train Joint and Combined with three seeds (42 already done by default).
+# 1. Train IJH and Combined with three seeds (42 already done by default).
 python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44
 
 # 2. Aggregate last-epoch metrics into mean ± std per configuration.
@@ -300,7 +300,7 @@ The script:
 Run for each population:
 
 ```bash
-# Joint (default)
+# IJH (default)
 python -m src.misclassification_joint_test
 
 # Ultra (mirror population — produces the dual-class TR + BE attractor)
@@ -341,7 +341,7 @@ experiments/results/circumplex_summary.csv                          # cross-popu
 ```
 
 Distance buckets: `1` adjacent (weakest evidence), `2-3` near, `4-5` cross-axis
-(strong evidence), `6` diametric (strongest). The paper reports Joint at mean
+(strong evidence), `6` diametric (strongest). The paper reports IJH at mean
 distance 3.6 (92.6% cross-axis) and Ultra at 3.3 (85.2% cross-axis).
 
 ---
@@ -370,7 +370,7 @@ Outputs:
 experiments/results/lexical_distinctive_by_pop_value.csv  # full table, top-20 per cell
 experiments/results/lexical_ultra_BE_top.csv              # Ultra communal-attractor
 experiments/results/lexical_ultra_AC_top.csv
-experiments/results/lexical_joint_UN_top.csv              # Joint achievement-attractor source
+experiments/results/lexical_joint_UN_top.csv              # IJH achievement-attractor source
 experiments/results/lexical_joint_AC_top.csv
 ```
 

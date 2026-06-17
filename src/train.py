@@ -86,7 +86,7 @@ def fine_tune_dataset(
 
     optimizer = AdamW(model.parameters(), lr=lr)
 
-    base_datasets = ["joint", "asian", "indian", "ultra"]
+    base_datasets = ["ijh", "asian", "indian", "ultra"]
 
     # if we trained on combined, evaluate OOD on all base datasets
     if dataset_name == "combined":
@@ -115,6 +115,47 @@ def fine_tune_dataset(
         json.dump(run_config, f, indent=2)
 
     results = []
+
+    def eval_row(epoch, train_loss):
+        """Evaluate the current model (in-domain + OOD) and build a metrics row.
+
+        Shared by the epoch-0 baseline pass and every fine-tuning epoch so both
+        use identical evaluation logic.
+        """
+        model.eval()
+        in_train = evaluate_model(model, tokenizer, train_texts, train_coarse, device)
+        in_test = evaluate_model(model, tokenizer, test_texts, test_coarse, device)
+
+        ood = {}
+        for d in out_of_domain:
+            test_file = f"{data_root}/{d}/test.csv"
+            if os.path.exists(test_file):
+                tt, tf, tc = load_dataset(test_file, return_coarse=True)
+                ood[d] = evaluate_model(model, tokenizer, tt, tc, device)
+
+        if str(device).startswith("mps"):
+            torch.mps.empty_cache()
+
+        row = {
+            "epoch": epoch,
+            "train_loss": train_loss,
+            "in_train_f1": in_train["f1_macro"],
+            "in_test_f1": in_test["f1_macro"],
+            "in_train_f1_micro": in_train["f1_micro"],
+            "in_test_f1_micro": in_test["f1_micro"],
+        }
+        for d, scores in ood.items():
+            row[f"ood_{d}_f1"] = scores["f1_macro"]
+            row[f"ood_{d}_f1_micro"] = scores["f1_micro"]
+        return row
+
+    # Epoch 0: evaluate the un-tuned base model before any fine-tuning. This is
+    # the pre-fine-tuning baseline the cross-domain heatmap reads for its "base"
+    # row; logging it here makes that row reproducible from scratch (no manually
+    # preserved flat metrics.csv required). Epoch 0 is seed-independent.
+    results.append(eval_row(0, float("nan")))
+    pd.DataFrame(results).to_csv(os.path.join(save_dir, "metrics.csv"), index=False)
+    print(f"[{dataset_name}] Epoch 0 (base) | in_test_f1={results[0]['in_test_f1']:.4f}")
 
     for epoch in range(1, num_epochs + 1):
         model.train()
@@ -159,45 +200,14 @@ def fine_tune_dataset(
 
         avg_train_loss = total_loss / max(1, n_batches)
 
-        # -------------------
-        # In-domain evaluation
-        # -------------------
-        model.eval()
-        in_train = evaluate_model(model, tokenizer, train_texts, train_coarse, device)
-        in_test = evaluate_model(model, tokenizer, test_texts, test_coarse, device)
-
-        # -------------------
-        # Out-of-domain eval
-        # -------------------
-        ood = {}
-        for d in out_of_domain:
-            test_file = f"{data_root}/{d}/test.csv"
-            if os.path.exists(test_file):
-                tt, tf, tc = load_dataset(test_file, return_coarse=True)
-                ood[d] = evaluate_model(model, tokenizer, tt, tc, device)
-
-        if str(device).startswith("mps"):
-            torch.mps.empty_cache()
+        # In-domain + out-of-domain evaluation (shared with the epoch-0 pass).
+        row = eval_row(epoch, avg_train_loss)
 
         # Save checkpoint
         epoch_dir = os.path.join(save_dir, f"epoch_{epoch}")
         os.makedirs(epoch_dir, exist_ok=True)
         model.save_pretrained(epoch_dir)
         tokenizer.save_pretrained(epoch_dir)
-
-        # Save epoch metrics
-        row = {
-            "epoch": epoch,
-            "train_loss": avg_train_loss,
-            "in_train_f1": in_train["f1_macro"],
-            "in_test_f1": in_test["f1_macro"],
-            "in_train_f1_micro": in_train["f1_micro"],
-            "in_test_f1_micro": in_test["f1_micro"],
-        }
-
-        for d, scores in ood.items():
-            row[f"ood_{d}_f1"] = scores["f1_macro"]
-            row[f"ood_{d}_f1_micro"] = scores["f1_micro"]
 
         results.append(row)
         pd.DataFrame(results).to_csv(os.path.join(save_dir, "metrics.csv"), index=False)
@@ -214,9 +224,12 @@ def fine_tune_dataset(
 
 
 if __name__ == "__main__":
-    # Single-seed (seed=42) convenience entry point: runs all five fine-tunes.
-    # For multi-seed runs use:  python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44
-    for d in ["joint", "asian", "indian", "ultra"]:
+    # Single-seed (seed=42) convenience entry point: runs all five fine-tunes
+    # (the four per-population models plus Combined). Each run also logs an
+    # epoch-0 baseline, so the cross-domain heatmap's base/Combined rows are
+    # fully reproducible from this entry point alone.
+    # For the variance runs use:  python -m src.train_multi_seed --datasets ijh,combined --seeds 42,43,44
+    for d in ["ijh", "asian", "indian", "ultra", "combined"]:
         fine_tune_dataset(d)
 
     # Then run the combined fine-tune (assumes data/combined/train.csv + test.csv exist)

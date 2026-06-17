@@ -292,8 +292,8 @@ def main():
     ap.add_argument("--checkpoint_dir", default=None,
                     help="If set, overlay fine-tuned weights from "
                          "<checkpoint_dir>/epoch_*/model.safetensors. Used to ablate the "
-                         "fine-tuned joint model on its own test set, e.g. "
-                         "--checkpoint_dir experiments/results/joint.")
+                         "fine-tuned IJH model on its own test set, e.g. "
+                         "--checkpoint_dir experiments/results/ijh.")
     ap.add_argument("--input_csv", default="data/merged.csv")
     ap.add_argument("--dataset_col", default="Dataset")
     ap.add_argument("--text_col", default="Text")
@@ -302,7 +302,7 @@ def main():
     ap.add_argument("--output_label", default="ablation_achievement",
                     help="Subdirectory name under experiments/results and experiments/plots. "
                          "Use a distinct label per run to avoid clobbering "
-                         "(e.g. ablation_achievement_joint_finetuned).")
+                         "(e.g. ablation_achievement_ijh_finetuned).")
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 

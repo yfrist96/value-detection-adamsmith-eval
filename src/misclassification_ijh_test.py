@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Focused misclassification analysis for the in-domain JOINT test set.
+Focused misclassification analysis for the in-domain IJH test set.
 
 Outputs (same as before):
-- experiments/results/misclf_joint_test_predictions.csv
-- experiments/results/misclf_joint_test_misclassified.csv
-- experiments/results/misclf_joint_test_confusion_matrix.csv
-- experiments/plots/misclf_joint_test_confusion_matrix.png
+- experiments/results/misclf_ijh_test_predictions.csv
+- experiments/results/misclf_ijh_test_misclassified.csv
+- experiments/results/misclf_ijh_test_confusion_matrix.csv
+- experiments/plots/misclf_ijh_test_confusion_matrix.png
 
 Key detail:
 - Adam-Smith returns dict outputs like {"loss": ..., "output": ...}
@@ -210,9 +210,9 @@ def load_model_and_tokenizer(ckpt_dir: Path, base_model_dir: Path, device):
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dataset", type=str, default="joint")
+    ap.add_argument("--dataset", type=str, default="ijh")
     ap.add_argument("--split", type=str, default="test", choices=["train", "test"])
-    ap.add_argument("--model_dir", type=str, default="experiments/results/joint/seed_42",
+    ap.add_argument("--model_dir", type=str, default="experiments/results/ijh/seed_42",
                     help="Run directory containing the epoch_<N>/ subdirs to inspect; "
                          "defaults to the seed-42 run from the multi-seed campaign.")
     ap.add_argument("--base_model_dir", type=str, default="models/adam-smith")

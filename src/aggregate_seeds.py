@@ -9,7 +9,7 @@ mean/std table to stdout.
 
 Usage:
 
-    python -m src.aggregate_seeds --datasets joint,combined
+    python -m src.aggregate_seeds --datasets ijh,combined
 
 Outputs:
 
@@ -88,8 +88,8 @@ def main() -> None:
     ap.add_argument(
         "--datasets",
         type=str,
-        default="joint,combined",
-        help="Comma-separated dataset names (default: joint,combined)",
+        default="ijh,combined",
+        help="Comma-separated dataset names (default: ijh,combined)",
     )
     ap.add_argument(
         "--results_dir",
@@ -122,7 +122,7 @@ def main() -> None:
 
     if not any_written:
         print("\n[warn] No summaries written. Did you run training with multiple seeds first?")
-        print("       Try: python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44")
+        print("       Try: python -m src.train_multi_seed --datasets ijh,combined --seeds 42,43,44")
 
 
 if __name__ == "__main__":

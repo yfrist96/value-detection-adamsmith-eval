@@ -3,7 +3,7 @@
 Adds Schwartz circumplex distance scoring to misclassification CSVs and
 summarizes the attractor structure for each population.
 
-Inputs (produced by misclassification_joint_test.py):
+Inputs (produced by misclassification_ijh_test.py):
   experiments/results/misclf_<dataset>_test_misclassified.csv
   experiments/results/misclf_<dataset>_test_confusion_matrix.csv
 
@@ -146,7 +146,7 @@ def cross_population_overview(per_dataset: Dict[str, Path]) -> pd.DataFrame:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--datasets", nargs="+", default=["joint", "ultra"])
+    ap.add_argument("--datasets", nargs="+", default=["ijh", "ultra"])
     ap.add_argument("--results_dir", default="experiments/results")
     ap.add_argument("--split", default="test")
     args = ap.parse_args()

@@ -8,7 +8,7 @@ def split_merged_csv(
     out_root="data",
     test_size=0.2,
     random_state=42,
-    combined_from=("asian", "indian", "joint", "ultra"),
+    combined_from=("asian", "indian", "ijh", "ultra"),
 ):
     if not os.path.exists(merged_path):
         raise FileNotFoundError(merged_path)
@@ -55,14 +55,19 @@ def split_merged_csv(
                 shuffle=True,
             )
 
-        ds_dir = os.path.join(out_root, ds)
+        # Folder slug is lowercased so the per-dataset directories match the
+        # lowercase dataset names used everywhere downstream (e.g. "IJH" -> ijh,
+        # "Asian" -> asian). This keeps the pipeline working on case-sensitive
+        # filesystems (Linux), not just case-insensitive macOS/Windows.
+        ds_slug = ds.lower()
+        ds_dir = os.path.join(out_root, ds_slug)
         os.makedirs(ds_dir, exist_ok=True)
 
         train_df.to_csv(os.path.join(ds_dir, "train.csv"), index=False)
         test_df.to_csv(os.path.join(ds_dir, "test.csv"), index=False)
 
-        print(f"  ✓ Train: {len(train_df)} rows → {ds}/train.csv")
-        print(f"  ✓ Test:  {len(test_df)} rows → {ds}/test.csv")
+        print(f"  ✓ Train: {len(train_df)} rows → {ds_slug}/train.csv")
+        print(f"  ✓ Test:  {len(test_df)} rows → {ds_slug}/test.csv")
 
     # ---------------------------------------
     # 2) Combined dataset = merge the per-dataset splits

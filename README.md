@@ -38,7 +38,7 @@ ValueDetection/
 │   │   ├── split_datasets.txt
 │   │   └── *.csv
 │   │
-│   ├── joint/
+│   ├── ijh/
 │   │   ├── train.csv
 │   │   └── test.csv
 │   │
@@ -69,7 +69,7 @@ ValueDetection/
 │   ├── eval.py
 │   ├── plotting.py
 │   ├── cross_domain_heatmaps.py
-│   ├── misclassification_joint_test.py     # per-population error analysis (IJH, Ultra, ...)
+│   ├── misclassification_ijh_test.py       # per-population error analysis (IJH, Ultra, ...)
 │   ├── circumplex_error_analysis.py        # Schwartz circumplex distance scoring
 │   ├── lexical_exhibits.py                 # log-odds distinctive vocabulary per cell
 │   ├── ablate_achievement_vocab.py
@@ -96,8 +96,8 @@ ValueDetection/
 │   │   ├── lexical_<pop>_<value>_top.csv          # per-cell highlights (Ultra-BE, IJH-UN, ...)
 │   │   ├── ablation_achievement/                    # base model, full corpus
 │   │   ├── ablation_achievement_<dataset>_finetuned/   # per-population epoch-10, full corpus
-│   │   ├── ablation_achievement_joint_finetuned/    # IJH epoch-10, IJH test split
-│   │   ├── ablation_achievement_joint_finetuned_train/  # IJH epoch-10, IJH train split
+│   │   ├── ablation_achievement_ijh_finetuned/      # IJH epoch-10, IJH test split
+│   │   ├── ablation_achievement_ijh_finetuned_train/   # IJH epoch-10, IJH train split
 │   │   └── ablation_summary_per_setting.csv         # cross-setting AC-share / F1 deltas
 │   ├── train.txt     # Training CLI output
 │   └── plots/        # Evaluation plots and charts
@@ -106,6 +106,45 @@ ValueDetection/
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
+## Dataset Setup
+
+The corpus is distributed via Zenodo: **https://zenodo.org/records/20324552**
+
+Download the dataset file (`dataset.csv`, 2,699 rows) and save it as **`data/merged.csv`**:
+
+```bash
+mkdir -p data
+# download dataset.csv from the Zenodo record above, then:
+mv ~/Downloads/dataset.csv data/merged.csv
+```
+
+`data/merged.csv` must have exactly three columns — `Dataset`, `Text`, `Annotated Value` —
+where `Dataset` is one of the four populations: `Asian`, `Indian`, `IJH`, `Ultra`. The
+per-population train/test splits and the `combined` split are generated from this file by
+`src/split_datasets.py` (see step 2️⃣ below); everything downstream reads from those splits.
+
+---
+
+## Model Setup
+
+The base classifier is **Adam-Smith** ([Schroter et al., 2023](https://aclanthology.org/2023.semeval-1.196/)),
+the top system in SemEval-2023 Task 4 (ValueEval) — a DeBERTa-large multi-label value
+detector. It is released on HuggingFace as
+[`tum-nlp/Deberta_Human_Value_Detector`](https://huggingface.co/tum-nlp/Deberta_Human_Value_Detector)
+under the **OpenRAIL++** license. Download it into `models/adam-smith/` (the path the
+scripts default to):
+
+```bash
+pip install -r requirements.txt
+huggingface-cli download tum-nlp/Deberta_Human_Value_Detector --local-dir models/adam-smith
+```
+
+The model ships custom modeling code, so the scripts load it with `trust_remote_code=True`.
+All fine-tuned checkpoints and result files under `experiments/` are **regenerated** by the
+pipeline below (training uses fixed seeds 42/43/44); they are not distributed.
 
 ---
 
@@ -210,16 +249,16 @@ aggregate:
 
 ```bash
 # 1. Train IJH and Combined with three seeds (42 already done by default).
-python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44
+python -m src.train_multi_seed --datasets ijh,combined --seeds 42,43,44
 
 # 2. Aggregate last-epoch metrics into mean ± std per configuration.
-python -m src.aggregate_seeds --datasets joint,combined
+python -m src.aggregate_seeds --datasets ijh,combined
 ```
 
 This writes:
 
 ```
-experiments/results/joint_seed_summary.csv
+experiments/results/ijh_seed_summary.csv
 experiments/results/combined_seed_summary.csv
 ```
 
@@ -271,6 +310,14 @@ Run:
 python -m src.cross_domain_heatmaps
 ```
 
+The matrix columns and the per-population rows are the four populations
+(`asian,indian,ijh,ultra`); the `base` row (epoch 0) and the **Combined** row are
+added automatically. The Combined row is sourced from
+`experiments/results/combined_seed_summary.csv`, so it appears only after the
+multi-seed + aggregate steps above have produced that file (otherwise the heatmap
+renders without it). Do **not** add `combined` to `--datasets` — that is the eval
+target list, and the union model is not evaluated on a `combined` test set.
+
 Results are saved to:
 
 ```
@@ -301,10 +348,10 @@ Run for each population:
 
 ```bash
 # IJH (default)
-python -m src.misclassification_joint_test
+python -m src.misclassification_ijh_test
 
 # Ultra (mirror population — produces the dual-class TR + BE attractor)
-python -m src.misclassification_joint_test \
+python -m src.misclassification_ijh_test \
   --dataset ultra --model_dir experiments/results/ultra/seed_42
 ```
 
@@ -329,7 +376,7 @@ openness ↔ conservation) can be distinguished from local adjacency confusions.
 Run after step 6 has produced misclassified CSVs for the relevant populations:
 
 ```bash
-python -m src.circumplex_error_analysis --datasets joint ultra
+python -m src.circumplex_error_analysis --datasets ijh ultra
 ```
 
 Outputs:
@@ -370,8 +417,8 @@ Outputs:
 experiments/results/lexical_distinctive_by_pop_value.csv  # full table, top-20 per cell
 experiments/results/lexical_ultra_BE_top.csv              # Ultra communal-attractor
 experiments/results/lexical_ultra_AC_top.csv
-experiments/results/lexical_joint_UN_top.csv              # IJH achievement-attractor source
-experiments/results/lexical_joint_AC_top.csv
+experiments/results/lexical_ijh_UN_top.csv               # IJH achievement-attractor source
+experiments/results/lexical_ijh_AC_top.csv
 ```
 
 ---
@@ -395,8 +442,8 @@ python -m src.ablate_achievement_vocab \
   --input_csv data/merged.csv \
   --output_label ablation_achievement
 
-# 2-5. Per-population fine-tuned checkpoints (Asian / Indian / Joint / Ultra).
-for ds in asian indian joint ultra; do
+# 2-5. Per-population fine-tuned checkpoints (Asian / Indian / IJH / Ultra).
+for ds in asian indian ijh ultra; do
   python -m src.ablate_achievement_vocab \
     --checkpoint_dir experiments/results/${ds}/seed_42 \
     --input_csv data/merged.csv \
@@ -414,11 +461,20 @@ experiments/plots/<output_label>/global_cm_diff.{png,pdf}
 experiments/plots/<output_label>/<dataset>_cm_diff.{png,pdf}
 ```
 
+Once all five runs are done, collate their `summary.json` files into the
+cross-setting table:
+
+```bash
+python -m src.aggregate_ablation
+```
+
+This writes `experiments/results/ablation_summary_per_setting.csv` (one row per
+setting: AC-prediction share and F1 deltas before/after masking).
+
 The headline result is the negative one: across all five settings, masking this
 vocabulary shifts AC-prediction share by only `|Δ| ≤ 2.1`pp (base −1.4, Asian
-−0.9, Indian −0.6, Joint −0.1, Ultra −2.1), indicating that AC over-prediction is
-not primarily driven by this lexical set. The cross-setting deltas are also
-summarized in `experiments/results/ablation_summary_per_setting.csv`.
+−0.9, Indian −0.6, IJH −0.1, Ultra −2.1), indicating that AC over-prediction is
+not primarily driven by this lexical set.
 
 ---
 

@@ -3,7 +3,7 @@
 Dataset analysis for data/merged.csv
 
 Expected columns (exactly 3):
-- Dataset   (name of dataset: Indian, Asian, Joint, Ultra)
+- Dataset   (name of dataset: Indian, Asian, IJH, Ultra)
 - Text      (string)
 - Annotated Value (encoded label; numeric OR categorical)
 

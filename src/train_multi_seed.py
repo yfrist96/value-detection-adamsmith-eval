@@ -6,13 +6,13 @@ Runs `fine_tune_dataset` for the cartesian product of (datasets) x (seeds).
 Per-run output lands at experiments/results/<dataset>/seed_<seed>/ thanks to
 the seed-aware layout introduced in src/train.py.
 
-Typical usage (matches the paper's Combined+Joint multi-seed campaign):
+Typical usage (matches the paper's Combined+IJH multi-seed campaign):
 
-    python -m src.train_multi_seed --datasets joint,combined --seeds 42,43,44
+    python -m src.train_multi_seed --datasets ijh,combined --seeds 42,43,44
 
 After all runs finish, aggregate with:
 
-    python -m src.aggregate_seeds --datasets joint,combined
+    python -m src.aggregate_seeds --datasets ijh,combined
 """
 from __future__ import annotations
 
@@ -27,8 +27,8 @@ def main() -> None:
     ap.add_argument(
         "--datasets",
         type=str,
-        default="joint,combined",
-        help="Comma-separated dataset names (default: joint,combined)",
+        default="ijh,combined",
+        help="Comma-separated dataset names (default: ijh,combined)",
     )
     ap.add_argument(
         "--seeds",

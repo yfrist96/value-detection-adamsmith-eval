@@ -21,7 +21,7 @@ Outputs:
 Notes:
 - train.py logs macro-F1 columns like:
     in_test_f1
-    ood_asian_f1, ood_indian_f1, ood_joint_f1, ood_ultra_f1
+    ood_asian_f1, ood_indian_f1, ood_ijh_f1, ood_ultra_f1
   and also micro versions (not used here).
 
 - The "base" row is constructed from epoch 0 rows. We fill each dataset’s base
@@ -50,7 +50,7 @@ def _resolve_metrics_path(results_root: Path, dataset_name: str, seed: int = 42)
     Prefers the seed-aware layout (seed_<seed>/metrics.csv) introduced for the
     multi-seed campaign; falls back to the legacy flat layout (metrics.csv at
     the dataset root) if the seeded directory does not exist. This keeps the
-    heatmap working for both the multi-seeded runs (Joint, Combined) and the
+    heatmap working for both the multi-seeded runs (IJH, Combined) and the
     untouched single-seed runs (Asian, Indian, Ultra).
     """
     seeded = results_root / dataset_name / f"seed_{seed}" / "metrics.csv"
@@ -335,7 +335,7 @@ def main() -> None:
     p.add_argument(
         "--datasets",
         type=str,
-        default="asian,indian,joint,ultra",
+        default="asian,indian,ijh,ultra",
         help="Comma-separated dataset order for heatmap columns (and fine-tuned rows)",
     )
     args = p.parse_args()

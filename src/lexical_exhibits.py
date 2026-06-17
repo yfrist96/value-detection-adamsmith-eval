@@ -8,12 +8,12 @@ is measured by log-odds-ratio with an informative Dirichlet prior built from
 the overall corpus background (Monroe, Colaresi, Quinn 2008).
 
 This is the kind of "ultra-Orthodox typical achievement vocabulary" exhibit
-Sharon asked for in the email thread, plus the Joint parity check.
+Sharon asked for in the email thread, plus the IJH parity check.
 
 Outputs (under experiments/results/):
   lexical_distinctive_by_pop_value.csv     # all (pop, val) cells, top tokens
   lexical_ultra_BE_top.csv                 # Ultra-BE highlight (Sharon request)
-  lexical_joint_UN_top.csv                 # Joint-UN parity check
+  lexical_ijh_UN_top.csv                   # IJH-UN parity check
 
 The CSVs include z-scores so the LaTeX table author can decide thresholds.
 """
@@ -208,9 +208,9 @@ def main() -> None:
     # Highlights for the paper.
     for pop, val, name in [
         ("Ultra", "BE", "lexical_ultra_BE_top.csv"),
-        ("Joint", "UN", "lexical_joint_UN_top.csv"),
+        ("IJH", "UN", "lexical_ijh_UN_top.csv"),
         ("Ultra", "AC", "lexical_ultra_AC_top.csv"),
-        ("Joint", "AC", "lexical_joint_AC_top.csv"),
+        ("IJH", "AC", "lexical_ijh_AC_top.csv"),
     ]:
         sub = distinctive[
             (distinctive["population"] == pop) & (distinctive["value"] == val)

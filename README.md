@@ -72,6 +72,8 @@ ValueDetection/
 │   ├── misclassification_ijh_test.py       # per-population error analysis (IJH, Ultra, ...)
 │   ├── circumplex_error_analysis.py        # Schwartz circumplex distance scoring
 │   ├── lexical_exhibits.py                 # log-odds distinctive vocabulary per cell
+│   ├── register_distance.py                # lexical distance per population pair vs transfer
+│   ├── dump_predictions.py                 # per-item predictions + macro-F1 convention check
 │   ├── ablate_achievement_vocab.py
 │   ├── split_datasets.py
 │   ├── data_analysis.py
@@ -88,6 +90,10 @@ ValueDetection/
 │   │   │       ├── metrics.csv     #   per-epoch in/OOD F1 for that seed
 │   │   │       └── epoch_<N>/      #   model checkpoint per epoch
 │   │   ├── <dataset>_seed_summary.csv         # mean ± std across seeds
+│   │   ├── cross_domain_macro_f1_matrix.csv   # the transfer matrix (seed means)
+│   │   ├── transfer_per_seed.csv              # the same matrix, one row per run
+│   │   ├── register_distance.csv              # per-pair lexical distance measures
+│   │   ├── register_distance_correlations.json  # Spearman rho vs transfer
 │   │   ├── misclf_<dataset>_test_*.csv        # per-population error tables + confusion matrices
 │   │   ├── misclf_<dataset>_test_misclassified_scored.csv  # + Schwartz circumplex distance
 │   │   ├── misclf_<dataset>_test_attractor_summary.csv     # per-class attractor counts
@@ -243,27 +249,34 @@ python -c "from src.plotting import plot_f1_curve; plot_f1_curve('<ds_name>', se
 
 #### Multi-seed runs (variance reporting)
 
-To produce mean ± std for the headline numbers, run additional seeds for the
-configurations that matter most (Combined and IJH, per the paper) and
-aggregate:
+Every cell of the transfer matrix is a mean over seeds, not a single run. All
+five configurations are trained with seeds 42/43/44, and Ultra additionally with
+45/46 (see the note below):
 
 ```bash
-# 1. Train IJH and Combined with three seeds (42 already done by default).
-python -m src.train_multi_seed --datasets ijh,combined --seeds 42,43,44
+# 1. Train every configuration with three seeds.
+python -m src.train_multi_seed --datasets asian,indian,ijh,ultra,combined --seeds 42,43,44
 
-# 2. Aggregate last-epoch metrics into mean ± std per configuration.
-python -m src.aggregate_seeds --datasets ijh,combined
+# 2. Two extra seeds for Ultra, which had one diverged run.
+python -m src.train_multi_seed --datasets ultra --seeds 45,46
+
+# 3. Aggregate last-epoch metrics into mean ± std per configuration.
+python -m src.aggregate_seeds --datasets asian,indian,ijh,ultra,combined
 ```
 
-This writes:
+This writes one `experiments/results/<dataset>_seed_summary.csv` per
+configuration and prints a per-metric mean ± std table to stdout.
 
-```
-experiments/results/ijh_seed_summary.csv
-experiments/results/combined_seed_summary.csv
-```
-
-and prints a per-metric mean ± std table to stdout, ready to drop into the
-paper's Results section.
+**Excluded run: `ultra` seed 43.** It diverged at the first epoch to constant
+prediction of the majority class and never recovered, ending at a *training*
+macro F1 of 0.055 — exactly the score of always predicting Benevolence on that
+split. Since it never fit the data it was trained on, it is an optimization
+failure rather than a weak model, and `aggregate_seeds.py` drops it by default
+via `--exclude ultra:43`. The criterion is training-set performance and never
+looks at the test set. Pass `--exclude ""` to keep every run and see the
+difference: including it drags Ultra's in-domain mean from 0.592 ± 0.035 to
+0.485 ± 0.242. Training uses plain AdamW with no warmup, no LR schedule, and no
+gradient clipping, which is the likely cause; 16 of the 17 runs converged.
 
 ---
 
@@ -297,7 +310,8 @@ Generate a **cross-domain generalization heatmap** summarizing how well each fin
 This script reads the per-run logs saved by `src/train.py`:
 
 
-It uses the **last epoch** of each run and constructs a Macro-F1 matrix where:
+It uses the **last epoch** of each run, averaged across seeds via
+`<dataset>_seed_summary.csv`, and constructs a Macro-F1 matrix where:
 
 - Rows = training dataset  
 - Columns = evaluation dataset  
@@ -317,6 +331,11 @@ added automatically. The Combined row is sourced from
 multi-seed + aggregate steps above have produced that file (otherwise the heatmap
 renders without it). Do **not** add `combined` to `--datasets` — that is the eval
 target list, and the union model is not evaluated on a `combined` test set.
+
+Every fine-tuned row is a seed mean, taken from `<dataset>_seed_summary.csv`; if
+a summary file is missing the script falls back to that dataset's seed-42 run
+alone, so run the aggregate step first. The `base` row is read from epoch 0,
+which is the un-tuned model and therefore seed-independent.
 
 Results are saved to:
 
@@ -423,7 +442,41 @@ experiments/results/lexical_ijh_AC_top.csv
 
 ---
 
-### 9️⃣ Achievement-Vocabulary Ablation
+### 9️⃣ Register Distance vs Transfer
+
+Section 8 shows *which* words are distinctive. This step asks whether lexical
+distance between two populations, measured on its own, predicts how well a
+classifier transfers between them — otherwise the register account is circular.
+
+Distances are computed from the **training text alone**, with no access to
+labels, predictions, or F1 scores, and only then correlated against the
+transfer matrix:
+
+```bash
+python -m src.register_distance
+```
+
+Three measures are reported, and they disagree. Over the six population pairs,
+the share of the 100 most frequent content words two populations do *not* share
+tracks transfer closely (Spearman ρ = −0.93), while Jensen–Shannon divergence
+between unigram distributions (−0.26) and Jaccard distance over word types
+(+0.03) do not — with fewer than 2,000 content tokens per population, both
+whole-vocabulary measures are dominated by the rare tail. Two alternative
+accounts are checked on the same pairs: shared nationality (−0.66, i.e. the
+wrong direction for cultural proximity) and relative training-set size (+0.37).
+
+Outputs:
+
+```
+experiments/results/register_distance.csv
+experiments/results/register_distance_correlations.json
+```
+
+With n = 6 pairs this establishes an ordering, not a significance claim.
+
+---
+
+### 🔟 Achievement-Vocabulary Ablation
 
 Test directly whether a small set of achievement-coded tokens (`achieve`, `impact`,
 `improve`, `advance`, with morphological variants; 22 tokens total) causally drives
@@ -502,6 +555,57 @@ The mapping between fine-grained (20-class) and coarse (12-class) labels is defi
 ```
 src/label_map.py
 ```
+
+Note that only **ten** of the twelve categories are ever used in the annotated
+corpus: Face (FA) and Humility (HU) have no instances in any of the four
+populations. The model can still predict them, and the base model does so
+occasionally, which is why the macro-F1 convention below matters.
+
+**Macro-F1 convention.** `src/eval.py` calls
+`f1_score(gold, pred, average="macro")` with no `labels=` argument, so sklearn
+averages over the union of gold and predicted classes. The denominator therefore
+depends on what the model predicts: a model that predicts a class with no gold
+support in that test set picks up an extra zero-F1 category. Every cell of the
+transfer matrix goes through this one code path, so the matrix is internally
+consistent. In practice the choice only affects the base row — fine-tuned models
+do not predict outside their target's gold support, so every fine-tuned cell is
+identical under either convention. To measure the difference yourself:
+
+```bash
+python -m src.dump_predictions              # writes per-item predictions for every cell
+python -m src.dump_predictions --recompute  # rescores them under all three conventions
+```
+
+---
+
+## Reproducing the Reported Numbers
+
+Model checkpoints and per-item prediction dumps are far too large to version
+(the checkpoints alone run to hundreds of gigabytes), but the **metric logs that
+every number in the paper is computed from are tracked in this repository** —
+about 200 KB of CSV under `experiments/results/`. So the reported results can be
+checked without re-running any training:
+
+```bash
+# Rebuild the transfer matrix and heatmap from the committed per-seed logs.
+python -m src.aggregate_seeds --datasets asian,indian,ijh,ultra,combined
+python -m src.cross_domain_heatmaps --datasets asian,indian,ijh,ultra
+```
+
+Re-running the fine-tuning itself takes roughly 18 hours across the 17 runs on a
+single Apple M4 (MPS backend): Asian ~25 min, Indian ~74 min, IJH ~26 min, Ultra
+~46 min, and Combined ~163 min per seed. The analyses in sections 4️⃣–🔟 run in
+minutes on a laptop.
+
+---
+
+## License
+
+Code in this repository is released under the **MIT license** (see `LICENSE`).
+
+The annotated corpus is distributed separately, on Zenodo, under
+**CC-BY-4.0**. The Adam-Smith checkpoint is third-party and carries its own
+**OpenRAIL++** license.
 
 ---
 

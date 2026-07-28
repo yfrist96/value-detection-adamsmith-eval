@@ -38,12 +38,14 @@ def _seed_from_dirname(p: Path) -> Optional[int]:
         return None
 
 
-def aggregate_one(dataset_name: str, results_root: Path) -> Optional[pd.DataFrame]:
+def aggregate_one(dataset_name: str, results_root: Path, exclude: Optional[set] = None) -> Optional[pd.DataFrame]:
     ds_root = results_root / dataset_name
     if not ds_root.exists():
         return None
 
     seed_dirs = sorted(p for p in ds_root.glob("seed_*") if p.is_dir() and _seed_from_dirname(p) is not None)
+    if exclude:
+        seed_dirs = [p for p in seed_dirs if (dataset_name, _seed_from_dirname(p)) not in exclude]
     if not seed_dirs:
         return None
 
@@ -97,14 +99,34 @@ def main() -> None:
         default="experiments/results",
         help="Root results dir containing <dataset>/seed_*/metrics.csv",
     )
+    ap.add_argument(
+        "--exclude",
+        type=str,
+        default="ultra:43",
+        help=(
+            "Comma-separated <dataset>:<seed> runs to leave out, e.g. ultra:43. "
+            "Ultra seed 43 diverged at epoch 1 and never fit its own training data "
+            "(training macro F1 0.055, the score of always predicting the majority class), "
+            "so it is excluded as an optimization failure rather than a low-performing model. "
+            "The criterion is training-set performance and never references the test set. "
+            "Pass an empty string to keep every run."
+        ),
+    )
     args = ap.parse_args()
 
     results_root = Path(args.results_dir)
     datasets = [d.strip() for d in args.datasets.split(",") if d.strip()]
+    exclude = set()
+    for item in args.exclude.split(","):
+        item = item.strip()
+        if not item:
+            continue
+        ds_name, _, seed_str = item.partition(":")
+        exclude.add((ds_name.strip(), int(seed_str)))
 
     any_written = False
     for ds in datasets:
-        summary = aggregate_one(ds, results_root)
+        summary = aggregate_one(ds, results_root, exclude)
         if summary is None:
             print(f"[skip] {ds}: no seed_* subdirs found under {results_root / ds}")
             continue

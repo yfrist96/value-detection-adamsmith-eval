@@ -601,7 +601,7 @@ minutes on a laptop.
 
 ## License
 
-Code in this repository is released under the **MIT license** (see `LICENSE`).
+Code in this repository is released under the **MIT license** ([LICENSE](LICENSE)).
 
 The annotated corpus is distributed separately, on Zenodo, under
 **CC-BY-4.0**. The Adam-Smith checkpoint is third-party and carries its own

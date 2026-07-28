@@ -1,0 +1,13 @@
+predicted_class,diagonal_correct,offdiag_errors_into,n_true_classes_contributing_errors
+AC,23,19,6
+UN,21,6,5
+SD,8,1,1
+PO,0,1,1
+ST,1,0,0
+HE,0,0,0
+FA,0,0,0
+SE,0,0,0
+TR,0,0,0
+CO,2,0,0
+HU,0,0,0
+BE,1,0,0

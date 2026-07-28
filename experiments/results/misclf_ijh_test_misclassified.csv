@@ -1,0 +1,28 @@
+idx,text,true_coarse,pred_coarse,confusion_pair,pred_fine_top1,pred_conf,top2_gap,correct,top3_coarse,n_chars,n_words,punct_per_100_chars,upper_ratio
+74,Influence on policy,UN,AC,UN->AC,Achievement,0.11713216453790665,0.036813296377658844,False,AC:0.117;SD:0.080;ST:0.080,19.0,3.0,0.0,0.058823529411764705
+41,To advance through the ranks,PO,AC,PO->AC,Achievement,0.11711365729570389,0.03680705279111862,False,AC:0.117;ST:0.080;SE:0.080,28.0,5.0,0.0,0.041666666666666664
+7,Advanced organization,SE,AC,SE->AC,Achievement,0.11710342019796371,0.036784470081329346,False,AC:0.117;SE:0.080;ST:0.080,21.0,2.0,0.0,0.05
+6,Creating a significant change within me,UN,AC,UN->AC,Achievement,0.11709106713533401,0.036762215197086334,False,AC:0.117;ST:0.080;SD:0.080,39.0,6.0,0.0,0.029411764705882353
+14,To encourage growth in people,BE,AC,BE->AC,Achievement,0.11708510667085648,0.03678984194993973,False,AC:0.117;SD:0.080;ST:0.080,29.0,5.0,0.0,0.04
+0,meaning,SD,AC,SD->AC,Achievement,0.11707207560539246,0.03677019476890564,False,AC:0.117;SD:0.080;UN:0.080,7.0,1.0,0.0,0.0
+72,A sense of meaning and professional pride,SD,AC,SD->AC,Achievement,0.11705625802278519,0.03672933578491211,False,AC:0.117;SD:0.080;ST:0.080,41.0,7.0,0.0,0.02857142857142857
+4,Promoting a sense of self-fulfillment and satisfaction,SD,AC,SD->AC,Achievement,0.11699837446212769,0.03651120513677597,False,AC:0.117;SD:0.080;ST:0.080,54.0,7.0,1.8518518518518516,0.02127659574468085
+60,Promoting fairness in public systems,UN,AC,UN->AC,Achievement,0.11688550561666489,0.036238521337509155,False,AC:0.117;UN:0.081;PO:0.080,36.0,5.0,0.0,0.03125
+36,Organizational culture will always strive to operate inwardly from the same values ​​that motivate us to act in society.,UN,AC,UN->AC,Achievement,0.11678428947925568,0.036274343729019165,False,AC:0.117;SD:0.081;ST:0.080,120.0,19.0,2.5,0.010101010101010102
+81,Trust-based organization,BE,AC,BE->AC,Achievement,0.11676152795553207,0.03605802357196808,False,AC:0.117;PO:0.081;CO:0.081,24.0,2.0,4.166666666666666,0.045454545454545456
+56,Promoting the social periphery in the north,UN,AC,UN->AC,Achievement,0.11630454659461975,0.035435765981674194,False,AC:0.116;UN:0.081;ST:0.080,43.0,7.0,0.0,0.02702702702702703
+18,Expand my field of activity also in professional innovation,ST,AC,ST->AC,Achievement,0.1160409227013588,0.034080058336257935,False,AC:0.116;ST:0.082;SD:0.080,59.0,9.0,0.0,0.0196078431372549
+53,"Promote significant social change, especially for populations in need.",UN,AC,UN->AC,Achievement,0.11521320044994354,0.03293466567993164,False,AC:0.115;UN:0.082;ST:0.080,70.0,9.0,2.857142857142857,0.016666666666666666
+67,Improving technological systems infrastructure and improving processes for employees and managers,SE,AC,SE->AC,Achievement,0.11322269588708878,0.032107606530189514,False,AC:0.113;SE:0.081;PO:0.081,97.0,11.0,0.0,0.011494252873563218
+23,Providing an opportunity for everyone to realize their personal potential,UN,AC,UN->AC,Achievement,0.11316343396902084,0.03082408756017685,False,AC:0.113;UN:0.082;ST:0.081,73.0,10.0,0.0,0.015625
+65,Innovate and influence the products,AC,SD,AC->SD,Self-direction: thought,0.10004515200853348,0.017267391085624695,False,SD:0.100;ST:0.083;AC:0.082,35.0,5.0,0.0,0.03225806451612903
+8,Help and support my team,BE,PO,BE->PO,Power: dominance,0.09940800815820694,0.016542740166187286,False,PO:0.099;CO:0.083;AC:0.083,24.0,5.0,0.0,0.05
+39,Digital and data-based social sector,UN,AC,UN->AC,Achievement,0.09844540804624557,0.01312720775604248,False,AC:0.098;ST:0.085;PO:0.082,36.0,5.0,2.7777777777777777,0.03225806451612903
+77,Promoting a government decision for optimal aging and implementing measures that Eshel will lead in the work plan,UN,AC,UN->AC,Universalism: concern,0.09828224033117294,0.011570319533348083,False,AC:0.098;UN:0.087;PO:0.082,113.0,18.0,0.0,0.020833333333333332
+32,Improving the situation of service recipients,BE,UN,BE->UN,Universalism: concern,0.09199952334165573,0.009367987513542175,False,UN:0.092;AC:0.083;ST:0.083,45.0,6.0,0.0,0.025
+55,People development,PO,UN,PO->UN,Universalism: concern,0.09197390079498291,0.009249821305274963,False,UN:0.092;AC:0.083;ST:0.083,18.0,2.0,0.0,0.058823529411764705
+37,Improving government service,AC,UN,AC->UN,Universalism: concern,0.09191419929265976,0.009232588112354279,False,UN:0.092;AC:0.083;BE:0.083,28.0,3.0,0.0,0.038461538461538464
+44,National influence,AC,UN,AC->UN,Universalism: concern,0.09168265759944916,0.007991626858711243,False,UN:0.092;AC:0.084;PO:0.083,18.0,2.0,0.0,0.058823529411764705
+52,To achieve occupational stability,SE,UN,SE->UN,Universalism: concern,0.09130943566560745,0.007740899920463562,False,UN:0.091;AC:0.084;SE:0.083,33.0,4.0,0.0,0.03333333333333333
+3,Tidiness,SE,AC,SE->AC,Self-direction: thought,0.09089899063110352,0.004331856966018677,False,AC:0.091;SD:0.087;BE:0.084,8.0,1.0,0.0,0.125
+33,"Flexibility in working hours and tasks, improved conditions and pay",HE,UN,HE->UN,Universalism: concern,0.08715593814849854,0.0001625940203666687,False,UN:0.087;SE:0.087;SD:0.083,67.0,10.0,1.4925373134328357,0.017543859649122806

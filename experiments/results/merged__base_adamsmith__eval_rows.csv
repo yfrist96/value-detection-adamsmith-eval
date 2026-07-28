@@ -1,0 +1,2700 @@
+Source_Dataset,Text,Annotated_Coarse,Predicted_Top1_Coarse,Predicted_TopK_Coarse,Predicted_Thresholded_Coarse_Set,Top1_Correct,HitAt3,HitAny_ThresholdedSet
+Indian,Taking care of the data center.,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Indian,Sincerity,BE,BE,BE; SE; UN,BE; SE,1,1,1
+Indian,Career stability,SE,AC,AC; SE; BE,AC; SE,0,1,1
+Indian,To be professional,AC,AC,AC; CO; FA,AC; BE; CO; FA,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,Respect and confidence,CO,FA,FA; AC; SE,AC; FA,0,0,0
+Indian,Credibility and Reliability,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Indian,Challenges,ST,AC,AC; SD; CO,AC,0,0,0
+Indian,Work delight,HE,AC,AC; BE; SD,AC,0,0,0
+Indian,Chance to Improve continuously,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Highest production at most economic cost,AC,PO,PO; AC; UN,AC; PO; SE; UN,0,1,1
+Indian,Stock management,AC,PO,PO; AC; BE,AC; PO,0,1,1
+Indian,Improving my skill sets,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Justify the work entrusted by simplifying the methodology,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Challenges,ST,AC,AC; SD; CO,AC,0,0,0
+Indian,Financial benefits,PO,PO,PO; SE; AC,AC; PO; SE,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,For money in manufacturing,AC,PO,PO; SE; AC,AC; PO; SE,0,1,1
+Indian,honesty,BE,BE,BE; CO; HU,BE; CO,1,1,1
+Indian,Working gives me success,AC,AC,AC; FA; SD,AC,1,1,1
+Indian,Employment,SE,AC,AC; SE; PO,AC; PO; SE,0,1,1
+Indian,COMPUTER OPPERRETER,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Job quality,AC,AC,AC; BE; FA,AC,1,1,1
+Indian,profit,PO,AC,AC; BE; SE,,0,0,0
+Indian,I want to be successful,AC,AC,AC; ST; SD,AC; SD; ST,1,1,1
+Indian,Remove Poverty,UN,BE,BE; SE; CO,AC; BE; CO; SE,0,0,0
+Indian,processing purchase order,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Indian,Doing work properly,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,growing consistently,AC,AC,AC; UN; CO,AC; UN,1,1,1
+Indian,Ambition,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Progress,AC,AC,AC; SE; BE,,1,1,0
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,To experience the work,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Indian,Yes my first goal is to concentrate on my work,AC,AC,AC; CO; BE,AC; BE; CO; SD,1,1,1
+Indian,Being a good employee,AC,AC,AC; FA; BE,AC; BE; FA,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,travelling world,HE,ST,ST; SD; AC,AC; SD; ST,0,0,0
+Indian,Loyalty,BE,BE,BE; CO; FA,BE; CO; FA,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Be respected at my workplace,CO,FA,FA; CO; AC,AC; CO; FA,0,1,1
+Indian,Become best employee,AC,AC,AC; FA; UN,AC; FA,1,1,1
+Indian,getting higher position.,AC,AC,AC; UN; PO,AC; UN,1,1,1
+Indian,I like my job very much,HE,AC,AC; SE; PO,AC; SE,0,0,0
+Indian,Achievement,AC,AC,AC; FA; ST,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,I want to learn and earn big,PO,AC,AC; SD; ST,AC; PO; SD; ST,0,0,1
+Indian,Self-care and indulgence,HE,SE,SE; SD; HE,HE; SD; SE,0,1,1
+Indian,rich,PO,BE,BE; AC; CO,,0,0,0
+Indian,To be the best,AC,AC,AC; FA; ST,AC; FA; ST,1,1,1
+Indian,Achieve success,AC,AC,AC; CO; FA,AC,1,1,1
+Indian,To be flexible,ST,BE,BE; AC; UN,AC; BE; UN,0,0,0
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,I try to give my best at any work,AC,AC,AC; FA; SD,AC; FA; SD,1,1,1
+Indian,Complete the deliverables on time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Obedient,CO,CO,CO; BE; SD,BE; CO,1,1,1
+Indian,Safe family,SE,BE,BE; SE; TR,BE; SE,0,1,1
+Indian,Concentration,AC,AC,AC; SE; UN,AC,1,1,1
+Indian,new product launching successfully,AC,AC,AC; UN; SD,AC,1,1,1
+Indian,Adhere to senior,CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Indian,Deploying the code,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Indian,performance,AC,AC,AC; BE; SE,,1,1,0
+Indian,attaining the goals of my organization,AC,AC,AC; PO; BE,AC; BE; PO,1,1,1
+Indian,The main goal is to improve my knowledge,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,Challenges,ST,AC,AC; SD; CO,AC,0,0,0
+Indian,TO BE SUCCESFULL,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Productivity,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,Commitment,BE,CO,CO; BE; AC,AC; BE; CO,0,1,1
+Indian,work sincerely,BE,AC,AC; BE; FA,AC; BE,0,1,1
+Indian,TO ACHIEVE THE DIRECTOR SEAT AFTER PROMOTION,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Indian,consistency in work,AC,AC,AC; CO; BE,AC; CO,1,1,1
+Indian,increment,PO,AC,AC; UN; CO,AC,0,0,0
+Indian,Achieving goals,AC,AC,AC; ST; FA,AC,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Good salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,My goal is to work harder,AC,AC,AC; ST; CO,AC; CO; ST,1,1,1
+Indian,honesty,BE,BE,BE; CO; HU,BE; CO,1,1,1
+Indian,"To fulfil my and family needs,",SE,BE,BE; SE; SD,BE; SE,0,1,1
+Indian,Punctuality,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Indian,Full time job,SE,AC,AC; SE; PO,AC; SE,0,1,1
+Indian,Software development,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Looking after the employees,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Indian,higher pay,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Supervisory role,PO,AC,AC; BE; PO,AC; BE; CO; PO,0,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,improving my skills,AC,AC,AC; ST; SD,AC; SD; ST,1,1,1
+Indian,My goal is to be a good employee,AC,AC,AC; FA; BE,AC; BE; FA,1,1,1
+Indian,Gain a New Skill. ... Boost Your Networking Abilities. ... Intern with a Large C,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,Implementation productivity and profitability,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Indian,FOCUS,AC,AC,AC; CO; SE,AC,1,1,1
+Indian,Peace,UN,SE,SE; BE; CO,BE; SE,0,0,0
+Indian,High income,PO,PO,PO; SE; AC,PO; SE,1,1,1
+Indian,Ethical Hacking,UN,CO,CO; BE; UN,BE; CO; SD; UN,0,1,1
+Indian,Job security,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,I will achieve my certifications.,AC,AC,AC; FA; BE,AC,1,1,1
+Indian,Independent,SD,AC,AC; SE; CO,,0,0,0
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Learning new skills every day,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,C level management,PO,AC,AC; PO; BE,AC; PO,0,1,1
+Indian,employee safety,SE,SE,SE; UN; CO,CO; SE; UN,1,1,1
+Indian,to be independent,SD,SD,SD; PO; AC,SD,1,1,1
+Indian,Finish task at time,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,House,SE,CO,CO; BE; SE,BE; CO,0,1,0
+Indian,Meeting the daily requirements,AC,SE,SE; AC; BE,AC; SE,0,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Achieve all goals,AC,AC,AC; ST; CO,AC; ST,1,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,TO complete my work within time .,AC,AC,AC; SD; BE,AC,1,1,1
+Indian,Seniority,SE,UN,UN; AC; CO,AC; CO; UN,0,0,0
+Indian,I want to become more successful and I wish I am able to learn a lot from my work,AC,AC,AC; SD; ST,AC; PO; SD; ST,1,1,1
+Indian,to achieve company requirements,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,PRODUCTIVE,AC,AC,AC; SE; BE,AC; SE,1,1,1
+Indian,to achieve anything,AC,AC,AC; ST; SD,AC,1,1,1
+Indian,Providing the best for the stakeholders,AC,BE,BE; AC; PO,AC; BE; PO,0,1,1
+Indian,Concentration,AC,AC,AC; SE; UN,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Good lifestyle,HE,SE,SE; ST; HE,HE; SE; ST,0,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,safety,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,Creative,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Good salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,increase professional knowledge and training,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Indian,GIVE JUSTICE TO WORK,UN,UN,UN; BE; CO,BE; UN,1,1,1
+Indian,Target,AC,BE,BE; UN; SE,,0,0,0
+Indian,creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Career,AC,AC,AC; BE; SD,AC,1,1,1
+Indian,Money security,SE,PO,PO; SE; BE,PO; SE,0,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Growth,AC,SE,SE; AC; UN,,0,1,0
+Indian,Achievements,AC,AC,AC; FA; ST,AC,1,1,1
+Indian,Be more proactive,AC,BE,BE; CO; AC,AC; BE; CO,0,1,1
+Indian,I get Promotion,AC,AC,AC; FA; SD,AC,1,1,1
+Indian,Proper management,SE,AC,AC; BE; PO,AC; BE; CO; PO,0,0,0
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Safety,SE,SE,SE; CO; AC,SE,1,1,1
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,concentration,AC,UN,UN; SE; AC,AC; SE; UN,0,1,1
+Indian,Market Research,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Indian,Set a career path,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Achieve financial independence,SE,SD,SD; SE; PO,PO; SD; SE,0,1,1
+Indian,Earn money and happiness,PO,PO,PO; SE; HE,HE; PO; SD; SE,1,1,1
+Indian,Weekly target,AC,PO,PO; UN; AC,PO; UN,0,1,0
+Indian,WEALTH,PO,SE,SE; UN; BE,SE,0,0,0
+Indian,I would do my best in the job and I will reach my desires,HE,AC,AC; SD; FA,AC; FA; SD,0,0,0
+Indian,Regularity,AC,UN,UN; AC; FA,UN,0,1,0
+Indian,Business,AC,AC,AC; SE; CO,,1,1,0
+Indian,Meet customer expectations,AC,AC,AC; FA; CO,AC; CO; FA,1,1,1
+Indian,focus,AC,SE,SE; BE; AC,,0,1,0
+Indian,Implementation productivity and profitability,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Indian,Well developed/ growth,AC,HU,HU; SE; UN,HU; SE,0,0,0
+Indian,Achieved my goal with my full effort and my time,AC,AC,AC; FA; ST,AC; FA; SD; ST,1,1,1
+Indian,To achieve success in my career.,AC,AC,AC; FA; SD,AC; FA; SD; ST,1,1,1
+Indian,Successful,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,Time Management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Freedom of opinion,SD,SD,SD; UN; AC,SD; UN,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Become more successful,AC,AC,AC; PO; ST,AC; FA; PO; ST,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,daily targets,AC,CO,CO; SE; AC,CO; SE,0,1,0
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Completing what work is given,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Successful,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Teaching something meaningful,BE,AC,AC; SD; BE,AC; BE; SD; ST,0,1,1
+Indian,Perform with maximum possible output,AC,AC,AC; UN; PO,AC; UN,1,1,1
+Indian,creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Successful,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,to be creative at work,SD,AC,AC; SD; ST,AC; SD,0,1,1
+Indian,Dedication about work,BE,AC,AC; SD; FA,AC; SD,0,0,0
+Indian,Achieve maximum potential utilization,AC,AC,AC; PO; UN,AC; PO; UN,1,1,1
+Indian,I want to become software engineer,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Lots of money,PO,PO,PO; SE; BE,PO; SE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,completing goals,AC,AC,AC; CO; ST,AC,1,1,1
+Indian,To be independent,SD,SD,SD; AC; PO,SD,1,1,1
+Indian,Responsible,BE,BE,BE; CO; PO,BE; CO,1,1,1
+Indian,I want to be productive to the company who is paying for me,BE,AC,AC; PO; SE,AC; BE; PO; SE,0,0,1
+Indian,innovative work,ST,SD,SD; AC; UN,AC; SD,0,0,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,"My goal is process all orders of flipkart , amazon",AC,AC,AC; UN; BE,AC,1,1,1
+Indian,Ambitious,AC,AC,AC; SD; ST,AC,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,WEALTH,PO,SE,SE; UN; BE,SE,0,0,0
+Indian,Complete daily tasks on time,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,Task completion on time,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,do works on time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Full accuracy,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,getting the job done at time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Should be loyal,BE,BE,BE; CO; TR,BE; CO,1,1,1
+Indian,Quality,AC,AC,AC; SE; BE,AC,1,1,1
+Indian,Goals and objectives to obtain the information,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Indian,To get my promotion,AC,AC,AC; PO; FA,AC; FA; PO,1,1,1
+Indian,Completion of work in a stipulated time period,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,increase growth,AC,SE,SE; AC; BE,,0,1,0
+Indian,To have a pleasant day at work.,HE,SE,SE; AC; HE,AC; BE; HE; SE,0,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,My personal and as well as Organization's Growth,AC,AC,AC; PO; SE,AC; PO,1,1,1
+Indian,Work life balance,HE,SE,SE; AC; BE,AC; SE,0,0,0
+Indian,independent and non influenced thinking,SD,SD,SD; UN; AC,AC; SD; UN,1,1,1
+Indian,Get better time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Making my company no 1 in our field,AC,AC,AC; FA; PO,AC; FA; PO,1,1,1
+Indian,Accounting,BE,PO,PO; BE; AC,AC; BE; PO; SE; UN,0,1,1
+Indian,l want to be helpful to my colleagues,BE,BE,BE; AC; SE,AC; BE; CO; SE,1,1,1
+Indian,Technical improvement as technology development,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,Achievements,AC,AC,AC; FA; ST,AC,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,honest and obedient,BE,BE,BE; CO; AC,AC; BE; CO; UN,1,1,1
+Indian,Pleasure,HE,HE,HE; SD; SE,HE; SD,1,1,1
+Indian,Order booking. We have our target for booking order to generate revenues from customers,AC,PO,PO; AC; UN,AC; PO,0,1,1
+Indian,target of project,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Indian,Manufacturing,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,promotes new ideas,AC,SD,SD; AC; UN,AC; SD; UN,0,1,1
+Indian,Do better work,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Sincerity at our work place,BE,CO,CO; BE; FA,AC; BE; CO; FA,0,1,1
+Indian,loyalty,BE,BE,BE; CO; FA,BE,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,world's richest man,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,ACHIEVEMENT,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Indian,Archiving goals,AC,BE,BE; AC; UN,AC; BE; UN,0,1,1
+Indian,Self dependence,SD,SE,SE; CO; BE,CO; SE,0,0,0
+Indian,Good health,SE,SE,SE; UN; BE,SE,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,EXCEL IN MY WORK,AC,AC,AC; FA; SD,AC; FA; SD,1,1,1
+Indian,target achievement,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Indian,Meeting my target.,AC,AC,AC; UN; CO,AC; UN,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,I want to run my own study center,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Work delivery,AC,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Indian,Work hard,AC,AC,AC; ST; FA,AC,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Asset to organization,BE,AC,AC; BE; UN,AC; BE,0,1,1
+Indian,sincerity,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Indian,independent,SD,AC,AC; SE; CO,,0,0,0
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Respect,UN,FA,FA; AC; UN,AC; CO; FA; UN,0,1,1
+Indian,The successful and humble workplace,AC,AC,AC; BE; FA,AC; BE; FA,1,1,1
+Indian,earn,PO,BE,BE; AC; CO,BE,0,0,0
+Indian,Project Implementation on time.,AC,AC,AC; UN; BE,AC,1,1,1
+Indian,To be 1 st in the company,AC,AC,AC; PO; FA,AC; FA; PO,1,1,1
+Indian,dedication,BE,BE,BE; CO; AC,BE,1,1,1
+Indian,Our success has been the result of the innovation,ST,AC,AC; SD; PO,AC; FA; PO; SD,0,0,0
+Indian,discipline,CO,CO,CO; AC; UN,AC; CO,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,To have security of job,SE,SE,SE; AC; PO,AC; PO; SE,1,1,1
+Indian,Being consistent,AC,UN,UN; AC; HU,UN,0,1,0
+Indian,I want to have a stable job.,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Indian,Innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Honesty at work in whatever you do.,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Indian,Strength,PO,SE,SE; BE; AC,SE,0,0,0
+Indian,dignity,CO,FA,FA; HU; CO,FA; HU,0,1,0
+Indian,Innovative,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Self employed,SD,AC,AC; SD; SE,AC; SD; SE,0,1,1
+Indian,Self discipline,CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,Opportunity,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,customer satisfaction,AC,AC,AC; BE; SD,AC; BE; FA; SD,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Innovative ideas,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,My goal is to get promotion in my job,AC,AC,AC; FA; PO,AC; FA; PO,1,1,1
+Indian,Giving my best to my company,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Indian,Weekly goals,AC,AC,AC; CO; BE,AC; CO,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,Job security,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Indian,Respected by my peers,UN,FA,FA; AC; SE,AC; FA; SE; UN,0,0,1
+Indian,High profit,PO,PO,PO; AC; CO,AC; PO,1,1,1
+Indian,Becoming manager,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Equal opportunity for all,UN,UN,UN; AC; SD,AC; UN,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,Work ethics,UN,AC,AC; CO; BE,AC; CO,0,0,0
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,dedication,BE,BE,BE; CO; AC,BE,1,1,1
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Meeting the organizational goal,AC,AC,AC; PO; CO,AC,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Work hard for development of company,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Indian,Customer satisfaction,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Salary at time,PO,PO,PO; SE; AC,AC; PO; SE,1,1,1
+Indian,Good job,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Government job,SE,AC,AC; SE; UN,AC,0,1,0
+Indian,Quality work,AC,AC,AC; BE; PO,AC,1,1,1
+Indian,Financial Freedom,SE,PO,PO; SE; SD,PO; SD; SE,0,1,1
+Indian,To be honest,BE,UN,UN; BE; HU,BE; HU; UN,0,1,1
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,increase in company profit,AC,PO,PO; AC; SE,AC; PO,0,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,freedom,SD,SD,SD; BE; UN,,1,1,0
+Indian,Independence,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Indian,To get promotion.,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Indian,To be independent,SD,SD,SD; AC; PO,SD,1,1,1
+Indian,leadership,PO,PO,PO; AC; FA,AC; PO,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,maintain my time at work,AC,AC,AC; CO; SD,AC; CO; SD,1,1,1
+Indian,Independent,SD,AC,AC; SE; CO,,0,0,0
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,WEALTH,PO,SE,SE; UN; BE,SE,0,0,0
+Indian,Safety,SE,SE,SE; CO; AC,SE,1,1,1
+Indian,First is Be as good employee as I can.,AC,AC,AC; BE; FA,AC; BE; FA,1,1,1
+Indian,Accountable,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Improve your performance numbers.,AC,AC,AC; UN; PO,AC; PO; UN,1,1,1
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,To be productive,AC,AC,AC; BE; CO,AC,1,1,1
+Indian,Positivity and Confidence,UN,SE,SE; AC; FA,AC; SE,0,0,0
+Indian,To be honest and trustworthy in work,BE,BE,BE; AC; CO,AC; BE; CO; PO,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Consistence,AC,SE,SE; CO; SD,SE,0,0,0
+Indian,freedom,SD,SD,SD; BE; UN,,1,1,0
+Indian,Safety,SE,SE,SE; CO; AC,SE,1,1,1
+Indian,Always work for my company's profit,AC,PO,PO; AC; BE,AC; PO,0,1,1
+Indian,"Production Supervision, Give quality product while having required quantity in given time",AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,Doing proper work,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,Development of skills,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,You have to be responsible at your work,BE,BE,BE; AC; CO,AC; BE; CO,1,1,1
+Indian,Growth,AC,SE,SE; AC; UN,,0,1,0
+Indian,I wish to be a successful personality.,AC,AC,AC; ST; FA,AC; FA; SD; ST,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,To complete my task first,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,Working happily,HE,AC,AC; BE; SE,AC; BE,0,0,0
+Indian,My intention has been to ensure customer gets best service possible,BE,AC,AC; BE; FA,AC; BE; FA,0,1,1
+Indian,To achieve,AC,AC,AC; UN; SE,AC,1,1,1
+Indian,Smart work,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,To lead the organization to upmost level,PO,AC,AC; FA; PO,AC; FA; PO,0,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Work should be done in given time.,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,Leadership,PO,AC,AC; PO; FA,AC; PO,0,1,1
+Indian,Confidence,SE,AC,AC; SE; UN,AC; SE,0,1,1
+Indian,To help my company reach greater heights.,AC,AC,AC; PO; FA,AC; FA; PO; SD,1,1,1
+Indian,To get challenging projects.,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Indian,Take risks and get double reward,ST,SD,SD; AC; PO,AC; PO; SD; ST,0,0,1
+Indian,Freedom of thought,SD,SD,SD; UN; AC,SD,1,1,1
+Indian,Realizing to god,TR,TR,TR; CO; HU,CO; TR,1,1,1
+Indian,Become good developer,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Work experiences,ST,AC,AC; SE; PO,AC; SE,0,0,0
+Indian,Financial security,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Indian,"A chance to learn & grasp ideas and concepts from my seniors, along with develop",AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,Enjoy at work,HE,AC,AC; PO; SD,AC; PO,0,0,0
+Indian,Able to generate and enact on my ideas on business,SD,AC,AC; SD; PO,AC; PO; SD,0,1,1
+Indian,Loyalty,BE,BE,BE; CO; FA,BE; CO; FA,1,1,1
+Indian,Trust,BE,AC,AC; BE; SE,,0,1,0
+Indian,GOOD FUTURE,SE,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,I become independent of my supervisor,SD,SD,SD; AC; PO,AC; SD,1,1,1
+Indian,To reach duty at the right time,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,According to my job I want to achieve my goals like production growth,AC,AC,AC; PO; SE,AC; PO,1,1,1
+Indian,To fulfill the requirements,CO,AC,AC; BE; CO,AC; BE,0,1,0
+Indian,Capable,AC,AC,AC; UN; BE,AC,1,1,1
+Indian,chasing goals,AC,AC,AC; ST; HE,AC; HE; SD; ST,1,1,1
+Indian,Perfectness in work.,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Getting best employees medal,AC,AC,AC; FA; UN,AC; FA,1,1,1
+Indian,WISDOM,UN,TR,TR; SD; CO,AC; BE; CO; SD; TR; UN,0,0,1
+Indian,Effective managing of team & focus on continual improvements of throughput,AC,AC,AC; SD; BE,AC,1,1,1
+Indian,Achieving the company annual targets through marketing and sales team,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,High efficiency on delivery,AC,AC,AC; SE; BE,AC,1,1,1
+Indian,I need a car,PO,AC,AC; BE; SE,AC; BE,0,0,0
+Indian,Growth of company,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,Customer satisfaction level with the organization.,AC,AC,AC; FA; UN,AC; BE; FA; SE; UN,1,1,1
+Indian,Recruiting best employee,AC,AC,AC; FA; BE,AC,1,1,1
+Indian,security of job,SE,SE,SE; PO; SD,PO; SE,1,1,1
+Indian,Working on Latest and Futuristic Technology,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Very hard Work and promotions,AC,AC,AC; FA; PO,AC; FA; PO,1,1,1
+Indian,Completion of task on time,AC,AC,AC; BE; CO,AC,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Credibility of the company,BE,AC,AC; FA; BE,AC; BE; FA; UN,0,1,1
+Indian,To become successful in the work by achieving all the goals,AC,AC,AC; PO; FA,AC,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,very faithful to my work place,BE,CO,CO; BE; FA,AC; BE; CO; FA; TR,0,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,All employees should be equally important,UN,UN,UN; AC; FA,AC; FA; PO; SE; UN,1,1,1
+Indian,"Confident of my work,",SE,AC,AC; SD; FA,AC; FA; SD,0,0,0
+Indian,To improve our company in future and to be independent on work.,SD,SD,SD; AC; PO,AC; PO; SD,1,1,1
+Indian,My focus is to finish the task given to me in exact time.,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Perfection,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,Wealth,PO,PO,PO; CO; AC,,1,1,0
+Indian,Wealth,PO,PO,PO; CO; AC,,1,1,0
+Indian,customer satisfaction,AC,AC,AC; BE; SD,AC; BE; FA; SD,1,1,1
+Indian,freedom to pursue own leads to file for international news agency,SD,SD,SD; AC; UN,AC; SD; UN,1,1,1
+Indian,To help people who come to my office so clear their doubts regarding their account,BE,BE,BE; AC; SE,AC; BE; SE; UN,1,1,1
+Indian,Earn money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,DISCIPLINE,CO,CO,CO; SD; AC,CO,1,1,1
+Indian,To be important to other people.,PO,FA,FA; SE; AC,FA; SE,0,0,0
+Indian,Personal achievement,AC,AC,AC; FA; SD,AC; FA,1,1,1
+Indian,Achieving the target,AC,AC,AC; UN; FA,AC,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Achieving targets,AC,AC,AC; CO; FA,AC,1,1,1
+Indian,Check on Delivery System,AC,BE,BE; SE; UN,AC; BE; SE; UN,0,0,1
+Indian,customer satisfaction,AC,AC,AC; BE; SD,AC; BE; FA; SD,1,1,1
+Indian,Tangible numbers of Business metrics,AC,AC,AC; UN; PO,AC; PO; UN,1,1,1
+Indian,To excel in whatever I do,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Managing the coordination between staff and management.,SE,AC,AC; PO; SE,AC; PO; SE,0,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Doing better than my predecessor,AC,AC,AC; BE; FA,AC,1,1,1
+Indian,Thinking out of the box,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Indian,To be honest to my work,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Indian,Stay peaceful and enjoy my work,HE,SE,SE; HE; BE,BE; HE; SE,0,1,1
+Indian,Self Discipline,CO,CO,CO; AC; SD,AC; BE; CO; SD,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Work life balance,HE,SE,SE; AC; BE,AC; SE,0,0,0
+Indian,Reduce expenses,AC,SE,SE; PO; BE,PO; SE,0,0,0
+Indian,Purchase,AC,SE,SE; AC; BE,,0,1,0
+Indian,To bring out Innovative solutions,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,Creative ideas to increase efficiency,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,No repetitive work,AC,AC,AC; SE; SD,AC,1,1,1
+Indian,Growth,AC,SE,SE; AC; UN,,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Indian,Achieve target,AC,AC,AC; CO; UN,AC,1,1,1
+Indian,Get reward,PO,AC,AC; BE; UN,AC,0,0,0
+Indian,Job Security,SE,SE,SE; AC; PO,AC; SE,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Chasing for payment,PO,PO,PO; CO; UN,CO; PO; SE; UN,1,1,1
+Indian,Respecting everyone,UN,CO,CO; UN; TR,CO; FA; TR; UN,0,1,1
+Indian,Feel secure about my job,SE,SE,SE; PO; SD,SE,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,Freedom to give my own ideas,SD,SD,SD; AC; UN,AC; SD; UN,1,1,1
+Indian,Do more effort,AC,AC,AC; CO; BE,AC; BE; CO; FA; ST,1,1,1
+Indian,Not being late,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,earn more money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Wealth,PO,PO,PO; CO; AC,,1,1,0
+Indian,earn a good amount,PO,AC,AC; SD; FA,AC; FA; SD,0,0,0
+Indian,Go on trip,HE,ST,ST; AC; SD,AC; SD; ST,0,0,0
+Indian,Fun,HE,SE,SE; BE; AC,,0,0,0
+Indian,I want to grow myself with company,AC,BE,BE; SE; ST,BE; SE; ST,0,0,0
+Indian,Enjoyment and long-term employment,HE,SE,SE; AC; BE,AC; BE; PO; SE; ST,0,0,0
+Indian,peaceful,UN,SE,SE; TR; BE,BE; HE; SE; TR,0,0,0
+Indian,Reach goal,AC,AC,AC; ST; CO,AC; ST,1,1,1
+Indian,To be strong,PO,SE,SE; AC; HU,AC; SE,0,0,0
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,I always focus in my work,AC,AC,AC; SD; PO,AC; CO; PO; SD,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Earn money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,make good economy,AC,PO,PO; AC; SE,AC; PO; SE,0,1,1
+Indian,Marketing,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Achievement of target,AC,AC,AC; SD; FA,AC,1,1,1
+Indian,Tracking the data,AC,UN,UN; AC; SD,AC; UN,0,1,1
+Indian,talent,AC,AC,AC; SD; HE,AC; SD,1,1,1
+Indian,make it successful,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,To prove that I can do better,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Work on time,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Update with technology,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Indian,Trend setter,AC,SD,SD; FA; UN,FA; SD; UN,0,0,0
+Indian,Incentive,PO,AC,AC; PO; BE,AC; BE; PO,0,1,1
+Indian,Respect,UN,FA,FA; AC; UN,AC; CO; FA; UN,0,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,To ensure my work is done in time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,Innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,more concentrated,AC,UN,UN; CO; AC,UN,0,1,0
+Indian,Trust,BE,AC,AC; BE; SE,,0,1,0
+Indian,TO ACHIEVE THE PROMOTION FASTER,AC,AC,AC; UN; ST,AC; UN,1,1,1
+Indian,gradual improvement/growth,AC,AC,AC; SE; UN,AC,1,1,1
+Indian,Setting targets,AC,SE,SE; AC; UN,AC; SE; UN,0,1,1
+Indian,Responsible,BE,BE,BE; CO; PO,BE; CO,1,1,1
+Indian,Always ready for work,AC,AC,AC; SD; BE,AC,1,1,1
+Indian,Self respect,CO,FA,FA; HU; UN,AC; FA; HU; UN,0,0,0
+Indian,My bright future,SE,SE,SE; AC; BE,AC; BE; SE; ST,1,1,1
+Indian,performance,AC,AC,AC; BE; SE,,1,1,0
+Indian,I want to go higher position,AC,AC,AC; PO; UN,AC,1,1,1
+Indian,concentrate,AC,SE,SE; UN; AC,SE; UN,0,1,0
+Indian,Govt job,SE,AC,AC; BE; UN,AC,0,0,0
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Quality work,AC,AC,AC; BE; PO,AC,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Right amount of salary,PO,PO,PO; SE; AC,AC; PO; SE,1,1,1
+Indian,equality,UN,AC,AC; SE; UN,,0,1,0
+Indian,Leading,PO,AC,AC; UN; SE,AC,0,0,0
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Financially Supporting my family,SE,BE,BE; SE; PO,BE; SE,0,1,1
+Indian,And get promotion,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Indian,career advancement,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,DISCIPLINE,CO,CO,CO; SD; AC,CO,1,1,1
+Indian,Job Security,SE,SE,SE; AC; PO,AC; SE,1,1,1
+Indian,Cybersecurity,AC,SE,SE; CO; AC,SE,0,1,0
+Indian,Kind,CO,AC,AC; CO; BE,,0,1,0
+Indian,I will improve my skill,AC,AC,AC; ST; SD,AC; ST,1,1,1
+Indian,To earn respect,CO,FA,FA; AC; UN,AC; CO; FA; PO; UN,0,0,1
+Indian,To be honest,BE,UN,UN; BE; HU,BE; HU; UN,0,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Managing time well,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,Chief,PO,CO,CO; BE; AC,,0,0,0
+Indian,job stability,SE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Indian,two wheeler,HE,AC,AC; SD; ST,AC,0,0,0
+Indian,Grade up company reputation,AC,FA,FA; AC; PO,AC; FA; PO,0,1,1
+Indian,BMW,PO,AC,AC; UN; CO,AC,0,0,0
+Indian,time management,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,Hard working,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Developing company,AC,AC,AC; SD; PO,AC; SD,1,1,1
+Indian,Responsibility,BE,BE,BE; CO; AC,BE; CO,1,1,1
+Indian,The second goal would be accuracy of my work.,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Indian,travel in world,HE,ST,ST; SD; AC,AC; HE; SD; ST,0,0,1
+Indian,plan the steps,SE,CO,CO; AC; BE,AC; BE; CO,0,0,0
+Indian,Faithful,TR,TR,TR; BE; CO,BE; TR,1,1,1
+Indian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Indian,to be creative,SD,SD,SD; AC; BE,AC; SD,1,1,1
+Indian,Focus & Respect towards work and colleagues,CO,CO,CO; AC; FA,AC; BE; CO; FA,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Talented,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Good health,SE,SE,SE; UN; BE,SE,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Respect,UN,FA,FA; AC; UN,AC; CO; FA; UN,0,1,1
+Indian,good earnings,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Easy work,HE,AC,AC; BE; SD,AC; BE,0,0,0
+Indian,Have new experiences,ST,SD,SD; ST; HE,AC; HE; SD; SE; ST; UN,0,1,1
+Indian,CARRER,AC,AC,AC; BE; CO,,1,1,0
+Indian,Responsible,BE,BE,BE; CO; PO,BE; CO,1,1,1
+Indian,Ambition,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Designation,AC,AC,AC; UN; CO,AC,1,1,1
+Indian,One Of My Machine Was Successful,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Indian,Quality assurance,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Indian,good salary,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Motivation,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,Authority,PO,AC,AC; BE; SD,AC; BE; SD; UN,0,0,0
+Indian,contribution in company,BE,AC,AC; FA; PO,AC; FA; PO,0,0,0
+Indian,sincerity,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Indian,Market Organization,AC,AC,AC; CO; PO,AC; CO,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,A good financial payment must be there to be given to me,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,obedient,CO,CO,CO; BE; TR,BE; CO,1,1,1
+Indian,Securing my family,SE,BE,BE; SE; TR,BE; SE,0,1,1
+Indian,Promotion on half yearly basis,AC,UN,UN; PO; AC,AC; PO; UN,0,1,1
+Indian,Creative mind,SD,SD,SD; AC; UN,AC; SD,1,1,1
+Indian,I would have fun to do my job,HE,HE,HE; ST; SD,AC; HE; SD; ST,1,1,1
+Indian,Acceptance of my job and honoring my seniors and mates,CO,FA,FA; CO; AC,AC; BE; CO; FA; UN,0,1,1
+Indian,Marketing,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Earn money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,concentration,AC,UN,UN; SE; AC,AC; SE; UN,0,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,To work with our full concentration and it will help me to achieve my goals,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,To get awareness of the task given to me.,AC,AC,AC; CO; BE,AC; BE; CO; FA,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Chance of growth,AC,UN,UN; AC; BE,UN,0,1,0
+Indian,Loyal,BE,BE,BE; SE; TR,,1,1,0
+Indian,Hard working,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,authenticity,BE,BE,BE; UN; AC,BE; UN,1,1,1
+Indian,My main goals are be faithful to my work and company. Have self respect,BE,FA,FA; AC; BE,AC; BE; CO; FA; PO,0,1,1
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Sanctioning hr. benefits to the employees,PO,UN,UN; SE; PO,PO; SE; UN,0,1,1
+Indian,Respect,UN,FA,FA; AC; UN,AC; CO; FA; UN,0,1,1
+Indian,Understanding,UN,AC,AC; SE; UN,,0,1,0
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,Attain a leadership role,PO,AC,AC; PO; FA,AC; FA; PO,0,1,1
+Indian,Family security,SE,BE,BE; SE; SD,BE; SE,0,1,1
+Indian,Don't depend on others,SD,SD,SD; BE; SE,BE; SD; SE,1,1,1
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Maximum result,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Indian,Or an ethical hacker,UN,AC,AC; BE; UN,AC; BE,0,1,0
+Indian,House,SE,CO,CO; BE; SE,BE; CO,0,1,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,earning money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,To Earn money or status,AC,PO,PO; AC; SD,AC; PO,0,1,1
+Indian,Successful,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,I focus on my target and way to achieve it,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,creative,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,Discipline in deadlines,CO,AC,AC; CO; BE,AC; BE; CO,0,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Ambitious,AC,AC,AC; SD; ST,AC,1,1,1
+Indian,I have to list the products on e-commerce companies,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Indian,Family Security,SE,BE,BE; SE; CO,BE; SE,0,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Do work with ethics,UN,CO,CO; BE; AC,AC; BE; CO,0,0,0
+Indian,Respect my seniors,CO,CO,CO; AC; FA,AC; CO; FA; TR,1,1,1
+Indian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Indian,Perception,AC,UN,UN; SD; SE,,0,0,0
+Indian,come to office on time,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,helping others,BE,BE,BE; AC; SE,AC; BE; SE; UN,1,1,1
+Indian,Hardworking and helpful,AC,BE,BE; AC; SE,AC; BE,0,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,To work for profit of company,AC,UN,UN; PO; CO,CO; PO; UN,0,0,0
+Indian,Always be honest & Clean,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,products availability,AC,AC,AC; UN; SE,AC; SE; UN,1,1,1
+Indian,To have equality among employees.,UN,UN,UN; SE; AC,SE; UN,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Team Building,PO,AC,AC; BE; SE,AC,0,0,0
+Indian,Safety and security,SE,SE,SE; CO; BE,BE; CO; SE,1,1,1
+Indian,organized environment,SE,UN,UN; SE; CO,,0,1,0
+Indian,Improve low functioning work processes,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Indian,Best salary package in the industry,PO,AC,AC; PO; SE,AC; PO,0,1,1
+Indian,focus,AC,SE,SE; BE; AC,,0,1,0
+Indian,I want to be reliable,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Indian,Enhance performance of machine material and manpower,AC,AC,AC; BE; PO,AC,1,1,1
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,creative and think out of the box,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Indian,Sales booking. We have target for billing to be done against our order booking.,AC,AC,AC; PO; UN,AC; BE; PO; UN,1,1,1
+Indian,daily task in time,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Good salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Self income,SD,PO,PO; AC; SE,AC; PO; SE,0,0,0
+Indian,honestly do your work,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Indian,stability,SE,SE,SE; CO; BE,CO; SE,1,1,1
+Indian,Helpful,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Indian,most successful guy,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,SECURITY,SE,SE,SE; CO; SD,CO; SE,1,1,1
+Indian,Customer satisfaction,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Good experience,ST,AC,AC; BE; SD,AC; BE,0,0,0
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,BEING HELPFUL,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Indian,Leader,PO,CO,CO; AC; SE,,0,0,0
+Indian,Customer satisfaction,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Be more protective,BE,BE,BE; SE; CO,BE; SE,1,1,1
+Indian,I want to make it a brand in future,AC,AC,AC; FA; PO,AC; FA; PO; SD,1,1,1
+Indian,Achievements,AC,AC,AC; FA; ST,AC,1,1,1
+Indian,Salary,PO,PO,PO; SE; AC,AC; PO; SE,1,1,1
+Indian,Achieve goal,AC,AC,AC; ST; SD,AC,1,1,1
+Indian,Try to do all the jobs with perfection,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Indian,improvement in position,AC,AC,AC; HU; UN,AC,1,1,1
+Indian,successful,AC,AC,AC; BE; SE,,1,1,0
+Indian,Motivated,AC,AC,AC; UN; CO,AC,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Faith,TR,TR,TR; BE; UN,TR,1,1,1
+Indian,Specific curious ambitious and unique mindset,SD,AC,AC; SD; UN,AC; SD; ST; UN,0,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Customer satisfaction,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Complaint-less work,AC,AC,AC; BE; FA,AC; BE,1,1,1
+Indian,dignity,CO,FA,FA; HU; CO,FA; HU,0,1,0
+Indian,Respectable person,CO,AC,AC; FA; PO,AC; FA,0,0,0
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,To achieve higher position,AC,AC,AC; FA; UN,AC,1,1,1
+Indian,Being confident,AC,AC,AC; FA; UN,AC; FA; UN,1,1,1
+Indian,Have a job that I love.,HE,AC,AC; SE; PO,AC; PO; SD; SE,0,0,0
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,"Discipline with respect to time, respect for others.",CO,CO,CO; BE; AC,AC; BE; CO; TR,1,1,1
+Indian,Hard working,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,money,PO,SE,SE; PO; CO,SE,0,1,0
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Risk taking,ST,BE,BE; SE; SD,BE,0,0,0
+Indian,Commitment,BE,CO,CO; BE; AC,AC; BE; CO,0,1,1
+Indian,Do my work perfectly,AC,AC,AC; BE; CO,AC,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,profits,PO,AC,AC; SE; BE,,0,0,0
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Responsible at work,BE,BE,BE; AC; CO,AC; BE; CO,1,1,1
+Indian,Higher salaries,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Loyal to company,BE,AC,AC; FA; PO,AC; FA,0,0,0
+Indian,Monthly target,AC,PO,PO; UN; BE,PO; UN,0,0,0
+Indian,Perseverance,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Indian,Innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Productive and satisfaction,AC,HE,HE; BE; SE,BE; HE,0,0,0
+Indian,To be at high position,PO,AC,AC; UN; FA,AC; UN,0,0,0
+Indian,Low loss percentage,AC,AC,AC; PO; UN,AC,1,1,1
+Indian,I have goal to purchase new car,HE,AC,AC; ST; SD,AC; SD; ST,0,0,0
+Indian,Great job,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Indian,Promoting peace,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Responsibility,BE,BE,BE; CO; AC,BE; CO,1,1,1
+Indian,Power,PO,AC,AC; CO; BE,AC,0,0,0
+Indian,Creative,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,Making profit for the organization,AC,PO,PO; AC; UN,AC; PO,0,1,1
+Indian,Trust,BE,AC,AC; BE; SE,,0,1,0
+Indian,family safety,SE,SE,SE; BE; CO,BE; SE,1,1,1
+Indian,Learning new things,AC,SD,SD; AC; ST,AC; SD; ST,0,1,1
+Indian,Employee health and safety,SE,SE,SE; CO; UN,CO; SE,1,1,1
+Indian,Increase our quality day by day,AC,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Indian,Quality work,AC,AC,AC; BE; PO,AC,1,1,1
+Indian,Pleasure of doing work,HE,AC,AC; HE; SD,AC; HE; SD; ST,0,1,1
+Indian,Respect for me and my work,CO,AC,AC; FA; PO,AC; FA,0,0,0
+Indian,Ambitious,AC,AC,AC; SD; ST,AC,1,1,1
+Indian,Good business manner,BE,AC,AC; CO; PO,AC; BE; CO; PO,0,0,1
+Indian,"Process, performance, outcome goals",AC,AC,AC; UN; CO,AC; UN,1,1,1
+Indian,Recognition,AC,AC,AC; FA; BE,AC; FA,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Ambitious,AC,AC,AC; SD; ST,AC,1,1,1
+Indian,safety of all employees,SE,SE,SE; CO; BE,CO; SE,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,capable,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,Confidence,SE,AC,AC; SE; UN,AC; SE,0,1,1
+Indian,Accuracy,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Indian,To become a best employee.,AC,AC,AC; FA; BE,AC; FA,1,1,1
+Indian,Food service,AC,SE,SE; CO; BE,SE,0,0,0
+Indian,To protect the environment,UN,UN,UN; BE; AC,UN,1,1,1
+Indian,be honest and responsible to authority,CO,BE,BE; CO; AC,AC; BE; CO,0,1,1
+Indian,Follow of government rules,CO,CO,CO; BE; PO,BE; CO,1,1,1
+Indian,RESPECT,UN,CO,CO; UN; FA,CO; UN,0,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Always active,AC,ST,ST; HE; SE,HE; SE; ST,0,0,0
+Indian,Improve your work-life balance.,HE,SE,SE; BE; AC,AC; BE; SD; SE,0,0,0
+Indian,Quality management,SE,AC,AC; PO; BE,AC,0,0,0
+Indian,Helpful,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Indian,To be respected,CO,FA,FA; AC; PO,AC; CO; FA; PO; UN,0,0,1
+Indian,Never give up,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Loyal,BE,BE,BE; SE; TR,,1,1,0
+Indian,Job Security,SE,SE,SE; AC; PO,AC; SE,1,1,1
+Indian,Being loyal at work,BE,AC,AC; BE; FA,AC; BE; FA,0,1,1
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,you should be loyal to your organization,BE,FA,FA; AC; BE,AC; BE; FA,0,1,1
+Indian,I wish to own an Audi A6,PO,SD,SD; AC; ST,AC; BE; SD; ST,0,0,0
+Indian,Respect,UN,FA,FA; AC; UN,AC; CO; FA; UN,0,1,1
+Indian,Completed our goal with 100 % accuracy,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Indian,An opportunity for making a self decision in my duty,SD,SD,SD; BE; UN,SD,1,1,1
+Indian,Freedom to work,SD,SD,SD; AC; PO,AC; SD,1,1,1
+Indian,To earn money,PO,PO,PO; AC; SD,AC; PO,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,To take the organization on the top with the help of employees,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Play a vital role in the upliftment of the organization,AC,AC,AC; SE; BE,AC; BE; FA; SE; UN,1,1,1
+Indian,speak up to increase visibility,UN,FA,FA; AC; SE,AC; FA,0,0,0
+Indian,earn more incentives,PO,AC,AC; CO; FA,AC; CO; FA,0,0,0
+Indian,Confidence,SE,AC,AC; SE; UN,AC; SE,0,1,1
+Indian,The work should be error free.,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Indian,Dignity,CO,FA,FA; HU; CO,FA; HU,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Determination,AC,UN,UN; AC; BE,AC; UN,0,1,1
+Indian,Learn the new way of analyzing data,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Indian,To become an honest employee at work,BE,CO,CO; BE; UN,BE; CO; UN,0,1,1
+Indian,To improve knowledge,AC,AC,AC; SD; BE,AC; BE; SD; UN,1,1,1
+Indian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Indian,Challenging and interesting situation,ST,SD,SD; AC; ST,AC; SD; ST; UN,0,1,1
+Indian,Multitasking,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,Make world better,UN,BE,BE; UN; AC,AC; BE; UN,0,1,1
+Indian,Become good engineer,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Indian,Focus,AC,SE,SE; AC; UN,,0,1,0
+Indian,Work culture,SE,AC,AC; SE; PO,AC; SE,0,1,1
+Indian,Recognition,AC,AC,AC; FA; BE,AC; FA,1,1,1
+Indian,Challenging yet satisfying,ST,AC,AC; SD; ST,AC; HE; SD; ST,0,1,1
+Indian,Establishment,SE,AC,AC; CO; SE,AC,0,1,0
+Indian,Hard working,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Indian,Believe in myself,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,BEST WORKING HOURS,HE,AC,AC; SD; SE,AC; SD; SE,0,0,0
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Pursue my level ii certificate,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Work honestly,BE,AC,AC; BE; FA,AC,0,1,0
+Indian,Also I want to ensure company's products quality is good,AC,AC,AC; BE; FA,AC; BE; FA,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,achieving job safety,SE,AC,AC; FA; ST,AC,0,0,0
+Indian,Mutual trust.,BE,BE,BE; SE; CO,BE; SE,1,1,1
+Indian,become department head,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,AMBITIOUS,AC,SE,SE; UN; SD,SE,0,0,0
+Indian,Contribute towards the growth of the organization and the efficiency of the task,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Indian,Providing quality services to customers through backend/operation team,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Indian,Customer satisfaction beyond expectations,AC,AC,AC; BE; FA,AC; BE; FA; HE; SD,1,1,1
+Indian,I need a luxury home,HE,SD,SD; PO; ST,PO; SD; ST,0,0,0
+Indian,Innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Revenue generations,AC,PO,PO; AC; SE,AC; PO,0,1,1
+Indian,Maintain employees efficacy,PO,AC,AC; SE; CO,AC; CO; FA; SE,0,0,0
+Indian,perfect wages,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Employee Benefits,PO,SE,SE; UN; PO,PO; SE; UN,0,1,1
+Indian,Salary is good,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,To attain a leadership role.,PO,AC,AC; FA; PO,AC; FA; PO; ST,0,1,1
+Indian,Delegation of work and follow up,PO,AC,AC; BE; PO,AC; BE,0,1,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Increased Salary offering,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,"Honest, Sincere, and grateful to the organization",BE,BE,BE; AC; FA,AC; BE; CO; FA; PO,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Second goal is promoted to a higher post and better salary.,PO,AC,AC; PO; FA,AC; FA; PO,0,1,1
+Indian,I should create a magic in my work and always try to be one step ahead of everyone,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Achievement,AC,AC,AC; FA; ST,AC,1,1,1
+Indian,Respect for everyone and their work.,UN,AC,AC; FA; SD,AC; FA; SD,0,0,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,company reputation,PO,AC,AC; FA; UN,AC; FA,0,0,0
+Indian,Pursuing many leads at a time so that I had many full length news features everyday,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,I want to finish or complete my given work on that day,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Contribute to something people use,BE,AC,AC; SD; BE,AC; BE; SD; UN,0,1,1
+Indian,EQUALITY,UN,UN,UN; AC; HU,AC; UN,1,1,1
+Indian,To have a nice salary.,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Protect long term interests & security.,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Indian,Welfare of subordinates,SE,BE,BE; UN; CO,BE; CO; UN,0,0,0
+Indian,Good service,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,provide the best,AC,AC,AC; BE; UN,AC; BE,1,1,1
+Indian,Innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,To work honestly,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Indian,Helping in decision making in the interest of company.,AC,AC,AC; PO; BE,AC; BE; PO,1,1,1
+Indian,Faithfulness,TR,TR,TR; BE; CO,BE; TR,1,1,1
+Indian,Appreciating at least one junior,BE,FA,FA; AC; BE,AC; BE; FA,0,1,1
+Indian,Customer Centric,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Indian,Brand for yourself in the industry,AC,AC,AC; FA; SD,AC; FA; PO; SD,1,1,1
+Indian,To try and make a difference in the society with my work,UN,AC,AC; BE; UN,AC; BE; PO; SD; UN,0,1,1
+Indian,Respectable and fair salary,CO,AC,AC; PO; UN,AC; FA; PO; UN,0,0,0
+Indian,Financial stability,SE,SE,SE; PO; BE,BE; PO; SE,1,1,1
+Indian,Keep updated myself with contemporary technologies and tools,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Trust and independence,BE,SD,SD; BE; FA,SD,0,1,0
+Indian,Discipline and punctuality,CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Indian,Factory management,PO,AC,AC; BE; PO,AC,0,1,0
+Indian,To be part of decision making,AC,BE,BE; PO; SD,AC; BE; PO; SD; UN,0,0,1
+Indian,Innovative,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Upgrade skillsets,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Job Security,SE,SE,SE; AC; PO,AC; SE,1,1,1
+Indian,Ambition,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Live,HE,SE,SE; AC; BE,,0,0,0
+Indian,Get respect of employer,CO,FA,FA; AC; CO,AC; CO; FA; PO,0,1,1
+Indian,Job value,SE,AC,AC; SE; PO,AC; PO; SE,0,1,1
+Indian,Expansion,AC,AC,AC; SE; SD,AC,1,1,1
+Indian,co ordinating with clients,AC,BE,BE; AC; PO,AC; BE; CO; PO; SD,0,1,1
+Indian,Being loyal to my work,BE,FA,FA; AC; BE,AC; FA,0,1,0
+Indian,Giving my 100%,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Indian,Opportunity,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,Benefits of it,PO,SE,SE; AC; BE,AC; SE,0,0,0
+Indian,growth,AC,SE,SE; AC; CO,,0,1,0
+Indian,Development,AC,AC,AC; SE; UN,,1,1,0
+Indian,Get good results,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Indian,Never messy,SE,CO,CO; UN; BE,BE; CO; HU; UN,0,0,0
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,help poor people,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,A job that I actually like,SD,AC,AC; SD; SE,AC; SD; SE,0,1,1
+Indian,Do some charity,BE,BE,BE; AC; SD,BE,1,1,1
+Indian,being hard working at work.,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,I want to become CEO of my company,PO,AC,AC; PO; SD,AC; PO,0,1,1
+Indian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Indian,kindness,CO,BE,BE; UN; CO,BE; UN,0,1,0
+Indian,To be active,AC,SE,SE; ST; AC,AC; SE; ST,0,1,1
+Indian,I am always Disciplined with my work,CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Indian,Done good work,AC,AC,AC; BE; FA,AC,1,1,1
+Indian,family safety,SE,SE,SE; BE; CO,BE; SE,1,1,1
+Indian,And wisdom,UN,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Indian,Be financially stable,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Indian,Performance,AC,AC,AC; BE; SE,AC,1,1,1
+Indian,Fixing the problems for better outcome,AC,AC,AC; BE; SE,AC; BE; SE; UN,1,1,1
+Indian,make it respectful in society,CO,CO,CO; TR; FA,CO; FA; HU; TR,1,1,1
+Indian,To prove that I can lead,AC,AC,AC; PO; SE,AC; PO; SE,1,1,1
+Indian,Be faithful,BE,BE,BE; TR; CO,BE; CO; TR,1,1,1
+Indian,Access right things,AC,BE,BE; UN; CO,BE,0,0,0
+Indian,Innovator,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,BE THE BEST AT WORK,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Indian,Bonus,PO,AC,AC; SE; BE,,0,0,0
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,To being regular,CO,SE,SE; CO; UN,CO; SE,0,1,1
+Indian,enjoy and happy when working,HE,AC,AC; HE; SE,AC; BE; HE; SD; SE; ST,0,1,1
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,TO ACHIEVE THE GIFTS AND REWARDS FROM COMPANY,PO,AC,AC; PO; FA,AC; FA; PO; SD,0,1,1
+Indian,dedication,BE,BE,BE; CO; AC,BE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Helpful,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Indian,outcome,AC,UN,UN; AC; BE,AC; UN,0,1,1
+Indian,devoted to my work,BE,AC,AC; SD; ST,AC; SD,0,0,0
+Indian,To get the house of my dream,HE,SD,SD; BE; ST,BE; SD; ST,0,0,0
+Indian,Scientist,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Indian,Responsible,BE,BE,BE; CO; PO,BE; CO,1,1,1
+Indian,Assurance,SE,BE,BE; SE; CO,BE; SE,0,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Motivating,AC,AC,AC; SD; HE,AC; SD,1,1,1
+Indian,Trust,BE,AC,AC; BE; SE,,0,1,0
+Indian,To become successful person,AC,AC,AC; PO; ST,AC,1,1,1
+Indian,And give good service,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,influencer,AC,UN,UN; SD; SE,SD; SE; UN,0,0,0
+Indian,TRY UNTIL SUCCESSFUL,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Indian,Environment friendly,UN,UN,UN; BE; SE,UN,1,1,1
+Indian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Indian,Security analyst,AC,SE,SE; AC; SD,SE,0,1,0
+Indian,Involvement,AC,BE,BE; CO; UN,BE; CO; UN,0,0,0
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,I will work for my company with more efficiency,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,To earn money,PO,PO,PO; AC; SD,AC; PO,1,1,1
+Indian,Truthful,BE,BE,BE; UN; AC,AC; BE; SD; UN,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,car,PO,CO,CO; SE; BE,,0,0,0
+Indian,Error free work,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Indian,achieving the targeted work,AC,AC,AC; FA; SD,AC,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,Develop all business environment,AC,AC,AC; PO; SD,AC,1,1,1
+Indian,The last goal would be honesty and freedom.,UN,SD,SD; BE; UN,BE; SD; UN,0,1,1
+Indian,Maintaining peace.,UN,UN,UN; SE; CO,CO; SE; UN,1,1,1
+Indian,work for goal,AC,AC,AC; ST; UN,AC; ST,1,1,1
+Indian,Punctuality,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Indian,have responsible job position,BE,BE,BE; CO; AC,AC; BE; CO,1,1,1
+Indian,Easy going,HE,AC,AC; BE; UN,AC; BE,0,0,0
+Indian,Following the guidelines and proving the best,AC,AC,AC; FA; SD,AC; FA; SD,1,1,1
+Indian,And wisdom,UN,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Indian,Good money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Confident,SE,AC,AC; SE; FA,AC,0,1,0
+Indian,Secure,SE,SE,SE; CO; AC,,1,1,0
+Indian,Active,AC,AC,AC; SE; UN,,1,1,0
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Smart work,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Attain a leadership role,PO,AC,AC; PO; FA,AC; FA; PO,0,1,1
+Indian,RESPONSIBLITIES,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,data analytics,AC,UN,UN; AC; BE,AC; UN,0,1,1
+Indian,Loyalty,BE,BE,BE; CO; FA,BE; CO; FA,1,1,1
+Indian,complete the work,AC,AC,AC; BE; SD,AC,1,1,1
+Indian,Justice to work,BE,UN,UN; BE; AC,BE; UN,0,1,1
+Indian,freedom,SD,SD,SD; BE; UN,,1,1,0
+Indian,Daringness,ST,AC,AC; SD; FA,AC; SD,0,0,0
+Indian,Salary status,PO,PO,PO; AC; SE,AC; PO; SE; UN,1,1,1
+Indian,Safe and happy work life,SE,SE,SE; BE; AC,AC; BE; SE,1,1,1
+Indian,I Have Got Job In a place I wanted,SD,AC,AC; SE; SD,AC; PO; SD; SE,0,1,1
+Indian,Giving my best,AC,AC,AC; BE; HE,AC; BE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Progress,AC,AC,AC; SE; BE,,1,1,0
+Indian,creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Affiliate Marketing,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Indian,work with team's goals,AC,AC,AC; SE; BE,AC; BE; SE,1,1,1
+Indian,The company in which I work must do its work in an ethical way without harming environment,UN,UN,UN; CO; BE,BE; CO; UN,1,1,1
+Indian,trustworthy,BE,BE,BE; UN; AC,AC; BE; UN,1,1,1
+Indian,Achieve highest position,AC,AC,AC; FA; UN,AC; FA; UN,1,1,1
+Indian,Bonus after one year,PO,AC,AC; PO; BE,AC; BE; PO; SE,0,1,1
+Indian,Enough pay for my living and being a good person as my colleagues as well as my job safety,SE,SE,SE; PO; AC,AC; BE; PO; SE,1,1,1
+Indian,Legal services,CO,UN,UN; CO; BE,BE; CO; UN,0,1,1
+Indian,Independent,SD,AC,AC; SE; CO,,0,0,0
+Indian,Experience,AC,SE,SE; AC; BE,SE,0,1,0
+Indian,To take risk in work to achieve goals,AC,AC,AC; SD; ST,AC; PO; SD; ST,1,1,1
+Indian,I should present in a humble manner.,TR,CO,CO; FA; UN,CO; FA; HU; UN,0,0,0
+Indian,Polite,CO,CO,CO; FA; BE,,1,1,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Dedicated,BE,BE,BE; CO; AC,BE,1,1,1
+Indian,Market research,AC,UN,UN; AC; SD,AC; UN,0,1,1
+Indian,Innovative ideas,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,To be innovative,ST,SD,SD; AC; UN,AC; SD,0,0,0
+Indian,Earn enough money,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Sanctioning leave to the employees,SE,CO,CO; SD; AC,AC; CO; SD,0,0,0
+Indian,Help others,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Indian,Richness,PO,SE,SE; BE; UN,,0,0,0
+Indian,Dedicated people,BE,BE,BE; UN; AC,BE,1,1,1
+Indian,Prosperity,AC,SE,SE; AC; PO,AC; SE,0,1,1
+Indian,Rapport development with clients,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,Help poor people,UN,UN,UN; BE; SE,BE; SE; UN,1,1,1
+Indian,Optimization,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Indian,Car,PO,CO,CO; SE; AC,CO,0,0,0
+Indian,reaching new targets,AC,AC,AC; ST; CO,AC; ST,1,1,1
+Indian,To enjoy and indulge myself,HE,SD,SD; HE; ST,HE; SD; SE; ST,0,1,1
+Indian,Freedom To Work,SD,SD,SD; AC; PO,AC; SD,1,1,1
+Indian,high paid jobs,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Occupational stability,SE,SE,SE; AC; BE,AC; SE,1,1,1
+Indian,Discipline,CO,CO,CO; BE; UN,BE; CO,1,1,1
+Indian,I have to manage the inventory,AC,AC,AC; SE; PO,AC; BE; PO; SE,1,1,1
+Indian,Enjoying life,HE,HE,HE; ST; SD,BE; HE; SD; SE; ST,1,1,1
+Indian,Achieving goals,AC,AC,AC; ST; FA,AC,1,1,1
+Indian,Get desired results,AC,UN,UN; AC; SD,AC; UN,0,1,1
+Indian,Early to work,AC,AC,AC; SD; BE,AC,1,1,1
+Indian,Finishing tasks quickly,AC,AC,AC; ST; BE,AC,1,1,1
+Indian,Positive thinking,UN,AC,AC; SE; BE,AC; BE; SD; SE; UN,0,0,1
+Indian,Reputation,AC,FA,FA; CO; BE,BE; CO; FA,0,0,0
+Indian,Equal opportunity to all,UN,UN,UN; AC; SD,AC; UN,1,1,1
+Indian,Sr. Manager,AC,AC,AC; PO; BE,AC; BE; PO,1,1,1
+Indian,Increase level of potential,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Should give and get respect from others,CO,FA,FA; CO; UN,CO; FA; UN,0,1,1
+Indian,best reviews,AC,AC,AC; SD; UN,AC,1,1,1
+Indian,To be able to complete the given task of the day with success.,AC,AC,AC; ST; BE,AC,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,problem solving,SD,AC,AC; UN; BE,AC; BE; UN,0,0,0
+Indian,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Indian,appreciation for my efforts,CO,AC,AC; FA; BE,AC; BE; FA,0,0,0
+Indian,"Have a new experience , satisfaction always comes from there",ST,AC,AC; SD; HE,AC; HE; SD; ST,0,0,1
+Indian,Best opportunity for promotion,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,I want to be trusted by everyone,BE,BE,BE; CO; SE,BE; CO; FA; SE,1,1,1
+Indian,Cost economical for machines,AC,AC,AC; PO; SE,AC; PO; SE,1,1,1
+Indian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Indian,to excel and earn money,PO,AC,AC; PO; SD,AC; PO,0,1,1
+Indian,Independence and free soul,SD,SD,SD; UN; ST,SD; UN,1,1,1
+Indian,Collection. We have targets to collect money from our customers against sales.,AC,PO,PO; CO; AC,AC; BE; CO; PO,0,1,1
+Indian,promotion,AC,SE,SE; BE; CO,,0,0,0
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Creative head,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,good pay according to work,PO,PO,PO; AC; UN,AC; PO; UN,1,1,1
+Indian,Manage all situations,AC,SE,SE; AC; PO,AC; BE; CO; PO; SE,0,1,1
+Indian,Give always your 100% at your work,AC,AC,AC; FA; BE,AC; BE; FA,1,1,1
+Indian,creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,most rich and humble gentleman,AC,TR,TR; CO; BE,BE; CO; TR,0,0,0
+Indian,CREATIVITY,SD,SD,SD; AC; ST,AC; SD,1,1,1
+Indian,Stable profit,SE,PO,PO; AC; SE,AC; PO,0,1,0
+Indian,discipline,CO,CO,CO; AC; UN,AC; CO,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Prosperity,AC,SE,SE; AC; PO,AC; SE,0,1,1
+Indian,SKILL DEVELOPMENT,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,team leader,PO,AC,AC; UN; BE,AC,0,0,0
+Indian,My income protection lifetime,SE,PO,PO; SE; UN,PO; SE,0,1,1
+Indian,Responsibility.,BE,BE,BE; CO; AC,BE; CO,1,1,1
+Indian,I want to earn enough for my whole life,SE,SE,SE; PO; AC,AC; PO; SD; SE,1,1,1
+Indian,Career growth,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Become more popular,AC,SE,SE; FA; UN,FA; SE,0,0,0
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Target,AC,BE,BE; UN; SE,,0,0,0
+Indian,My absence should be felt,AC,SE,SE; UN; AC,SE,0,1,0
+Indian,respectful,CO,CO,CO; FA; HU,CO; FA; HU,1,1,1
+Indian,ambitious,AC,AC,AC; BE; UN,AC,1,1,1
+Indian,work like crazy,AC,AC,AC; SD; UN,AC,1,1,1
+Indian,Punctuality,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Indian,Liberty,SD,SD,SD; UN; SE,SD,1,1,1
+Indian,travel,HE,AC,AC; SE; CO,AC,0,0,0
+Indian,Salary high,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,trust,BE,AC,AC; SE; BE,,0,1,0
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Freedom of expression,SD,SD,SD; UN; CO,SD,1,1,1
+Indian,Being honest,BE,BE,BE; UN; SD,BE; UN,1,1,1
+Indian,Pay is good.,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Indian,Dedication,BE,BE,BE; AC; CO,BE,1,1,1
+Indian,"Courteous to all irrespective of age, sex.",CO,CO,CO; UN; FA,CO; UN,1,1,1
+Indian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Indian,security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,Honesty and dedication,BE,BE,BE; CO; AC,AC; BE; CO; FA,1,1,1
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Honest,BE,AC,AC; SE; BE,,0,1,0
+Indian,Accept the challenges and Implementing new things,ST,AC,AC; SD; ST,AC; SD; ST; UN,0,1,1
+Indian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Indian,Experience,AC,SE,SE; AC; BE,SE,0,1,0
+Indian,individual performance,AC,AC,AC; ST; HE,AC; ST,1,1,1
+Indian,Ambitious,AC,AC,AC; SD; ST,AC,1,1,1
+Indian,Gain Properties,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Dedicate honestly to the prospect of company.,BE,BE,BE; CO; FA,AC; BE; CO; FA,1,1,1
+Indian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Indian,Success,AC,AC,AC; BE; CO,,1,1,0
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Creative,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Indian,Earn money and be happy,PO,PO,PO; SE; SD,HE; PO; SD; SE; ST,1,1,1
+Indian,Efficient,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Indian,I have to purchase new home,HE,BE,BE; SE; SD,BE; SD; SE,0,0,0
+Indian,Politeness,CO,CO,CO; FA; BE,BE; CO; FA; UN,1,1,1
+Indian,Safety,SE,SE,SE; CO; AC,SE,1,1,1
+Indian,Work life balance,HE,SE,SE; AC; BE,AC; SE,0,0,0
+Indian,Superiority,PO,AC,AC; UN; HU,AC,0,0,0
+Indian,honesty,BE,BE,BE; CO; HU,BE; CO,1,1,1
+Indian,High quality job,AC,AC,AC; FA; BE,AC,1,1,1
+Indian,money,PO,SE,SE; PO; CO,SE,0,1,0
+Indian,Polite with colleagues,CO,CO,CO; FA; BE,CO; FA,1,1,1
+Indian,Respect the owners and work for the people,BE,AC,AC; FA; PO,AC; BE; FA; PO; SE,0,0,1
+Indian,Time punctual,AC,CO,CO; BE; AC,AC; BE; CO,0,1,1
+Indian,Responsible,BE,BE,BE; CO; PO,BE; CO,1,1,1
+Indian,Understand the problem and find solutions,SD,AC,AC; UN; SD,AC; BE; SD; UN,0,1,1
+Indian,Earn more money,PO,PO,PO; AC; SD,AC; PO,1,1,1
+Indian,Finishing work on time,AC,AC,AC; BE; SD,AC,1,1,1
+Indian,Making plan for growth,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Indian,Financial stability,SE,SE,SE; PO; BE,BE; PO; SE,1,1,1
+Indian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Indian,Every situation must be handled,AC,SE,SE; AC; PO,AC; BE; PO; SE; UN,0,1,1
+Indian,Design making,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,customer satisfaction,AC,AC,AC; BE; SD,AC; BE; FA; SD,1,1,1
+Indian,helpful to others,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Reliability,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Indian,To become a CEO or owner of the organization.,PO,AC,AC; PO; FA,AC; FA; PO,0,1,1
+Indian,To meet people's expectations,CO,AC,AC; FA; HU,AC; FA,0,0,0
+Indian,loyalty,BE,BE,BE; CO; FA,BE,1,1,1
+Indian,bringing my best output,AC,AC,AC; SD; UN,AC,1,1,1
+Indian,responsible,BE,AC,AC; BE; CO,AC,0,1,0
+Indian,Good Behavior,CO,CO,CO; BE; AC,BE; CO,1,1,1
+Indian,HIGHER WORK,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Indian,No mistakes should happen while doing work,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Indian,Disciplined,CO,AC,AC; CO; SD,AC; CO; SD,0,1,1
+Indian,Focused on goal,AC,AC,AC; CO; SE,AC; CO,1,1,1
+Indian,Disciplined,CO,AC,AC; CO; SD,AC; CO; SD,0,1,1
+Indian,To feel important,PO,FA,FA; SE; SD,AC; FA; SD; SE; ST,0,0,0
+Indian,Respect and being faithful to co workers,UN,CO,CO; FA; BE,AC; BE; CO; FA; TR,0,0,0
+Indian,To follow rules and regulations properly and do not even think of committing fraud,CO,CO,CO; BE; UN,BE; CO; UN,1,1,1
+Indian,Purity,TR,SE,SE; TR; UN,,0,1,0
+Indian,hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,successful,AC,AC,AC; BE; SE,,1,1,0
+Indian,Good ethics,UN,CO,CO; SD; AC,AC; CO; SD; TR,0,0,0
+Indian,Concentration at work,AC,AC,AC; CO; SD,AC; CO,1,1,1
+Indian,Wisdom,UN,SD,SD; AC; BE,AC; BE; SD; UN,0,0,1
+Indian,you should be humble,TR,AC,AC; FA; CO,AC; CO; FA; HU,0,0,0
+Indian,I wish to start my own business after getting sufficient fund.,SD,PO,PO; AC; SD,AC; PO; SD,0,1,1
+Indian,Helping,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Indian,Achieve all target,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Indian,And enjoy full work,HE,SD,SD; HE; AC,AC; HE; SD; ST,0,1,1
+Indian,Strive to grow in and with the organization,AC,AC,AC; SD; FA,AC; FA; SD; SE; ST,1,1,1
+Indian,Self independent,SD,SD,SD; AC; UN,SD,1,1,1
+Indian,Innovative ideas,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Indian,To help improve life of employees,BE,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Indian,To be successful,AC,AC,AC; BE; ST,AC,1,1,1
+Indian,improve presentation/public speaking skills/improve emotional intelligence,AC,AC,AC; FA; BE,AC; BE; FA; UN,1,1,1
+Indian,get financially independent,SE,SD,SD; PO; SE,PO; SD; SE,0,1,1
+Indian,Record should be maintained correctly.,AC,BE,BE; UN; AC,AC; BE; CO; UN,0,1,1
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,Hard work,AC,AC,AC; SD; PO,AC,1,1,1
+Indian,Perseverance,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Indian,Learn consumer employer relationship,AC,AC,AC; BE; FA,AC; BE,1,1,1
+Indian,To overcome difficult situations,AC,AC,AC; BE; SE,AC; BE; SE,1,1,1
+Indian,Enough to give luxury and proper earning capacity without any problem,PO,SE,SE; PO; AC,AC; PO; SD; SE,0,1,1
+Indian,Live your life like a monk,HE,TR,TR; SD; CO,CO; SD; TR,0,0,0
+Indian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Indian,Long term goals,SD,AC,AC; ST; CO,AC; ST,0,0,0
+Indian,Decision maker,PO,SD,SD; UN; PO,BE; PO; SD; UN,0,1,1
+Indian,Keep updating on skills to go ahead in my chosen field,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Indian,Wisdom,UN,SD,SD; AC; BE,AC; BE; SD; UN,0,0,1
+Indian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Indian,Become most trusted colleague,BE,AC,AC; FA; BE,AC; BE; CO; FA; SE,0,1,1
+Indian,To progress further,AC,AC,AC; UN; BE,AC,1,1,1
+Indian,I handle my team to make products quality better for costumers,PO,AC,AC; FA; PO,AC,0,1,0
+Indian,To achieve success,AC,AC,AC; ST; FA,AC,1,1,1
+Indian,Wisdom,UN,SD,SD; AC; BE,AC; BE; SD; UN,0,0,1
+Indian,successful achieving,AC,AC,AC; CO; BE,AC,1,1,1
+Indian,New era of experience.,ST,SD,SD; AC; UN,AC; SD; ST; UN,0,0,1
+Indian,praise of seniors,CO,FA,FA; AC; BE,AC; FA,0,0,0
+Indian,Punctuality,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Indian,LOYAL,BE,TR,TR; CO; BE,,0,1,0
+Indian,Focus on taming business risk and device the strategies for the successful comp,AC,AC,AC; PO; SE,AC; PO; SE,1,1,1
+Indian,Setting targets,AC,SE,SE; AC; UN,AC; SE; UN,0,1,1
+Indian,Following the organization goals,AC,AC,AC; CO; PO,AC; CO,1,1,1
+Indian,I need a good life,HE,SE,SE; SD; BE,BE; HE; SD; SE; ST,0,0,1
+Indian,Learning new skills,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,Response time in each field,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Indian,Give employees reward and promotions to work efficiently,PO,AC,AC; FA; PO,AC; FA; PO,0,1,1
+Indian,independence of the work ideas,SD,SD,SD; AC; UN,AC; SD,1,1,1
+Indian,Technological Challenges,ST,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Indian,Boss proud of you,CO,AC,AC; FA; BE,AC,0,0,0
+Indian,Increase in knowledge and training at work.,AC,AC,AC; SD; SE,AC; SD,1,1,1
+Indian,Take the organization to the next level.,AC,AC,AC; SD; PO,AC; FA; PO; SD,1,1,1
+Indian,Equal work,UN,UN,UN; AC; PO,AC; UN,1,1,1
+Indian,Responsibility,BE,BE,BE; CO; AC,BE; CO,1,1,1
+Indian,Gradual success,AC,AC,AC; BE; SD,AC,1,1,1
+Indian,very attentive to my work.,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Indian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Indian,The benefits should be clear to all employees,UN,UN,UN; SE; PO,CO; PO; SE; UN,1,1,1
+Indian,To achieve something in future or to advance the career,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Indian,My submitted work should be perfect and no one can find any mistake in my work.,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Indian,Forgiveness,BE,BE,BE; UN; CO,BE; UN,1,1,1
+Indian,Earning was not the motivation but to have the power to tell the untold stories,AC,SD,SD; AC; BE,AC; BE; HE; SD; ST,0,1,1
+Indian,I work hard to get promoted to higher posts,AC,AC,AC; PO; FA,AC; FA; PO,1,1,1
+Indian,Good work,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Indian,Become a CEO,PO,AC,AC; PO; FA,AC; PO,0,1,1
+Indian,Sense of autonomy.,SD,SD,SD; ST; UN,SD,1,1,1
+Indian,Helping the weak to achieve target,UN,AC,AC; UN; BE,AC; UN,0,1,1
+Indian,Experience,AC,SE,SE; AC; BE,SE,0,1,0
+Indian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Indian,employees benefit,PO,AC,AC; UN; SE,AC; BE; PO; SE; UN,0,0,1
+Asian,Goal/task accomplishment,AC,AC,AC; CO; FA,AC,1,1,1
+Asian,independence,SD,SE,SE; AC; SD,,0,1,0
+Asian,Security for my company and my job,SE,SE,SE; PO; AC,SE,1,1,1
+Asian,Constanly improve,AC,AC,AC; BE; SD,AC,1,1,1
+Asian,Completing planned work,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Asian,achievement,AC,AC,AC; FA; ST,AC; FA,1,1,1
+Asian,Job security,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Asian,Autonomy,SD,SD,SD; UN; AC,SD,1,1,1
+Asian,Learn new skills,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,autonomy,SD,UN,UN; SD; FA,UN,0,1,0
+Asian,Increased Pay,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Asian,To be competent and successful at my job,AC,AC,AC; FA; BE,AC,1,1,1
+Asian,Success,AC,AC,AC; BE; CO,,1,1,0
+Asian,helping coworkers,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Asian,Having the financial security/income that allows me to build wealth,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Asian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Asian,Consistent promotion and raise,AC,AC,AC; PO; CO,AC; CO; FA; PO,1,1,1
+Asian,Money,PO,SE,SE; BE; PO,SE,0,1,0
+Asian,Freedom to work when I feel like it,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Asian,Higher income to provide for family,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Asian,Making a difference in my student's lives,BE,AC,AC; BE; SE,AC; BE; FA; SE,0,1,1
+Asian,resilience,AC,AC,AC; SE; BE,AC; SE,1,1,1
+Asian,meeting or exceeding expectations,CO,AC,AC; FA; UN,AC; FA,0,0,0
+Asian,To become a top performer and contributor to the company,PO,AC,AC; PO; FA,AC; FA; PO,0,1,1
+Asian,Process improvement,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Asian,becoming more skillful and competent,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Asian,Helping others,BE,BE,BE; SE; AC,AC; BE; SE,1,1,1
+Asian,provide good services,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Asian,producing successful content,AC,AC,AC; SD; HE,AC; HE; SD,1,1,1
+Asian,God-centeredness,TR,TR,TR; BE; SD,TR,1,1,1
+Asian,Impact,UN,SE,SE; UN; FA,SE,0,1,0
+Asian,Security,SE,SE,SE; CO; BE,SE,1,1,1
+Asian,Create connections with the children in the classroom,BE,SE,SE; BE; AC,AC; BE; CO; FA; SE,0,1,1
+Asian,Financial stability,SE,SE,SE; PO; BE,BE; PO; SE,1,1,1
+Asian,Produce meaningful data to aid company for success,AC,AC,AC; UN; PO,AC; BE; PO; SD; UN,1,1,1
+Asian,Monetary Incentives (Raises),PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Asian,Document information as accurately as possible,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Asian,"Provide service to local community, something bigger than myself",UN,BE,BE; SE; AC,AC; BE; SE,0,0,0
+Asian,Work-life balance,HE,SE,SE; BE; SD,BE; SE,0,0,0
+Asian,Help clients get through rough times,BE,BE,BE; SE; AC,AC; BE; SD; SE,1,1,1
+Asian,Learn and develop my competency in my field of practice.,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Asian,Ensure that the work I do is challenging and I am always learning something new,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Learning more knowledge about my area,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Asian,I ensure the success of my company.,AC,AC,AC; PO; SE,AC; PO,1,1,1
+Asian,I want to go home knowing that I have financial security.,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Asian,Being Creative,SD,SD,SD; AC; HE,AC; SD,1,1,1
+Asian,Getting promoted,AC,AC,AC; PO; UN,AC; FA; PO; UN,1,1,1
+Asian,Get promotions,AC,AC,AC; SD; CO,AC,1,1,1
+Asian,organization,SE,AC,AC; CO; SE,AC; CO,0,1,0
+Asian,Life work balance,HE,SE,SE; BE; SD,BE; SE,0,0,0
+Asian,"Safe environment, mentally and physically",SE,SE,SE; BE; CO,BE; SE,1,1,1
+Asian,Patient care,BE,SE,SE; BE; AC,BE; SE,0,1,1
+Asian,high salary,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,finishing my duties on time,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Asian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Asian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Asian,High productivity,AC,AC,AC; SD; CO,AC,1,1,1
+Asian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Asian,Don't sell out by doing work that goes against my morals just for more money.,UN,CO,CO; TR; BE,BE; CO; HU; TR,0,0,0
+Asian,Making sure my tasks are completed on time,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Asian,Meeting multiple deadlines daily/nightly,AC,AC,AC; CO; BE,AC; CO,1,1,1
+Asian,Making sure the clients are happy with my work.,AC,AC,AC; FA; PO,AC; BE; FA; PO; SD,1,1,1
+Asian,Making a difference,UN,BE,BE; UN; PO,BE; UN,0,1,1
+Asian,Completing my tasks on time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Asian,Improving patient care,BE,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Asian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Asian,reach new customers,AC,AC,AC; PO; CO,AC; PO,1,1,1
+Asian,job security,SE,SE,SE; BE; CO,BE; CO; SE,1,1,1
+Asian,Safety and Well-Being of Employees,SE,SE,SE; BE; CO,SE,1,1,1
+Asian,Customer satisfaction,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Asian,I want to produce good work product.,AC,AC,AC; SD; PO,AC; SD,1,1,1
+Asian,excel at my job,AC,AC,AC; FA; SD,AC,1,1,1
+Asian,Innovation of my work,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Asian,making a difference in society,UN,BE,BE; AC; UN,AC; BE; SE; UN,0,1,1
+Asian,Attaining the results I want,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Asian,to do my job well and efficiently,AC,AC,AC; BE; PO,AC,1,1,1
+Asian,I treat everyone with respect,CO,CO,CO; FA; UN,CO; FA; TR; UN,1,1,1
+Asian,independence,SD,SE,SE; AC; SD,,0,1,0
+Asian,Opportunity for growth,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Asian,customer satisfaction,AC,AC,AC; BE; SD,AC; BE; FA; SD,1,1,1
+Asian,financial stability,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Asian,To enjoy work to its fullest extent,HE,AC,AC; ST; SD,AC; HE; SD; ST,0,0,1
+Asian,Helping,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Asian,Generating income revenue/wealth,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Asian,to innovate and do something different from competitors,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Asian,reliability,BE,UN,UN; BE; AC,AC; BE; UN,0,1,1
+Asian,Good work life balance,HE,SE,SE; BE; AC,BE; SE,0,0,0
+Asian,Bringing home as much cash as possible,SE,PO,PO; AC; SE,AC; PO,0,1,0
+Asian,Earn lots of money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,honesty,BE,BE,BE; CO; HU,BE; CO,1,1,1
+Asian,student achievement,BE,AC,AC; FA; CO,AC; FA,0,0,0
+Asian,Learning new skills,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,quality,AC,SE,SE; AC; BE,,0,1,0
+Asian,Getting campaigns up and running,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Asian,To be the best I can be at what I am assigned,AC,AC,AC; BE; ST,AC,1,1,1
+Asian,Earning money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,Do work that I enjoy and love,HE,AC,AC; SD; ST,AC; HE; SD; ST,0,0,1
+Asian,Connections - expanding and strengthening my network,AC,SE,SE; AC; FA,AC; FA; SE; ST; UN,0,1,1
+Asian,Ability to advance my career,AC,AC,AC; SD; PO,AC; PO; SD,1,1,1
+Asian,Meeting goals and expectations if not surpassing them,AC,AC,AC; FA; ST,AC; FA,1,1,1
+Asian,Lending aid to those in need,UN,BE,BE; SE; UN,BE; SE; UN,0,1,1
+Asian,money,PO,SE,SE; PO; CO,SE,0,1,0
+Asian,Critical Thinking,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Asian,Freedom,SD,SD,SD; UN; AC,,1,1,0
+Asian,Service,SE,BE,BE; AC; CO,,0,0,0
+Asian,Learning something new while completing tasks.,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,Making a difference,UN,BE,BE; UN; PO,BE; UN,0,1,1
+Asian,Economic stability (fair salary/wages with benefits),SE,SE,SE; PO; AC,AC; PO; SE; UN,1,1,1
+Asian,providing a voice for those not in authority roles,UN,UN,UN; SD; PO,FA; PO; SD; UN,1,1,1
+Asian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Asian,making money,PO,PO,PO; SE; CO,PO,1,1,1
+Asian,Be driven to help people,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Asian,Make money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,"One of my goals is to grow the size of the companies customer base, I feel that fueling this growth is the best way for the company to develop.",AC,AC,AC; PO; SD,AC; PO,1,1,1
+Asian,"Contributing to something larger than I am (research, or teaching)",UN,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Asian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Asian,Providing a good user experience to those who work in healthcare,BE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Asian,Learn a new skill,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,constantly improve everyday,AC,SE,SE; AC; HE,AC; BE; HE; SE; ST,0,1,1
+Asian,work life balance,HE,SE,SE; ST; BE,SE,0,0,0
+Asian,making a difference,UN,BE,BE; UN; PO,BE,0,1,0
+Asian,Develop skillsets,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Asian,social impact,UN,SE,SE; UN; FA,FA; SE; UN,0,1,1
+Asian,Get everything done on time,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Asian,financial stability,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Asian,being successful,AC,AC,AC; BE; CO,AC,1,1,1
+Asian,Passing my exams,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Asian,Job security,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Asian,Trust of my patients,BE,SE,SE; BE; CO,BE; SE,0,1,1
+Asian,To always reliably preform my duties,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Asian,support family,SE,BE,BE; SE; TR,BE; SE; TR,0,1,1
+Asian,Making Money,PO,PO,PO; CO; BE,PO,1,1,1
+Asian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Asian,Presentable work,AC,AC,AC; BE; SD,AC,1,1,1
+Asian,having impact on people and the environment,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Asian,diverse tasks,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Serving patients and providing them with quality health care,BE,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Asian,Having enough money,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Asian,Job security,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Asian,Perfection,AC,AC,AC; CO; BE,AC,1,1,1
+Asian,being successful with my results,AC,AC,AC; SD; UN,AC,1,1,1
+Asian,Delivering value to our clients,AC,AC,AC; PO; FA,AC; FA; PO,1,1,1
+Asian,Get all my work done on time and correct,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Asian,Help others,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Asian,Learning new skills,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,success,AC,AC,AC; CO; BE,AC,1,1,1
+Asian,Provide for family,SE,BE,BE; SE; TR,BE; SE,0,1,1
+Asian,Stability,SE,SE,SE; AC; BE,SE,1,1,1
+Asian,Apply new methods,ST,AC,AC; UN; SD,AC; BE; SD; UN,0,0,0
+Asian,innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Asian,Being excited about work,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Independence,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Asian,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Asian,To be efficient enough that I can relax at work and enjoy myself,HE,HE,HE; ST; SD,AC; HE; SD; SE; ST,1,1,1
+Asian,Ability to make a contribution,BE,AC,AC; BE; SD,AC; BE; SD; ST,0,1,1
+Asian,helping those in need,UN,BE,BE; SE; UN,BE; SE; UN,0,1,1
+Asian,Being able to be a positive impact on society by focusing on structural issues while also directly interacting with the community,UN,SE,SE; BE; UN,AC; BE; PO; SE; UN,0,1,1
+Asian,Bottom line improvement,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Asian,Being the top performer among collogues always,AC,AC,AC; FA; SD,AC; FA,1,1,1
+Asian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Asian,Having a list of things to do and completing it,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Asian,Being kind and patient,CO,BE,BE; CO; UN,BE; CO,0,1,1
+Asian,able to apply skills gained/learned in future,AC,AC,AC; SD; BE,AC; BE; SD,1,1,1
+Asian,reaching goals,AC,AC,AC; CO; ST,AC; CO; ST,1,1,1
+Asian,Provide a service to give back to the world,UN,BE,BE; AC; UN,AC; BE,0,1,0
+Asian,Attaining seniority,SE,AC,AC; FA; PO,AC; CO; FA; PO; UN,0,0,0
+Asian,fast and accurate,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Asian,Contributing to society,UN,AC,AC; BE; UN,AC; BE; SD; SE; UN,0,1,1
+Asian,mentor well,AC,AC,AC; BE; SE,AC; BE; SE,1,1,1
+Asian,learning new techniques,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,Growth,AC,SE,SE; AC; UN,,0,1,0
+Asian,Manage and lead classroom with co-teachers by communicating effectively,PO,AC,AC; BE; CO,AC; BE; CO,0,0,0
+Asian,Contributing to the team,BE,AC,AC; SD; BE,AC; BE; SD,0,1,1
+Asian,Provide accurate data,AC,UN,UN; BE; AC,AC; BE; UN,0,1,1
+Asian,Promotions (Level Increase),AC,AC,AC; PO; FA,AC,1,1,1
+Asian,Document information as quickly as possible,AC,AC,AC; UN; BE,AC; BE; SD; UN,1,1,1
+Asian,Make more money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,Making a positive difference in the world,UN,UN,UN; BE; AC,AC; BE; UN,1,1,1
+Asian,Financial Stability,SE,SE,SE; PO; AC,AC; PO; SE,1,1,1
+Asian,Challenge myself by learning different tasks and expanding my scope of work.,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Independence and reliablity among coworkers,SD,SD,SD; AC; FA,AC; FA; SD,1,1,1
+Asian,Getting promoted to the next level,AC,AC,AC; UN; FA,AC; FA; UN,1,1,1
+Asian,I work hard on every task and have pride in my work.,AC,AC,AC; FA; PO,AC; FA; PO; SD,1,1,1
+Asian,I want to establish myself as someone my peers and supervisors can depend on and trust to handle situations independently.,BE,AC,AC; SD; BE,AC; BE; FA; SD; ST,0,1,1
+Asian,self reliance,SD,AC,AC; UN; BE,AC; BE; SD; UN,0,0,1
+Asian,Getting paid higher,PO,PO,PO; AC; UN,AC; PO; UN,1,1,1
+Asian,Look for ways to improve the organization structural goals,AC,AC,AC; BE; PO,AC,1,1,1
+Asian,Teach those that want to learn,BE,AC,AC; SD; ST,AC; BE; SD; ST,0,0,1
+Asian,Perform excellent work,AC,AC,AC; FA; BE,AC,1,1,1
+Asian,Making money for my future,SE,PO,PO; SE; AC,AC; PO; SE,0,1,1
+Asian,follow through,AC,SD,SD; AC; BE,SD,0,1,0
+Asian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Asian,freedom,SD,SD,SD; BE; UN,,1,1,0
+Asian,making my supervisor look good,CO,FA,FA; AC; HE,AC; FA,0,0,0
+Asian,Change,ST,UN,UN; AC; BE,,0,0,0
+Asian,Bonus,PO,AC,AC; SE; BE,,0,0,0
+Asian,Providing my patients with the best care possible,BE,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Asian,Independence,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Asian,Making sure my team understands what to do,PO,AC,AC; SE; BE,AC; BE; SE,0,0,0
+Asian,Producing error-free work,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Asian,perform work to the best of my ability,AC,AC,AC; FA; SD,AC; FA; SD,1,1,1
+Asian,Producing work in a timely manner that will allow a more productive and peaceful workflow.,AC,AC,AC; SE; BE,AC; BE; CO; SE,1,1,1
+Asian,Helping others,BE,BE,BE; SE; AC,AC; BE; SE,1,1,1
+Asian,To make money,PO,PO,PO; AC; CO,AC; PO,1,1,1
+Asian,Completing my tasks accurately,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Asian,Raise,PO,AC,AC; PO; BE,,0,1,0
+Asian,reach high sales,AC,PO,PO; AC; CO,AC; PO,0,1,1
+Asian,financial security,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Asian,Independence and Taking Initiative/Proactive/Adaptability/Grit/Resilience,SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Cleanliness,SE,UN,UN; CO; SE,CO; SE; UN,0,1,1
+Asian,I want to learn and get better at my practice.,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,make enough financially,SE,SE,SE; PO; BE,PO; SE,1,1,1
+Asian,Being efficient,AC,AC,AC; BE; UN,AC,1,1,1
+Asian,I make sure to finish all my tasks,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Asian,high paying,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,Varied challenges,ST,AC,AC; SD; UN,AC,0,0,0
+Asian,consumer health,BE,SE,SE; BE; UN,SE,0,1,0
+Asian,go beyond what is expected,AC,CO,CO; AC; FA,AC; CO; FA,0,1,1
+Asian,Encourage new ideas,ST,SD,SD; AC; UN,AC; SD; UN,0,0,0
+Asian,Organization,SE,AC,AC; CO; SE,AC; CO; SE,0,1,1
+Asian,Working diligently & efficiently,AC,AC,AC; CO; BE,AC,1,1,1
+Asian,Board certification in my specialty area,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Asian,Having sufficient time for relaxation,HE,HE,HE; ST; SD,AC; HE; SD; SE; ST,1,1,1
+Asian,Help lots of people,UN,BE,BE; AC; SE,AC; BE; SE,0,0,0
+Asian,fairness,BE,UN,UN; BE; CO,BE; UN,0,1,1
+Asian,student retention,BE,AC,AC; CO; BE,AC; BE; CO,0,1,1
+Asian,Mentoring new employees,AC,AC,AC; BE; FA,AC; BE,1,1,1
+Asian,balance,TR,UN,UN; BE; AC,,0,0,0
+Asian,Working in efficient manner to process orders,AC,AC,AC; PO; BE,AC; BE; PO,1,1,1
+Asian,To perform consistently at work,AC,AC,AC; FA; BE,AC,1,1,1
+Asian,Make a good living off of the work I enjoy doing and find fulfilling,SE,AC,AC; PO; SD,AC; PO; SD; SE; ST,0,0,1
+Asian,"Automation - being as clever as I can about things that don't matter, and focusing on things that do",AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Asian,Make my company prosper,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Asian,Understanding the order of things and maintaining efficiency,AC,AC,AC; UN; PO,AC; UN,1,1,1
+Asian,benefits,PO,SE,SE; AC; BE,AC; BE; SE,0,0,0
+Asian,Organization,SE,AC,AC; CO; SE,AC; CO; SE,0,1,1
+Asian,Wealth,PO,PO,PO; CO; AC,,1,1,0
+Asian,Development of skills,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Asian,Serve the other coworker's needs as best as possible.,BE,CO,CO; UN; SE,BE; CO; SE; UN,0,0,1
+Asian,Helping people,BE,BE,BE; AC; SE,AC; BE; SE; UN,1,1,1
+Asian,"Communal respect (workers, managers, and aux. workers)",CO,FA,FA; UN; SE,CO; FA; SE; UN,0,0,1
+Asian,providing value,AC,AC,AC; PO; SE,AC; PO; SE,1,1,1
+Asian,New experiences,ST,HE,HE; SD; ST,AC; HE; SD; SE; ST; UN,0,1,1
+Asian,exposing corruption,UN,BE,BE; CO; SE,BE; CO; SE; UN,0,0,1
+Asian,using creativity in my work,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Asian,Proceed in my chosen career,SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Asian,Have fun,HE,HE,HE; ST; SD,AC; HE; SD; ST,1,1,1
+Asian,Company Growth,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Asian,"Another goal is to create a comprehensive social network, not only with my peers, but with people in positions much higher and above my own.",PO,AC,AC; FA; SE,AC; FA; SE; UN,0,0,0
+Asian,Work life balance,HE,SE,SE; AC; BE,AC; SE,0,0,0
+Asian,Earning higher income.,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Asian,Tolerance,UN,UN,UN; CO; BE,BE; CO; UN,1,1,1
+Asian,Always be polite to both colleagues and clients.,CO,CO,CO; FA; BE,BE; CO; FA,1,1,1
+Asian,Creating an impact in healthcare,UN,AC,AC; SE; SD,AC; BE; SD; SE,0,0,0
+Asian,Build positive relationships with clients,AC,FA,FA; BE; AC,AC; BE; CO; FA; PO; SE,0,1,1
+Asian,show the best version of myself,AC,AC,AC; HE; SD,AC; BE; FA; HE; SD; ST,1,1,1
+Asian,being successful,AC,AC,AC; BE; CO,AC,1,1,1
+Asian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Asian,Create solutions to difficult problems,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Asian,"Remain calm and professional, even when I am unhappy at work",CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Asian,respect,CO,AC,AC; SE; CO,,0,1,0
+Asian,Get all my work done,AC,AC,AC; SD; CO,AC; SD,1,1,1
+Asian,making a lot of money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,Respectful,CO,FA,FA; AC; CO,AC; CO; FA,0,1,1
+Asian,Learning knowledge about my field,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Asian,Helping allies,BE,BE,BE; AC; SE,AC; BE; SE; UN,1,1,1
+Asian,Independence,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Asian,Independence,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Asian,Help those around me,BE,BE,BE; SE; UN,BE; SE,1,1,1
+Asian,To advance myself though certifications and promotions,AC,AC,AC; SD; PO,AC; PO; SD,1,1,1
+Asian,stay hired,SE,AC,AC; BE; CO,AC,0,0,0
+Asian,Meeting deadlines,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Asian,being creative,SD,SD,SD; AC; HE,AC; SD,1,1,1
+Asian,good social impact,UN,UN,UN; BE; SE,BE; SE; UN,1,1,1
+Asian,Having a positive impact,UN,BE,BE; UN; SE,AC; BE; SE; UN,0,1,1
+Asian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Asian,Mentoring individuals on my team,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Asian,Have fun,HE,HE,HE; ST; SD,AC; HE; SD; ST,1,1,1
+Asian,be the best in the company,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Asian,Helping others,BE,BE,BE; SE; AC,AC; BE; SE,1,1,1
+Asian,product sales,AC,PO,PO; AC; UN,AC; PO,0,1,1
+Asian,Helping others and community,BE,BE,BE; SE; UN,BE; SE; UN,1,1,1
+Asian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Asian,Prestige,AC,AC,AC; FA; PO,AC,1,1,1
+Asian,fun,HE,SE,SE; UN; AC,,0,0,0
+Asian,Time Management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Asian,Being helpful,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Asian,Stable,SE,AC,AC; UN; BE,AC,0,0,0
+Asian,Recognition,AC,AC,AC; FA; BE,AC; FA,1,1,1
+Asian,using my skills to the best of my abilities,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Asian,Being able to implement some of my ideas that will help with overall program development/management skills,SD,AC,AC; SD; PO,AC; BE; PO; SD,0,1,1
+Asian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Asian,Hardworking,AC,AC,AC; PO; BE,AC; PO,1,1,1
+Asian,Extra mile contributions,BE,AC,AC; BE; ST,AC; BE; ST,0,1,1
+Asian,Having a sales goal,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Asian,Wealth,PO,PO,PO; CO; AC,,1,1,0
+Asian,Job stability,SE,SE,SE; AC; BE,AC; BE; PO; SE,1,1,1
+Asian,Not leaving anyone behind,BE,BE,BE; SE; UN,BE; SE; UN,1,1,1
+Asian,being dependable,BE,BE,BE; AC; CO,AC; BE,1,1,1
+Asian,Earn money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,Creating products that make peoples' lives easier,UN,SE,SE; BE; SD,AC; BE; HE; SD; SE,0,0,0
+Asian,responsible,BE,AC,AC; BE; CO,AC,0,1,0
+Asian,Being punctual,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Asian,do well,AC,AC,AC; BE; FA,AC,1,1,1
+Asian,take on new responsibilities,BE,BE,BE; SE; CO,AC; BE; CO; SE,1,1,1
+Asian,Mutual Prosperity,AC,SE,SE; PO; BE,BE; PO; SE,0,0,0
+Asian,Doing my best,AC,AC,AC; BE; ST,AC; BE,1,1,1
+Asian,Create a safe environment that children can learn and grow within,BE,AC,AC; SD; BE,AC; BE; SD; SE; UN,0,1,1
+Asian,Use data to ensure company runs smoothly,AC,AC,AC; PO; UN,AC; PO; UN,1,1,1
+Asian,Work life balance,HE,SE,SE; AC; BE,AC; SE,0,0,0
+Asian,Document information in an aesthetically pleasing way,SE,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Asian,Effort is being recognized,CO,AC,AC; FA; PO,AC; FA; PO,0,0,0
+Asian,Succeeding/doing well,AC,AC,AC; FA; SD,AC,1,1,1
+Asian,Avoiding office drama and gossip,TR,CO,CO; BE; FA,BE; CO; FA; SE,0,0,0
+Asian,I treat the other employees and clients with respect.,CO,CO,CO; FA; UN,CO; FA; UN,1,1,1
+Asian,Freedom of time,SD,SD,SD; AC; ST,AC; SD,1,1,1
+Asian,Getting projects and I would genuinely enjoy,HE,AC,AC; SD; ST,AC; HE; SD; ST,0,0,1
+Asian,Develop and research technology features that may help the company,AC,AC,AC; SD; PO,AC; BE; PO; SD,1,1,1
+Asian,Complete the stuff I need to do with quality work,AC,AC,AC; BE; SD,AC,1,1,1
+Asian,Build connections,AC,AC,AC; SE; BE,AC,1,1,1
+Asian,courtesy,CO,CO,CO; BE; AC,BE; CO,1,1,1
+Asian,Give you sense of competency and opportunity to help others,BE,AC,AC; BE; SE,AC; BE; FA; SD; SE; ST,0,1,1
+Asian,hardwork,AC,AC,AC; BE; SD,AC,1,1,1
+Asian,Accountability,BE,BE,BE; CO; AC,AC; BE; CO,1,1,1
+Asian,safety of myself and others,SE,SE,SE; BE; CO,BE; SE,1,1,1
+Asian,Social welfare,UN,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Asian,Making sure that I am doing the best job possible,AC,AC,AC; BE; FA,AC,1,1,1
+Asian,Give full attention to people I'm assisting and don't just brush them off to save time.,BE,CO,CO; AC; BE,AC; BE; CO; UN,0,1,1
+Asian,Meeting metrics,AC,AC,AC; UN; CO,AC; UN,1,1,1
+Asian,be creative and think of new ways to do things,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Asian,Make enough money to cover bills and expenses at the end of each month.,SE,SE,SE; PO; BE,BE; PO; SE,1,1,1
+Asian,Enjoying what I do,HE,HE,HE; ST; SD,AC; HE; SD; ST,1,1,1
+Asian,To help out in any capacity,BE,BE,BE; AC; SE,AC; BE,1,1,1
+Asian,Finding ways to solve problems,SD,AC,AC; SD; BE,AC; BE; SD; UN,0,1,1
+Asian,Respect from co-workers,CO,FA,FA; AC; SE,AC; FA; SE,0,0,0
+Asian,growing numbers,AC,SE,SE; BE; UN,SE,0,0,0
+Asian,advancement opportunities,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Asian,Be dependable,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Asian,Flexibility with achievements,AC,AC,AC; SD; BE,AC; BE; SD,1,1,1
+Asian,work-life balance,HE,SE,SE; BE; AC,BE; SE,0,0,0
+Asian,Being creative,SD,SD,SD; AC; HE,AC; SD,1,1,1
+Asian,to find happiness in my job but not let it be my entire world,HE,SE,SE; SD; HE,AC; HE; SD; SE; ST,0,1,1
+Asian,I make sure that my clients are happy with my job,AC,SE,SE; SD; BE,AC; BE; CO; FA; PO; SD; SE,0,0,1
+Asian,Commensurate renumeration,SE,UN,UN; AC; BE,AC; BE; UN,0,0,0
+Asian,company wealth,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Asian,be outstanding,AC,AC,AC; ST; HE,AC,1,1,1
+Asian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Asian,Working to please and satisfy guests/customers,AC,CO,CO; BE; SD,BE; CO; SD,0,0,0
+Asian,excel at best skills,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Asian,management,PO,AC,AC; CO; SE,,0,0,0
+Asian,No complaints from clients,AC,CO,CO; BE; AC,AC; BE; CO,0,1,1
+Asian,Work contributes to society,UN,AC,AC; SE; BE,AC; BE; SE,0,0,0
+Asian,Having space/alone time,HE,SD,SD; ST; HE,HE; SD; ST,0,1,1
+Asian,operate in complete integrity,BE,CO,CO; BE; AC,AC; BE; CO,0,1,1
+Asian,diligence,AC,AC,AC; BE; CO,AC; BE; CO; UN,1,1,1
+Asian,student progress,BE,AC,AC; CO; BE,AC,0,1,0
+Asian,Participating in diversity and inclusion workshops,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Asian,fun,HE,SE,SE; UN; AC,,0,0,0
+Asian,Being time efficient,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Asian,To be responsible for my actions,BE,BE,BE; CO; UN,BE; CO,1,1,1
+Asian,Contribution to society,UN,AC,AC; BE; SE,AC; BE; SE; UN,0,0,1
+Asian,Make a difference in someone's life,BE,BE,BE; SE; AC,AC; BE; SE,1,1,1
+Asian,"Finding the right answer - not the loudest in the room, but the actual right thing",UN,AC,AC; UN; SD,AC; UN,0,1,1
+Asian,Fulfull the needs of our customers,AC,BE,BE; SD; AC,AC; BE; SD; SE,0,1,1
+Asian,Autonomy to meet goals and expectation in a way that allows me to thrive as a person,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Asian,vacation,HE,SD,SD; SE; HE,HE; SD; SE,0,1,1
+Asian,Efficiency,AC,AC,AC; UN; SE,AC; UN,1,1,1
+Asian,Leadership,PO,AC,AC; PO; FA,AC; PO,0,1,1
+Asian,Help the company in an any way possible to become profitable.,PO,AC,AC; PO; BE,AC; PO,0,1,1
+Asian,Job stability,SE,SE,SE; AC; BE,AC; BE; PO; SE,1,1,1
+Asian,helping others,BE,BE,BE; AC; SE,AC; BE; SE; UN,1,1,1
+Asian,Fun,HE,SE,SE; BE; AC,,0,0,0
+Asian,rooting out discrimination,UN,UN,UN; CO; FA,CO; FA; UN,1,1,1
+Asian,executing requests for clients successfully,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Asian,"Maintain economic prosperity, make a living wage",SE,PO,PO; SE; AC,AC; PO; SE,0,1,1
+Asian,Don't hurt others,BE,CO,CO; UN; BE,BE; CO; UN,0,1,1
+Asian,Financial Stability,SE,SE,SE; PO; AC,AC; PO; SE,1,1,1
+Asian,"Being more efficient at work, such that I can maintain my high quality level of work, but still have more free time.",AC,AC,AC; ST; SD,AC; HE; SD; SE; ST,1,1,1
+Asian,Opportunities for personal development in order to acquire new skills,AC,AC,AC; SD; ST,AC; SD; SE; ST,1,1,1
+Asian,Honesty,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Asian,Always ensure that the work is complete and thorough.,AC,AC,AC; BE; CO,AC; BE,1,1,1
+Asian,Establishing good design and development principles,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Asian,Reorganize structures,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Asian,make use of time,AC,AC,AC; HE; ST,AC; BE; HE; SD; ST,1,1,1
+Asian,money,PO,SE,SE; PO; CO,SE,0,1,0
+Asian,"Set, meet, and exceed one's goals",AC,AC,AC; ST; SD,AC; ST,1,1,1
+Asian,growth,AC,SE,SE; AC; CO,,0,1,0
+Asian,Find ways to express my creativity and passion,SD,SD,SD; AC; ST,AC; HE; SD; ST,1,1,1
+Asian,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Asian,Learning how to use certain programs,AC,AC,AC; SD; BE,AC; BE; SD,1,1,1
+Asian,Getting paid,SE,PO,PO; AC; UN,AC; PO; UN,0,0,0
+Asian,Success,AC,AC,AC; BE; CO,,1,1,0
+Asian,Time management,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Asian,Do good work,AC,AC,AC; BE; FA,AC,1,1,1
+Asian,To be known as reliable and dependable at work,BE,AC,AC; FA; BE,AC; BE; FA,0,1,1
+Asian,Not getting in trouble,CO,CO,CO; BE; UN,BE; CO; UN,1,1,1
+Asian,Productivity,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Asian,Being able to move up in my career,AC,AC,AC; SD; PO,AC; PO; SD; ST,1,1,1
+Asian,being challenged,ST,AC,AC; UN; CO,AC; UN,0,0,0
+Asian,growth,AC,SE,SE; AC; CO,,0,1,0
+Asian,Feeling challenged,ST,AC,AC; SD; UN,AC,0,0,0
+Asian,Helping others,BE,BE,BE; SE; AC,AC; BE; SE,1,1,1
+Joint,Pleasantness and Accomodation,CO,SE,SE; BE; HE,BE; CO; HE; SD; SE,0,0,1
+Joint,Equality and opportunities for all,UN,UN,UN; AC; SE,AC; SE; UN,1,1,1
+Joint,Quality social services,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Joint,Advancing the field,UN,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,Developing solutions for diverse populations,UN,UN,UN; AC; BE,AC; BE; SE; UN,1,1,1
+Joint,Streamlining processes in the organization,AC,AC,AC; PO; BE,AC,1,1,1
+Joint,Tolerance towards others,UN,UN,UN; BE; CO,BE; CO; UN,1,1,1
+Joint,To impact the ecosystem,BE,UN,UN; AC; BE,UN,0,1,0
+Joint,Equal opportunities,UN,UN,UN; AC; SD,UN,1,1,1
+Joint,Create mobility and employment opportunities for people,UN,AC,AC; SE; SD,AC; BE; SD; SE; ST; UN,0,0,1
+Joint,To support the business strategy of the organization,AC,AC,AC; PO; SD,AC; PO,1,1,1
+Joint,Expand the social vision in employment and society,AC,AC,AC; SE; PO,AC; PO; SE,1,1,1
+Joint,My personal progress,AC,AC,AC; UN; SD,AC,1,1,1
+Joint,Equal opportunities for employees and participants,UN,UN,UN; AC; SE,AC; PO; SE; UN,1,1,1
+Joint,Occupational competence,AC,AC,AC; SE; BE,AC; BE; SE,1,1,1
+Joint,To advance through the ranks,PO,AC,AC; PO; UN,AC; PO,0,1,1
+Joint,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Promoting a government decision for optimal aging and implementing measures that Eshel will lead in the work plan,UN,PO,PO; BE; AC,AC; BE; PO; SE,0,0,0
+Joint,Promoting social mobility in Arab society,UN,AC,AC; UN; SE,AC; SD; SE; ST; UN,0,1,1
+Joint,National influence,AC,SE,SE; PO; UN,SE,0,0,0
+Joint,Impact,UN,SE,SE; UN; FA,SE,0,1,0
+Joint,Success,AC,AC,AC; BE; CO,,1,1,0
+Joint,Promotion in current position,AC,AC,AC; PO; UN,AC; PO,1,1,1
+Joint,The success of the program,AC,AC,AC; BE; SE,AC; BE,1,1,1
+Joint,To do something meaningful with my time.,SD,AC,AC; ST; BE,AC; BE; SD; ST,0,0,1
+Joint,"Promote significant social change, especially for populations in need.",UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,"Appropriate service for residents, especially minorities",BE,UN,UN; SE; BE,BE; SE; UN,0,1,1
+Joint,Advancing disadvantaged populations in a changing labor market,UN,UN,UN; AC; SE,AC; SE; UN,1,1,1
+Joint,Develop the direct impact of the Joint Venture on society not only through government,AC,PO,PO; SE; AC,AC; PO; SE,0,1,1
+Joint,The goal is to promote optimal aging in Israel.,UN,AC,AC; UN; SE,AC; SE; UN,0,1,1
+Joint,Reducing gaps between populations,UN,UN,UN; SE; AC,AC; SE; UN,1,1,1
+Joint,To impliment change in the field of aging,UN,SD,SD; AC; UN,AC; SD; SE; UN,0,1,1
+Joint,Innovative thinking in solving social problems,SD,AC,AC; SD; BE,AC; BE; SD; UN,0,1,1
+Joint,To not be afraid to express my opinion,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Joint,Strengthen confidence in the abilities of adults and reduce self-agism bias,UN,AC,AC; UN; FA,AC; FA; SD; UN,0,1,1
+Joint,To move forward and always look forward to the next challenge,AC,AC,AC; ST; SD,AC; SD; ST,1,1,1
+Joint,To preform tasks to the best of my ability,AC,AC,AC; BE; FA,AC,1,1,1
+Joint,accuracy,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Joint,To think deeply about problems and solutions,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,Social justice,UN,UN,UN; CO; AC,CO; UN,1,1,1
+Joint,To continue helping and increasing support of vulnerable populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,"To feel significant, to feel a part of change",SD,FA,FA; AC; ST,AC; FA; PO; SD; SE; ST; UN,0,0,1
+Joint,Promoting fairness in public systems,UN,UN,UN; BE; PO,BE; UN,1,1,1
+Joint,To succeed and advance in other roles,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Reducing social gaps,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,reliability,BE,UN,UN; BE; AC,AC; BE; UN,0,1,1
+Joint,Promoting independent living for people with disabilities,UN,SD,SD; UN; SE,AC; BE; SD; SE; UN,0,1,1
+Joint,Change of perception,UN,UN,UN; SE; FA,SE; UN,1,1,1
+Joint,To recieve an appropriate salary for the position,SE,PO,PO; AC; UN,AC; PO; SE; UN,0,0,1
+Joint,Promoting quality education for everyone,UN,AC,AC; UN; SD,AC; SD; UN,0,1,1
+Joint,To impact optimal aging in Israeli society,UN,AC,AC; UN; SE,AC; SE; UN,0,1,1
+Joint,Transparency,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Joint,Linkage between the field and the office,SE,AC,AC; BE; SE,AC; BE,0,1,0
+Joint,To formulate a national policy in my line of work,AC,AC,AC; PO; UN,AC; PO; SD; UN,1,1,1
+Joint,Improving the lifestyle of the elderly,UN,SE,SE; BE; SD,BE; CO; HE; SD; SE,0,0,0
+Joint,meaning,SD,AC,AC; BE; SE,,0,0,0
+Joint,Tidiness,SE,CO,CO; BE; SE,BE; CO,0,1,0
+Joint,Influence on policy,UN,PO,PO; UN; AC,AC; PO; UN,0,1,1
+Joint,Creating a significant social impact,UN,UN,UN; FA; PO,BE; FA; PO; SE; UN,1,1,1
+Joint,Help create a better Israeli society,UN,SE,SE; BE; AC,AC; BE; SE; UN,0,0,1
+Joint,Providing service with kindness,CO,BE,BE; SE; CO,BE,0,1,0
+Joint,Environmental awareness,UN,UN,UN; AC; SE,UN,1,1,1
+Joint,Professionalism and attention to detail,AC,AC,AC; PO; BE,AC; BE; CO; FA; PO,1,1,1
+Joint,Assistance in promoting projects effectively and successfully,AC,AC,AC; SD; BE,AC; BE; PO; SD,1,1,1
+Joint,Promoting evidence-based development processes,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Joint,Impact on the quality of people's employment in their private lives,AC,SE,SE; AC; SD,AC; SD; SE,0,1,1
+Joint,Change in services provided to disadvantaged populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Proper books,AC,AC,AC; BE; UN,AC; BE; CO; UN,1,1,1
+Joint,Reducing gaps in Israeli society,UN,UN,UN; SE; AC,AC; SE; UN,1,1,1
+Joint,Equal opportunities,UN,UN,UN; AC; SD,UN,1,1,1
+Joint,"Flexibility in working hours and tasks, improved conditions and pay",HE,SD,SD; AC; SE,AC; PO; SD; SE,0,0,0
+Joint,Cooperation between organizations - welfare and health funds,UN,SE,SE; BE; UN,AC; BE; SE; UN,0,1,1
+Joint,Professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Integrating diverse populations into quality employment,UN,AC,AC; UN; SE,AC; SE; UN,0,1,1
+Joint,Implementing the map of indicators for optimal aging,UN,AC,AC; UN; SE,AC; UN,0,1,1
+Joint,Promoting equal opportunities for all populations in Israel,UN,UN,UN; SE; AC,AC; SE; UN,1,1,1
+Joint,Reducing gaps and inequality,UN,UN,UN; SE; AC,SE; UN,1,1,1
+Joint,To encourage growth in people,BE,AC,AC; SD; UN,AC; BE; SD; ST; UN,0,0,1
+Joint,Reducing social gaps,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,Fairness,BE,UN,UN; BE; CO,UN,0,1,0
+Joint,I want to be challenged and aim high in my work.,ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Joint,Social impact,UN,UN,UN; SE; FA,FA; SE; UN,1,1,1
+Joint,"Innovative services, digital and data based strategy",ST,AC,AC; SD; UN,AC; SD,0,0,0
+Joint,Reducing social gaps,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,A sense of meaning and professional pride,SD,AC,AC; FA; SE,AC; FA; SE,0,0,0
+Joint,Change the world,UN,SD,SD; AC; UN,AC; SD; UN,0,1,1
+Joint,A significant contribution to promoting job opportunities in Israeli society,UN,AC,AC; SE; PO,AC; BE; PO; SE,0,0,0
+Joint,Provide support and assistance to the team so they can advance department goals,PO,AC,AC; BE; SE,AC; BE; PO; SE,0,0,1
+Joint,Develop answers tailored to the population I work with,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Joint,Promoting the field,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Joint,efficiency,AC,AC,AC; BE; SE,AC,1,1,1
+Joint,Equal opportunities for people with disabilities,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,Professional and high-quality work,AC,AC,AC; FA; PO,AC; FA,1,1,1
+Joint,Implementing the plan which i am leading,AC,AC,AC; PO; BE,AC; BE; PO,1,1,1
+Joint,To achieve occupational stability,SE,SE,SE; BE; CO,BE; SE,1,1,1
+Joint,"Innovation, dynamism and professional development",ST,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Joint,Positioning Tevet as an engine of innovation,ST,AC,AC; SD; UN,AC; SD,0,0,0
+Joint,Network of connections for the elderly,UN,BE,BE; SE; CO,BE; CO; SE,0,0,0
+Joint,Contribution to broad social change in the field of employment,UN,AC,AC; SE; UN,AC; BE; SD; SE; UN,0,1,1
+Joint,Organizational happiness,SE,AC,AC; SE; BE,AC; SE,0,1,1
+Joint,Doing good,BE,AC,AC; BE; FA,AC; BE,0,1,1
+Joint,The ability to influence the quality of people's lives - the target audience,AC,SE,SE; AC; BE,AC; BE; HE; SE,0,1,1
+Joint,Promoting and achieving the program's goals,AC,AC,AC; FA; SE,AC; FA; PO; SE,1,1,1
+Joint,Creating a steady and impactful stream of projects,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Joint,Improving the independence of people with disabilities in Israel,UN,SD,SD; UN; SE,AC; BE; SD; SE; UN,0,1,1
+Joint,Profound impact on social structures in Israel,AC,SE,SE; UN; AC,AC; PO; SE; UN,0,1,1
+Joint,Success in carrying out the mission of the group I lead,AC,AC,AC; BE; TR,AC; BE; TR,1,1,1
+Joint,Social mobility,UN,AC,AC; SE; UN,AC; SE; UN,0,1,1
+Joint,Innovation - connecting different fields of knowledge,SD,AC,AC; SD; UN,AC; SD; SE; UN,0,1,1
+Joint,Mobility for remote populations,UN,UN,UN; SE; BE,AC; BE; SD; SE; UN,1,1,1
+Joint,Integrating populations into employment,UN,AC,AC; SE; UN,AC; SE; UN,0,1,1
+Joint,Managing a field within the division's finance department,PO,AC,AC; PO; SE,AC; PO,0,1,1
+Joint,efficiency,AC,AC,AC; BE; SE,AC,1,1,1
+Joint,To bring about significant change in the country in the areas in which I work,AC,AC,AC; PO; BE,AC; BE; PO; SD; SE; UN,1,1,1
+Joint,Do projects that address the problem at its root.,UN,AC,AC; UN; SD,AC; BE; SD; UN,0,1,1
+Joint,Specialization in my field,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Joint,Justice,UN,UN,UN; CO; BE,CO; UN,1,1,1
+Joint,Making the world right,UN,BE,BE; UN; SE,BE; SE; UN,0,1,1
+Joint,Promoting interpersonal communication within and outside the organization,AC,SE,SE; AC; BE,AC; BE; FA; PO; SE,0,1,1
+Joint,Promoting awareness to the need for integration of disabled childen in the community,UN,SE,SE; UN; BE,AC; BE; SE; UN,0,1,1
+Joint,Critical thinking,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,Reducing social gaps,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,Reducing social gaps between different groups/minorities,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,"Promoting systemic ""Impact Thinking""",UN,AC,AC; UN; SD,AC; SD; UN,0,1,1
+Joint,Encouraging growth and learning in the team,BE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Joint,Contribution to the advancement of weak and disadvantaged populations in Israeli society,UN,UN,UN; SE; AC,AC; SE; UN,1,1,1
+Joint,Expanding opportunities and possibilities for promoting social mobility,UN,AC,AC; SE; ST,AC; SD; SE; ST; UN,0,0,1
+Joint,Developing new idead and translating them into executionable actions,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,efficiency,AC,AC,AC; BE; SE,AC,1,1,1
+Joint,Integration of people with disabilities into society,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Accessibility to education,UN,AC,AC; UN; BE,AC; BE; SE; UN,0,1,1
+Joint,Streamline processes and work methods,AC,AC,AC; SD; PO,AC; SD,1,1,1
+Joint,To improve and politically influence injustices that exist in society,UN,UN,UN; SE; PO,AC; BE; PO; SE; UN,1,1,1
+Joint,Quality of life for the elderly,UN,SE,SE; BE; CO,BE; CO; SE,0,0,0
+Joint,Promotion prospect for veteran staff,AC,AC,AC; PO; UN,AC,1,1,1
+Joint,Maximization of plan execution regarding planning versus execution ,AC,AC,AC; UN; PO,AC; UN,1,1,1
+Joint,Social problems,UN,SE,SE; CO; BE,BE; CO; SE; UN,0,0,1
+Joint,Provide pleasant and professional service,CO,AC,AC; CO; BE,AC; BE; CO; FA; HE,0,1,1
+Joint,Connection between social sectors,UN,SE,SE; AC; UN,AC; SE; UN,0,1,1
+Joint,Early childhood promotion,UN,BE,BE; SE; AC,AC; BE; SE,0,0,0
+Joint,Developing programs for the elderly,UN,BE,BE; CO; SE,AC; BE; CO; SE,0,0,0
+Joint,Providing opportunities for professional development and advancement,AC,AC,AC; SD; PO,AC; PO; SD; ST,1,1,1
+Joint,Increasing distribution,AC,UN,UN; SE; BE,BE; SE; UN,0,0,0
+Joint,Reducing material poverty,UN,SE,SE; UN; BE,BE; SE; UN,0,1,1
+Joint,Employee development,BE,AC,AC; SE; UN,AC; SE,0,0,0
+Joint,Mobility - Reducing Gaps,UN,AC,AC; SE; UN,AC; SE; UN,0,1,1
+Joint,Ability to execute quickly and thoroughly,AC,AC,AC; SD; PO,AC,1,1,1
+Joint,Developing a broad systemic vision,AC,AC,AC; PO; SD,AC; PO; SD; SE; UN,1,1,1
+Joint,Reducing gaps and improving the quality of life of Arab society in Israel,UN,UN,UN; SE; AC,AC; SE; UN,1,1,1
+Joint,Ability to promote change in people in the system,AC,AC,AC; PO; UN,AC; BE; FA; PO; SD; UN,1,1,1
+Joint,Creating change,UN,UN,UN; BE; SD,AC; BE; SD; UN,1,1,1
+Joint,Equal opportunities in employment,UN,UN,UN; AC; PO,AC; PO; SE; UN,1,1,1
+Joint,Source for basing decision making,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Joint,Professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Personal and professional progress,AC,AC,AC; FA; PO,AC,1,1,1
+Joint,To improve the lives of the residents of Israel,UN,SE,SE; BE; AC,AC; BE; SE,0,0,0
+Joint,Increasing brand awareness among strategic target audiences,AC,FA,FA; AC; PO,AC; FA; PO; SE,0,1,1
+Joint,To move forward in my career,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Progress of the wing,AC,AC,AC; UN; SD,AC,1,1,1
+Joint,Financial stability for the organization,SE,SE,SE; PO; AC,AC; PO; SE,1,1,1
+Joint,More equality,UN,UN,UN; SE; HU,UN,1,1,1
+Joint,Make a positive impact on a social challenge,AC,BE,BE; AC; UN,AC; BE; PO; SE; UN,0,1,1
+Joint,Connectivity,UN,AC,AC; SE; UN,AC; SE,0,1,0
+Joint,Building new capabilities in the Joint Eshel team,PO,AC,AC; SD; BE,AC; SD,0,0,0
+Joint,To promote the field of health in Arab society,UN,SE,SE; AC; BE,AC; BE; SE,0,0,0
+Joint,Benefit for populations in need,UN,BE,BE; SE; UN,BE; SE; UN,0,1,1
+Joint,Doing good,BE,AC,AC; BE; FA,AC; BE,0,1,1
+Joint,Desire for achievement,AC,AC,AC; ST; FA,AC; FA; ST,1,1,1
+Joint,Managing broader tasks with a wider impact,BE,AC,AC; UN; BE,AC; UN,0,1,0
+Joint,To feel loved and supported - appreciated,CO,SE,SE; BE; UN,BE; SE; UN,0,0,0
+Joint,Promote high professionalism,AC,AC,AC; FA; CO,AC; BE; CO; FA,1,1,1
+Joint,Sustainable economy,UN,UN,UN; AC; PO,AC; PO; UN,1,1,1
+Joint,Identifying opportunities for collaboration and new technologies that can advance employment programs,AC,AC,AC; SD; SE,AC; BE; SD; SE,1,1,1
+Joint,Expand my field of activity also in professional innovation,ST,AC,AC; SD; ST,AC; SD,0,1,0
+Joint,Cross-sectoral collaborations,UN,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,"Providing tools and methods for analysis, understanding, and creative thinking",SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,Help and support my team,BE,BE,BE; SE; AC,AC; BE; PO; SE,1,1,1
+Joint,To be heard,SD,SD,SD; UN; SE,SD; UN,1,1,1
+Joint,Strengthen self-learning skills in adults and in general,UN,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Joint,To feel significant and contributing,SD,AC,AC; FA; UN,AC; FA; ST; UN,0,0,0
+Joint,Continuous improvement,AC,AC,AC; BE; SD,AC,1,1,1
+Joint,integrity,AC,SE,SE; FA; UN,FA; SE,0,0,0
+Joint,Feel part of the strategic picture,AC,AC,AC; SE; UN,AC; SE,1,1,1
+Joint,Living in a more just society,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Equal opportunities,UN,UN,UN; AC; SD,UN,1,1,1
+Joint,Continue to help and increase the work of finding systemic solutions at the social level,AC,AC,AC; BE; SE,AC; BE; PO; SD; SE; UN,1,1,1
+Joint,To perform my duties to the best of my ability.,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Joint,"To do the job well and professionally, to feel that I am capable too, and not just others.",AC,AC,AC; SD; FA,AC; FA; SD; UN,1,1,1
+Joint,"Promoting leadership capacity for ""disadvantaged"" populations",UN,UN,UN; AC; PO,AC; FA; PO; SE; UN,1,1,1
+Joint,Be involved in a variety of areas,SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Joint,A fair and equal society,UN,UN,UN; SE; CO,SE; UN,1,1,1
+Joint,Impact on the government - systemic results measurement,AC,AC,AC; UN; PO,AC; PO; UN,1,1,1
+Joint,Professionalization,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Clearer role definition,SE,AC,AC; BE; UN,AC; BE; UN,0,0,0
+Joint,Systemic change in the education system,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Joint,Optimal impact on retirement processes in Israeli society,AC,AC,AC; SE; UN,AC; SE,1,1,1
+Joint,"Change that will affect the system on the one hand, and the individual on the other",AC,SE,SE; UN; AC,SE,0,1,0
+Joint,Establishing synergy between relevant organizations,AC,AC,AC; SE; UN,AC; SD; SE; UN,1,1,1
+Joint,Promoting the perception of the elderly in society,UN,UN,UN; CO; BE,BE; CO; FA; SE; UN,1,1,1
+Joint,involvement,SD,BE,BE; CO; UN,BE; CO; UN,0,0,0
+Joint,Management,PO,AC,AC; SE; CO,AC,0,0,0
+Joint,Creating equal opportunities,UN,UN,UN; SE; AC,SE; UN,1,1,1
+Joint,To be practical,AC,BE,BE; AC; UN,AC; BE; UN,0,1,1
+Joint,Equality between wings,UN,UN,UN; HU; AC,UN,1,1,1
+Joint,Integrity,BE,SE,SE; FA; UN,FA; SE; UN,0,0,0
+Joint,To provide the best guidance and assistance,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Joint,Promoting fairness in the Israeli job market,UN,UN,UN; BE; PO,BE; UN,1,1,1
+Joint,Impact on the quality of employment at the state level - more significant achievements,AC,AC,AC; SE; PO,AC; PO; SE,1,1,1
+Joint,Changing social perceptions towards weakened populations,UN,UN,UN; SE; BE,SE; UN,1,1,1
+Joint,Perfect work that helps professionals fulfill their role,AC,AC,AC; FA; BE,AC; BE; FA,1,1,1
+Joint,Empowering the people I meet along the way,AC,AC,AC; BE; SD,AC; BE; SD; ST; UN,1,1,1
+Joint,Social justice,UN,UN,UN; CO; AC,CO; UN,1,1,1
+Joint,"Learning, sharing and implementing purchasing procedures in my devision",BE,AC,AC; SD; BE,AC; BE; SD,0,1,1
+Joint,"Raising awareness of the need to always collaborate, in every sector and age, between health and well-being",AC,SE,SE; BE; AC,AC; BE; SE; UN,0,1,1
+Joint,uniformity,SE,UN,UN; HU; SE,UN,0,1,0
+Joint,Promoting the implementation of innovative technologies as data sources for decision-making,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Joint,Creating a fundamental change in the State of Israel's ability to deal with social challenges,UN,AC,AC; SE; BE,AC; BE; PO; SE; UN,0,0,1
+Joint,Advocating for disadvantaged populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Creative breakthroughs,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Joint,Creating organizational social knowledge,AC,AC,AC; BE; SD,AC; BE; SD; UN,1,1,1
+Joint,Reducing gaps,UN,BE,BE; SE; AC,AC; BE; SE,0,0,0
+Joint,To put social challenges on the national agenda,UN,PO,PO; SE; AC,AC; BE; PO; SE; UN,0,0,1
+Joint,Helping my company,AC,AC,AC; BE; PO,AC; BE; PO,1,1,1
+Joint,Digital and data-based social sector,UN,AC,AC; SE; UN,AC; BE; SE; UN,0,1,1
+Joint,Leveraging an Arab occupational society,UN,UN,UN; AC; SE,AC; SE; UN,1,1,1
+Joint,To help the weak,UN,BE,BE; UN; SE,BE; SE; UN,0,1,1
+Joint,Promoting original ways to advance the goals of Tevat,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Help my personal manager with his time management to give him the opportunity to deal with all the tasks he has.,AC,AC,AC; BE; SE,AC; BE; SE,1,1,1
+Joint,Promoting national mechanisms that will assimilate necessary responses ,AC,AC,AC; SE; PO,AC; BE; PO; SE; UN,1,1,1
+Joint,Integration into the organization in additional projects,AC,AC,AC; SE; PO,AC; SE,1,1,1
+Joint,Effectiveness,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Joint,Unity and uniformity between the various sectors of the population,UN,SE,SE; UN; TR,SE; UN,0,1,1
+Joint,Satisfaction,SD,SE,SE; UN; AC,SE; UN,0,0,0
+Joint,Promotion to a broader role,AC,AC,AC; UN; SE,AC,1,1,1
+Joint,"Continue to do meaningful, enjoyable, and fulfilling work.",SD,AC,AC; SD; ST,AC; HE; PO; SD; ST,0,1,1
+Joint,New international and inter-sectoral relations at the division level,AC,FA,FA; AC; PO,AC; FA; PO; SE,0,1,1
+Joint,New collaborations with significant players,AC,AC,AC; SE; ST,AC; FA; HE; SD; SE; ST; UN,1,1,1
+Joint,The elderly's sense of meaning,UN,BE,BE; TR; AC,AC; BE; TR,0,0,0
+Joint,Providing tools and methods to professionals in the field,PO,AC,AC; SD; BE,AC; BE; SD,0,0,0
+Joint,Learning and Development Consulting Space,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Joint,Connecting to the field from a big picture perspective,SD,AC,AC; UN; ST,AC; UN,0,0,0
+Joint,Professional development,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Joint,Optimal impact on the program's target audience,AC,AC,AC; UN; PO,AC; PO; UN,1,1,1
+Joint,Raising standards in the performance of tasks and products,UN,AC,AC; FA; UN,AC; FA,0,1,0
+Joint,Providing a beneficial rehabilitative response to the most vulnerable and marginalized populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Continued learning and development,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Organizational culture will always strive to operate inwardly from the same values ​​that motivate us to act in society.,UN,UN,UN; TR; AC,AC; CO; FA; PO; SD; TR; UN,1,1,1
+Joint,Optimal and empathetic management of the team,PO,AC,AC; BE; PO,AC; BE; PO,0,1,1
+Joint,Integration in society,UN,SE,SE; UN; AC,SE; UN,0,1,1
+Joint,Adapting the labor market to workers a little more,BE,UN,UN; AC; SE,AC; BE; SE; UN,0,0,1
+Joint,transparency,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Joint,Efficient work processes,AC,AC,AC; PO; BE,AC,1,1,1
+Joint,Diversity,SD,UN,UN; SD; TR,SD; UN,0,1,1
+Joint,Building the department's budgets,AC,PO,PO; SE; AC,AC; BE; PO; SE; UN,0,1,1
+Joint,"Ability to make decisions independently, based on considerations based on my understanding and experience",SD,SD,SD; AC; UN,AC; SD; UN,1,1,1
+Joint,To achieve achievements/influence the policies of government ministries to properly care for its citizens,AC,BE,BE; AC; SE,AC; BE; PO; SE,0,1,1
+Joint,Continued monitoring of the program after implementation,BE,AC,AC; UN; BE,AC; BE; PO; UN,0,1,1
+Joint,Equality,UN,SE,SE; UN; TR,SE,0,1,0
+Joint,National Impact,UN,UN,UN; AC; FA,AC; UN,1,1,1
+Joint,Creating a common language that emphasizes the organization's vision and goals within the organization and externally with government partners,AC,AC,AC; PO; FA,AC; FA; PO; SE; UN,1,1,1
+Joint,Promote the inclusion of children with delays/disabilities in kindergartens,UN,UN,UN; AC; BE,AC; BE; SE; UN,1,1,1
+Joint,Significant developments,AC,UN,UN; AC; SD,AC; UN,0,1,1
+Joint,Domain positioning,AC,AC,AC; UN; BE,AC; UN,1,1,1
+Joint,Leading social change,UN,UN,UN; AC; SD,AC; SD; UN,1,1,1
+Joint,Strengthen the wing in front of the ecosystem,AC,UN,UN; AC; ST,AC; UN,0,1,1
+Joint,Be involved in new projects,SD,AC,AC; SD; ST,AC; BE; SD; ST,0,1,1
+Joint,Promoting understanding and tolerance between sectors and populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Designing policies for disadvantaged communities,UN,UN,UN; BE; SE,AC; BE; PO; SE; UN,1,1,1
+Joint,Promoting solutions for vulnerable populations,UN,UN,UN; BE; SE,BE; SE; UN,1,1,1
+Joint,order,SE,SE,SE; CO; BE,,1,1,0
+Joint,Equal rights,UN,UN,UN; CO; SD,UN,1,1,1
+Joint,Expand people's ability to earn a decent living,UN,SE,SE; PO; AC,AC; PO; SD; SE,0,0,0
+Joint,To bring something new into the world,SD,SD,SD; AC; ST,AC; SD; ST; UN,1,1,1
+Joint,Do projects that address the problem at its root.,UN,AC,AC; UN; SD,AC; BE; SD; UN,0,1,1
+Joint,Promoting the social periphery in the north,UN,SE,SE; UN; ST,SE; ST; UN,0,1,1
+Joint,Greater team involvement in choosing their key tasks,SD,AC,AC; PO; BE,AC; BE; PO; SE,0,0,0
+Joint,Adapting ourselves to reality and outside needs,UN,SE,SE; AC; HU,AC; BE; HU; SE; ST; UN,0,0,1
+Joint,Helping to get out of poverty,UN,SE,SE; UN; BE,AC; BE; SE; UN,0,1,1
+Joint,Promote the goals of the organization,AC,AC,AC; FA; PO,AC; FA; PO; SE,1,1,1
+Joint,Management improvement in the social field,PO,AC,AC; BE; SD,AC; BE,0,0,0
+Joint,Treatment of infancy,UN,SE,SE; BE; AC,BE; SE,0,0,0
+Joint,Empowering the team I manage,PO,AC,AC; FA; PO,AC; FA; PO; SD,0,1,1
+Joint,Deepening the work of the organization in general,AC,AC,AC; BE; SD,AC; BE; SD; SE; UN,1,1,1
+Joint,Social inclusion of individuals and families in poverty,UN,SE,SE; UN; BE,BE; SE; UN,0,1,1
+Joint,Trust-based organization,BE,AC,AC; BE; SE,AC; BE; SE,0,1,1
+Joint,Fairness and justice,UN,UN,UN; BE; CO,BE; UN,1,1,1
+Joint,Listening to the environment and providing assistance,UN,UN,UN; BE; SE,BE; UN,1,1,1
+Joint,Improving government service,AC,AC,AC; BE; SE,AC; BE; SE,1,1,1
+Joint,Cultivating human capital and empowering women in Arab society,UN,AC,AC; UN; PO,AC; PO; SD; SE; UN,0,1,1
+Joint,People development,PO,AC,AC; BE; UN,AC; BE,0,0,0
+Joint,Creating quality public services,BE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Joint,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,efficiency,AC,AC,AC; BE; SE,AC,1,1,1
+Joint,Improving the lives of vulnerable populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Social justice,UN,UN,UN; CO; AC,CO; UN,1,1,1
+Joint,To make people feel respected and financially independent,AC,SD,SD; AC; PO,AC; FA; PO; SD,0,1,1
+Joint,Increasing brand engagement (money) among strategic target audiences,AC,PO,PO; AC; UN,AC; PO; SE; UN,0,1,1
+Joint,Learn and acquire knowledge from the programs and work in the department,AC,AC,AC; SD; SE,AC; SD,1,1,1
+Joint,Progress of the organization,AC,AC,AC; PO; BE,AC,1,1,1
+Joint,Employee development,BE,AC,AC; SE; UN,AC; SE,0,0,0
+Joint,Employment accessible to all populations,UN,UN,UN; SE; AC,AC; BE; SE; UN,1,1,1
+Joint,Enjoy and feel meaning,SD,SE,SE; HE; BE,BE; HE; SE,0,0,0
+Joint,Helpfulness,AC,BE,BE; AC; SE,AC; BE; SE,0,1,1
+Joint,Increasing collaboration between government ministries and the rest of the field dealing with the aging population in Israel,AC,BE,BE; SE; AC,AC; BE; SE; UN,0,1,1
+Joint,To promote and advance the digital sector in Arab authorities,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Joint,Introducing innovation into government offices,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Joint,GWENT support,CO,AC,AC; SD; BE,AC,0,0,0
+Joint,Order and organization,SE,AC,AC; CO; BE,AC; CO,0,0,0
+Joint,Personal development,SD,AC,AC; SE; SD,AC; SE,0,1,0
+Joint,Wake up in the morning with motivation,SD,AC,AC; ST; SD,AC; SD; SE; ST,0,1,1
+Joint,Social justice,UN,UN,UN; CO; AC,CO; UN,1,1,1
+Joint,Capacity building and human capital for disadvantaged populations,AC,AC,AC; UN; SE,AC; BE; SE; UN,1,1,1
+Joint,Developing innovation in action,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Joint,Continue to reap compliments for teamwork,AC,AC,AC; FA; SE,AC; FA,1,1,1
+Joint,Changing perceptions in a government office,UN,FA,FA; UN; AC,AC; FA; UN,0,1,1
+Joint,Integrating social and community aspects into government work,UN,SE,SE; BE; UN,AC; BE; SE; UN,0,1,1
+Joint,Change ageist perceptions in society,UN,UN,UN; HU; CO,CO; FA; HU; SE; UN,1,1,1
+Joint,To earn a decent wage,SE,PO,PO; AC; SE,AC; PO; SE,0,1,1
+Joint,Personal development,SD,AC,AC; SE; SD,AC; SE,0,1,0
+Joint,reliability,BE,UN,UN; BE; AC,AC; BE; UN,0,1,1
+Joint,Knowing that things are being done correctly and accompanied correctly in all aspects,SE,AC,AC; BE; UN,AC; BE,0,0,0
+Joint,Providing an opportunity for everyone to realize their personal potential,UN,AC,AC; SD; ST,AC; SD; ST,0,0,0
+Joint,Bride,UN,SE,SE; BE; CO,,0,0,0
+Joint,Continue to help and increase the work to find systemic solutions to social problems in collaboration with the public sector.,AC,AC,AC; SE; BE,AC; BE; PO; SE; UN,1,1,1
+Joint,Innovate and influence the products,AC,AC,AC; SD; PO,AC; PO; SD,1,1,1
+Joint,"Learn, grow and develop",SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Joint,Tolerance and empathy between different populations living in the State of Israel,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Creating a significant impact,UN,UN,UN; AC; PO,AC; PO; UN,1,1,1
+Joint,assessment,CO,AC,AC; UN; FA,AC; UN,0,0,0
+Joint,That the more senior team in the organization will also know me,CO,AC,AC; FA; PO,AC; CO; FA; PO; UN,0,0,1
+Joint,Improving the society in which I live,UN,SE,SE; AC; BE,AC; BE; SE,0,0,0
+Joint,Improving work processes and collecting research data,AC,AC,AC; SD; UN,AC; BE; SD; UN,1,1,1
+Joint,Fair treatment,BE,UN,UN; BE; CO,BE; UN,0,1,1
+Joint,Promoting the language among professionals,AC,AC,AC; FA; UN,AC; FA; SE; UN,1,1,1
+Joint,Consideration also given to the frail and confined elderly population,UN,SE,SE; BE; UN,BE; CO; SE; UN,0,1,1
+Joint,responsibility,BE,BE,BE; CO; UN,BE; CO,1,1,1
+Joint,Making information and services accessible,UN,BE,BE; AC; UN,AC; BE; SE; UN,0,1,1
+Joint,Identify effective innovation,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Joint,Act according to uniform procedures and not have everyone translate as they see fit,SE,CO,CO; AC; UN,AC; CO; TR; UN,0,0,0
+Joint,investment,AC,PO,PO; AC; SE,AC; PO,0,1,1
+Joint,responsibility,BE,BE,BE; CO; UN,BE; CO,1,1,1
+Joint,Promoting a sense of self-fulfillment and satisfaction,SD,SE,SE; SD; HE,AC; FA; HE; SD; SE; ST,0,1,1
+Joint,Improving the situation of service recipients,BE,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Joint,Accuracy and completion of markings,AC,AC,AC; BE; UN,AC; BE; UN,1,1,1
+Joint,Strengthening the bond between Jews and Arabs in Israel,UN,SE,SE; UN; BE,BE; SE; UN,0,1,1
+Joint,openness,UN,BE,BE; CO; UN,BE; CO; SD; UN,0,1,1
+Joint,Equal employment opportunities,UN,UN,UN; AC; SE,AC; SE; UN,1,1,1
+Joint,Narrowing the gap between strategy and the field in organizational work,SE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Joint,"In the organization itself: A diverse workplace that respects, promotes, encourages creativity and enjoyment at work",SD,SD,SD; UN; AC,AC; FA; SD; SE; ST; UN,1,1,1
+Joint,Promoting social cohesion,UN,SE,SE; BE; UN,BE; CO; SE; UN,0,1,1
+Joint,To produce clarity and vision,UN,AC,AC; BE; SE,AC; BE; SE,0,0,0
+Joint,success,AC,AC,AC; CO; BE,AC,1,1,1
+Joint,An inclusive and equal society,UN,UN,UN; SE; FA,SE; UN,1,1,1
+Joint,Equal opportunities,UN,UN,UN; AC; SD,UN,1,1,1
+Joint,To use my mind -- it exists!,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Joint,Professional development,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Joint,Excellence and organizational infrastructure in my fields,AC,AC,AC; SD; FA,AC; FA; SD,1,1,1
+Joint,Personal growth and advancement,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Promoting department/organization goals,AC,AC,AC; FA; PO,AC; FA; PO,1,1,1
+Joint,Improve the organization,SE,AC,AC; BE; PO,AC,0,0,0
+Joint,Positioning existing work and the successes of the programs to enable continued effective work,AC,AC,AC; BE; PO,AC; BE; PO,1,1,1
+Joint,Promote collaboration between ministries and sectors,AC,SE,SE; AC; BE,AC; BE; PO; SE,0,1,1
+Joint,Leave more of my mark,AC,SD,SD; AC; PO,AC; PO; SD,0,1,1
+Joint,Fairness,BE,UN,UN; BE; CO,UN,0,1,0
+Joint,Improving standards and providing opportunities for administrative employees in the organization,UN,AC,AC; FA; SE,AC; FA; SE,0,0,0
+Joint,Don't stay put - move forward,AC,SD,SD; ST; AC,AC; SD; ST,0,1,1
+Joint,Efficient and early planning of work (to avoid putting out fires all the time),AC,AC,AC; SE; BE,AC; BE; SE,1,1,1
+Joint,Expansion in Arab society and development of projects tailored to its needs,UN,SE,SE; UN; AC,AC; PO; SD; SE; UN,0,1,1
+Joint,Raise wages,SE,PO,PO; AC; SE,AC; PO; SE,0,1,1
+Joint,"Connection to global, technological and business trends at the division level",ST,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Joint,Improving technological systems infrastructure and improving processes for employees and managers,SE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Joint,Changing the perception of work in the Ministry of Economy,UN,AC,AC; SE; FA,AC; FA; SE,0,0,0
+Joint,Developing innovative professional tools and knowledge in the field of employment,UN,AC,AC; SD; BE,AC; SD,0,0,0
+Joint,Compliance with the strategic planning program,AC,AC,AC; CO; BE,AC; BE; CO,1,1,1
+Joint,"Aspiration for professionalism - understanding the broader context, focus, and specialization",AC,AC,AC; FA; UN,AC; FA; SD; UN,1,1,1
+Joint,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Freedom to create and promote issues that are important to me,SD,SD,SD; AC; UN,AC; FA; SD; UN,1,1,1
+Joint,Creating a significant change within me,UN,SE,SE; UN; SD,SD; SE; UN,0,1,1
+Joint,"Create a sense of meaning and creativity at work over time, both towards employees and towards actions towards the company",SD,AC,AC; SD; ST,AC; FA; HE; SD; SE; ST,0,1,1
+Joint,Professional and personal growth,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Joint,Getting out of poverty,UN,SE,SE; UN; AC,AC; PO; SE; UN,0,1,1
+Joint,Providing quality and personal service to citizens,CO,AC,AC; BE; SE,AC; BE; SE,0,0,0
+Joint,Professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Joint,Comprehensive organizational vision (vertical and horizontal),SE,AC,AC; SD; PO,AC,0,0,0
+Joint,Innovation,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Joint,Taking collective responsibility on the part of populations,UN,BE,BE; SE; PO,BE; CO; PO; SE,0,0,0
+Joint,Continue to learn and specialize in the field,AC,AC,AC; SD; ST,AC; SD,1,1,1
+Joint,creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Joint,To expand our operations in a substantial and relevant manner,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Joint,Treat the JDC employees as a humane social organization.,SE,CO,CO; UN; FA,CO; FA; SE; UN,0,0,1
+Joint,Better connection between the organization and the program,SE,SE,SE; BE; AC,AC; BE; FA; PO; SE,1,1,1
+Joint,"Change at the individual, family, community level",UN,SE,SE; BE; AC,BE; SE,0,0,0
+Joint,Continued streamlining of the joint horizontal work between the various JDC departments,AC,AC,AC; SE; BE,AC; SE,1,1,1
+Joint,Influence positive perceptions of policymakers,AC,PO,PO; FA; UN,AC; BE; FA; PO; SE; UN,0,0,1
+Joint,Social impact,UN,UN,UN; SE; FA,FA; SE; UN,1,1,1
+Joint,Developing customized answers,UN,AC,AC; BE; UN,AC; BE; SD; UN,0,1,1
+Joint,Personal and professional growth,AC,AC,AC; SD; PO,AC; SD,1,1,1
+Joint,Influence the target population,AC,PO,PO; AC; FA,AC; FA; PO,0,1,1
+Joint,To advance professionally,AC,AC,AC; ST; SD,AC; ST,1,1,1
+Joint,Promotion and empowerment of different populations,UN,UN,UN; AC; PO,AC; FA; PO; SD; SE; UN,1,1,1
+Joint,Inter-sectoral partnership for disadvantaged populations,UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Joint,Punctuality,AC,AC,AC; CO; UN,AC; CO,1,1,1
+Joint,Promoting equality between sectors,UN,UN,UN; SE; AC,SE; UN,1,1,1
+Joint,To create social change,UN,UN,UN; PO; AC,AC; BE; PO; SD; SE; UN,1,1,1
+Joint,"Advertise in the media about good/positive deeds, not just those of the Joint",AC,BE,BE; UN; FA,BE; FA; UN,0,0,0
+Joint,A better world,UN,AC,AC; BE; UN,AC; BE; UN,0,1,1
+Joint,Building an induction/guidance process for managers and employees regardless of their seniority/rank,AC,AC,AC; UN; SE,AC; SE; UN,1,1,1
+Joint,"Professional growth and development, realization of abilities and skills",AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Joint,Training staff for social assistance and giving,AC,AC,AC; BE; SE,AC; BE; SE,1,1,1
+Joint,"Improving citizen services in Israel and, if possible, influencing the global circle as well.",UN,SE,SE; PO; AC,AC; BE; PO; SE; UN,0,0,1
+Joint,Strengthening cooperation with government ministries,AC,SE,SE; AC; BE,AC; BE; PO; SE,0,1,1
+Joint,Creating new connections in support of achieving various goals,AC,AC,AC; SE; UN,AC; BE; FA; SD; SE; ST; UN,1,1,1
+Joint,Improving the attitudes of professionals towards families in poverty,UN,SE,SE; UN; BE,BE; SE; UN,0,1,1
+Joint,Advanced organization,SE,AC,AC; SE; BE,AC,0,1,0
+Joint,Equal opportunities,UN,UN,UN; AC; SD,UN,1,1,1
+Ultra,the professionalism,AC,AC,AC; BE; FA,AC,1,1,1
+Ultra,accuracy,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Ultra,accuracy,AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Ultra,Increasing working hours,AC,AC,AC; SE; SD,AC; SE,1,1,1
+Ultra,Fulfilling dreams and goals,AC,AC,AC; ST; SD,AC; SD; ST,1,1,1
+Ultra,Educational material supplier,AC,AC,AC; SD; BE,AC; BE; SD,1,1,1
+Ultra,Excellent material transfer,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Ultra,Increasing the value of teaching,AC,AC,AC; PO; SD,AC; PO; SD,1,1,1
+Ultra,assessment,AC,AC,AC; UN; FA,AC; UN,1,1,1
+Ultra,success,AC,AC,AC; CO; BE,AC,1,1,1
+Ultra,The love of children,TR,BE,BE; SE; HE,BE,0,0,0
+Ultra,success,AC,AC,AC; CO; BE,AC,1,1,1
+Ultra,success,AC,AC,AC; CO; BE,AC,1,1,1
+Ultra,Expansion of institutions,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Ultra,Higher education achievements at a professional level,AC,AC,AC; FA; UN,AC,1,1,1
+Ultra,A broader impact in the field of training in which I work,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Ultra,Persistence in what I do,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Ultra,Professionalization - Progress,AC,AC,AC; FA; SD,AC,1,1,1
+Ultra,Specialization in my field,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Ultra,Work progress,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Ultra,Professional advancement,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Ultra,Professional knowledge,AC,AC,AC; BE; SD,AC; BE,1,1,1
+Ultra,Significant knowledge,AC,AC,AC; UN; SD,AC; BE; SD; UN,1,1,1
+Ultra,Creating a parent community around the educational institution,AC,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Ultra,Increase position,AC,AC,AC; UN; SD,AC,1,1,1
+Ultra,To fulfill my talents and professional dreams,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Ultra,To fulfill myself,AC,SD,SD; HE; ST,HE; HU; SD; ST,0,0,0
+Ultra,Guide teaching teams properly to develop emotionally healthy and independent students.,AC,AC,AC; SD; SE,AC; BE; SD; SE; UN,1,1,1
+Ultra,To get my kindergarteners to a high level,AC,AC,AC; CO; SD,AC,1,1,1
+Ultra,To be effective,AC,AC,AC; SE; BE,AC; BE; SE,1,1,1
+Ultra,Be effective and promote children,AC,AC,AC; BE; CO,AC; BE; CO,1,1,1
+Ultra,Be as professional as possible,AC,AC,AC; CO; FA,AC; BE; CO; FA,1,1,1
+Ultra,To be professionally valued,AC,FA,FA; AC; PO,AC; CO; FA; PO; UN,0,1,1
+Ultra,To be goal-oriented,AC,AC,AC; CO; BE,AC; CO,1,1,1
+Ultra,Be professional,AC,CO,CO; AC; BE,AC; BE; CO; FA,0,1,1
+Ultra,To be professional in educational matters,AC,AC,AC; FA; BE,AC; FA,1,1,1
+Ultra,To be truly suited to my role.,AC,AC,AC; ST; BE,AC; BE; ST,1,1,1
+Ultra,Deliver the learning material in the best possible way,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Ultra,To enhance the status of the teacher,AC,FA,FA; AC; UN,AC; FA; UN,0,1,1
+Ultra,Strengthen the teaching profession,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Ultra,succeed,AC,AC,AC; BE; CO,AC,1,1,1
+Ultra,To teach the basic material in the best possible way.,AC,AC,AC; SD; UN,AC; SD; UN,1,1,1
+Ultra,To teach the beginning of reading in the best possible way.,AC,AC,AC; SD; BE,AC; BE; SD,1,1,1
+Ultra,influence,AC,SE,SE; UN; SD,SD; SE; UN,0,0,0
+Ultra,"To influence wider circles, beyond the boundaries of the classroom",AC,AC,AC; UN; FA,AC; FA; PO; SD; SE; UN,1,1,1
+Ultra,To influence others,AC,SD,SD; UN; PO,AC; BE; CO; PO; SD; UN,0,0,1
+Ultra,"To specialize in another field of teaching, in professions where the work is pronto",AC,AC,AC; SD; SE,AC; SD,1,1,1
+Ultra,To become more professional,AC,AC,AC; FA; CO,AC; BE; CO; FA,1,1,1
+Ultra,Develop professionally,AC,AC,AC; SD; BE,AC,1,1,1
+Ultra,To develop professionally,AC,AC,AC; ST; SD,AC; SD; ST,1,1,1
+Ultra,To advance in rank,AC,AC,AC; FA; UN,AC,1,1,1
+Ultra,Advance in professional training,AC,AC,AC; SD; SE,AC; SD,1,1,1
+Ultra,To advance in positions,AC,AC,AC; PO; FA,AC; PO,1,1,1
+Ultra,Advance to training,AC,AC,AC; ST; UN,AC,1,1,1
+Ultra,To advance professionally and personally,AC,AC,AC; SD; ST,AC; FA; SD; ST,1,1,1
+Ultra,To advance professionally and do what I do best.,AC,AC,AC; SD; FA,AC; FA; PO; SD,1,1,1
+Ultra,To be more professional,AC,AC,AC; CO; FA,AC; BE; CO; FA,1,1,1
+Ultra,To create a high-quality and experiential teaching process,AC,AC,AC; SD; BE,AC; SD,1,1,1
+Ultra,Teach the students the material,AC,AC,AC; SD; CO,AC; SD,1,1,1
+Ultra,To teach my profession well,AC,AC,AC; CO; FA,AC; CO; FA,1,1,1
+Ultra,To study and become professionally skilled,AC,AC,AC; SD; ST,AC; SD; ST,1,1,1
+Ultra,Study other subjects related to education,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Ultra,Learn more and become a professional,AC,AC,AC; SD; PO,AC; SD,1,1,1
+Ultra,Optimal learning,AC,AC,AC; UN; SD,AC; SD; UN,1,1,1
+Ultra,To do my job professionally and faithfully.,AC,AC,AC; BE; CO,AC; BE; CO; FA,1,1,1
+Ultra,to do a master's degree,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Ultra,Get a professional concentration,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Ultra,promote,AC,AC,AC; SE; BE,AC; SE,1,1,1
+Ultra,promote,AC,AC,AC; SE; BE,AC; SE,1,1,1
+Ultra,Promote me,AC,AC,AC; FA; SD,AC; FA,1,1,1
+Ultra,Promote the school,AC,AC,AC; FA; SE,AC; FA; SE,1,1,1
+Ultra,"Promote a professional educational team, namely professional assistants",AC,AC,AC; FA; BE,AC; FA,1,1,1
+Ultra,Promote value-based social programs,AC,TR,TR; BE; SE,BE; SE; TR,0,0,0
+Ultra,See satisfaction and results on the ground,AC,AC,AC; UN; FA,AC; UN,1,1,1
+Ultra,Good manager,AC,AC,AC; BE; PO,AC; BE,1,1,1
+Ultra,Excellence,AC,AC,AC; SD; FA,AC,1,1,1
+Ultra,Excellence and capability,AC,AC,AC; SD; FA,AC; FA; SD,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,professionalism,AC,AC,AC; FA; CO,AC; FA,1,1,1
+Ultra,Planing,AC,AC,AC; UN; BE,AC; BE; UN,1,1,1
+Ultra,"Satisfaction, results",AC,UN,UN; AC; BE,AC; BE; UN,0,1,1
+Ultra,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Ultra,Compliance with the curriculum,AC,AC,AC; CO; BE,AC; CO,1,1,1
+Ultra,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Ultra,Promotion,AC,SE,SE; UN; AC,,0,1,0
+Ultra,Personal and social advancement,AC,AC,AC; FA; ST,AC; FA; SE; ST,1,1,1
+Ultra,Promoting the English language in school and urban success,AC,AC,AC; SE; UN,AC; SE,1,1,1
+Ultra,Academic advancement,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Ultra,Academic advancement,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Ultra,Professional advancement - to specialize in my teaching field to the best level,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Ultra,Promoting advanced pedagogy and promoting academic achievements,AC,AC,AC; SD; FA,AC; SD,1,1,1
+Ultra,Educational level,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Ultra,Educational level,AC,AC,AC; UN; SD,AC; UN,1,1,1
+Ultra,That they will succeed in the matriculation exams,AC,AC,AC; BE; UN,AC,1,1,1
+Ultra,That the environment will believe and trust my professionalism,AC,AC,AC; FA; PO,AC; BE; FA; PO,1,1,1
+Ultra,That students will master the material being taught,AC,AC,AC; SD; UN,AC; SD,1,1,1
+Ultra,Correct singing and precision in playing,AC,AC,AC; TR; ST,AC; HE; ST; TR,1,1,1
+Ultra,who want to be more professional,AC,AC,AC; FA; SD,AC; FA; PO; SD,1,1,1
+Ultra,Be aware of the work,AC,AC,AC; BE; SD,AC; BE; SD,1,1,1
+Ultra,Feeling of competence,AC,AC,AC; SE; FA,AC; FA; SE,1,1,1
+Ultra,Feeling of competence,AC,AC,AC; SE; FA,AC; FA; SE,1,1,1
+Ultra,Conditions and promotion,AC,AC,AC; FA; CO,AC,1,1,1
+Ultra,"Promoting children in the cognitive, emotional, and motor areas",BE,AC,AC; SE; SD,AC; BE; SD; SE,0,0,1
+Ultra,That the students will love the place they come to in the morning,BE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Ultra,Love all students unconditionally and with success,BE,AC,AC; BE; FA,AC; BE,0,1,1
+Ultra,Good atmosphere,BE,SE,SE; HE; UN,HE; SE; UN,0,0,0
+Ultra,Happy atmosphere,BE,HE,HE; SE; BE,BE; HE; SE,0,1,1
+Ultra,Happiness and satisfaction in children,BE,SE,SE; BE; HE,AC; BE; HE; SE,0,1,1
+Ultra,unity,BE,AC,AC; BE; SE,,0,1,0
+Ultra,unity,BE,AC,AC; BE; SE,,0,1,0
+Ultra,Unity in the classroom,BE,SE,SE; AC; CO,AC; CO; SE; TR; UN,0,0,0
+Ultra,Brotherhood,BE,CO,CO; TR; BE,CO,0,1,0
+Ultra,responsibility,BE,BE,BE; CO; UN,BE; CO,1,1,1
+Ultra,Work-life balance,BE,SE,SE; BE; SD,BE; SE,0,1,1
+Ultra,Correct interaction with my students,BE,CO,CO; AC; BE,AC; BE; CO,0,1,1
+Ultra,Trust from the team,BE,FA,FA; AC; PO,AC; BE; FA; PO,0,0,1
+Ultra,reliability,BE,UN,UN; BE; AC,AC; BE; UN,0,1,1
+Ultra,the potential of children,BE,AC,AC; BE; SD,AC; BE; SD; ST,0,1,1
+Ultra,Student safety,BE,SE,SE; CO; BE,CO; SE,0,1,0
+Ultra,Self-confidence for students,BE,AC,AC; SE; FA,AC; FA; SE,0,0,0
+Ultra,Interpersonal relations,BE,SE,SE; BE; FA,BE; FA; SE; UN,0,1,1
+Ultra,A man to his friend,BE,BE,BE; SE; CO,BE; CO; SE,1,1,1
+Ultra,Building ones stature,BE,AC,AC; FA; HU,AC,0,0,0
+Ultra,The construction of the child,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Ultra,In conditions suitable for my home and family,BE,BE,BE; SE; UN,BE; SE,1,1,1
+Ultra,Concern for the future generation,BE,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Ultra,Understanding and expression,BE,UN,UN; SD; AC,AC; SD; UN,0,0,0
+Ultra,Understanding the other,BE,UN,UN; AC; BE,AC; UN,0,1,0
+Ultra,Understanding the girls,BE,BE,BE; UN; CO,BE,1,1,1
+Ultra,Entering the correct values,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Ultra,Instilling values ​​and virtues,BE,TR,TR; CO; FA,CO; FA; TR,0,0,0
+Ultra,Academic achievements,BE,AC,AC; FA; SD,AC; FA,0,0,0
+Ultra,Enjoyment for students,BE,AC,AC; ST; HE,AC; HE; ST,0,0,0
+Ultra,Instilling values,BE,AC,AC; TR; SE,AC; SE; TR,0,0,0
+Ultra,Granting tools,BE,AC,AC; BE; UN,AC; BE,0,1,1
+Ultra,Empowering the facts,BE,AC,AC; SD; FA,AC; FA; PO; SD; UN,0,0,0
+Ultra,Enrichment and development at its best,BE,AC,AC; SD; ST,AC; SD; SE; ST; UN,0,0,0
+Ultra,Personal academic and emotional success of each student,BE,AC,AC; FA; SE,AC; FA; SE,0,0,0
+Ultra,Success in advancing students in life skills,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Success in advancing students in reading,BE,AC,AC; SD; BE,AC,0,1,0
+Ultra,Success in concentrating on the social sphere at school,BE,AC,AC; SE; FA,AC; CO; FA; SE,0,0,0
+Ultra,The success of the students,BE,AC,AC; FA; BE,AC,0,1,0
+Ultra,Student success,BE,AC,AC; BE; CO,AC,0,1,0
+Ultra,Teaching skills that will give the student the tools to develop as an independent adult,BE,AC,AC; SD; ST,AC; BE; SD; ST,0,0,1
+Ultra,Instilling values,BE,AC,AC; TR; SE,AC; SE; TR,0,0,0
+Ultra,You bought values,BE,UN,UN; AC; BE,,0,1,0
+Ultra,Personal progress of each student,BE,AC,AC; UN; BE,AC,0,1,0
+Ultra,"And again, to show love for the children",BE,BE,BE; SE; TR,BE; SE; TR,1,1,1
+Ultra,company,BE,AC,AC; SE; CO,,0,0,0
+Ultra,company,BE,AC,AC; SE; CO,,0,0,0
+Ultra,company,BE,AC,AC; SE; CO,,0,0,0
+Ultra,company,BE,AC,AC; SE; CO,,0,0,0
+Ultra,Company and interest in life,BE,ST,ST; HE; SE,AC; BE; HE; SD; SE; ST,0,0,1
+Ultra,Good company,BE,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Ultra,Good company,BE,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Ultra,Sociality,BE,SE,SE; HE; UN,FA; HE; SE; UN,0,0,0
+Ultra,Warmth and love,BE,BE,BE; SE; HE,BE; HE; SE,1,1,1
+Ultra,Warmth and love for students,BE,BE,BE; SE; TR,BE; SE; TR,1,1,1
+Ultra,Empowering girls and helping them believe in themselves,BE,AC,AC; UN; FA,AC; FA; SD; SE; ST; UN,0,0,0
+Ultra,Education,BE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Education,BE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Education,BE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Education,BE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Educating the future generation,BE,AC,AC; SD; BE,AC; BE; SD; SE,0,1,1
+Ultra,Education and values ​​before learning,BE,TR,TR; AC; SD,AC; SD; TR,0,0,0
+Ultra,Education of Israeli children,BE,AC,AC; BE; SD,AC; BE,0,1,1
+Ultra,Education for love of others,BE,BE,BE; TR; AC,AC; BE; TR; UN,1,1,1
+Ultra,Education from love,BE,AC,AC; BE; SD,AC; BE; SD,0,1,1
+Ultra,Education from the heart,BE,AC,AC; SD; TR,AC; BE; SD; SE; TR,0,0,1
+Ultra,Proper education for a healthy mind for today's generation,BE,AC,AC; SE; SD,AC; BE; SD; SE,0,0,1
+Ultra,"Life wisdom, formal arithmetic learning and more",BE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Ultra,Warm love and giving,BE,BE,BE; SE; HE,BE; HE; SE,1,1,1
+Ultra,The welfare of students,BE,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Ultra,As much knowledge and skills as possible,BE,AC,AC; SD; ST,AC; SD,0,0,0
+Ultra,Integrity,BE,SE,SE; FA; UN,FA; SE; UN,0,0,0
+Ultra,Personal and close approach to teaching,BE,AC,AC; BE; CO,AC; BE; CO; SD,0,1,1
+Ultra,Personal attention to each student,BE,AC,AC; BE; CO,AC; BE,0,1,1
+Ultra,"A warm, loving and caring attitude towards each child and a good relationship with the other staff at the kindergarten",BE,BE,BE; SE; CO,AC; BE; CO; SE,1,1,1
+Ultra,A more personal approach to each child,BE,BE,BE; AC; SD,AC; BE; SD,1,1,1
+Ultra,Respectful relationship between students,BE,FA,FA; CO; TR,CO; FA; TR,0,0,0
+Ultra,Creating a pleasant and accessible learning climate for all students,BE,SE,SE; AC; BE,AC; BE; SE; UN,0,1,1
+Ultra,Creating a safe space for students,BE,SE,SE; CO; BE,BE; CO; SE; UN,0,1,1
+Ultra,All a student needs is someone who believes in her and sees the good in her.,BE,AC,AC; BE; FA,AC; BE; FA,0,1,1
+Ultra,sincerity,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Ultra,sincerity,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Ultra,To love the students,BE,BE,BE; AC; TR,AC; BE,1,1,1
+Ultra,"Build a special education system for every child, like in special education kindergartens.",BE,UN,UN; AC; SE,AC; BE; SE; UN,0,0,1
+Ultra,Raise a quality generation,BE,AC,AC; BE; SE,AC; BE; PO; SE; TR,0,1,1
+Ultra,To raise a generation that is proud of its roots and continues them and does not lose its balance as soon as things change for it.,BE,TR,TR; SE; BE,AC; BE; SE; TR,0,1,1
+Ultra,"Raising a sensitive, happy, and high-quality generation",BE,BE,BE; SE; HE,BE; SE,1,1,1
+Ultra,To enable students to maximize their talents,BE,AC,AC; SD; ST,AC; SD; ST,0,0,0
+Ultra,"Taking care of every student, not giving up on any girl, paying attention to the soul",BE,BE,BE; SE; UN,AC; BE; SE; UN,1,1,1
+Ultra,To care for the well-being and happiness of students,BE,SE,SE; BE; HE,BE; HE; SE,0,1,1
+Ultra,Ensure that each child receives professional assistance according to their needs.,BE,UN,UN; BE; AC,AC; BE; SE; UN,0,1,1
+Ultra,"Believe in the child and in the child, and instill mutual trust in him/her",BE,BE,BE; AC; SE,AC; BE; FA; SE,1,1,1
+Ultra,Understand the students' world and connect with their academic and emotional needs,BE,AC,AC; SE; BE,AC; BE; SE; UN,0,1,1
+Ultra,To express appreciation,BE,BE,BE; AC; FA,AC; BE; FA,1,1,1
+Ultra,Increase the sense of self-confidence of each child,BE,AC,AC; SE; FA,AC; FA; SD; SE,0,0,0
+Ultra,Reaching children,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Ultra,To bring out the worker's skills,BE,AC,AC; FA; SD,AC; FA; PO; SD,0,0,0
+Ultra,To leave a mark on my educational path for the future generation,BE,AC,AC; BE; UN,AC; BE,0,1,1
+Ultra,To be a listening ear,BE,BE,BE; SE; UN,BE; SE; UN,1,1,1
+Ultra,To be caring,BE,BE,BE; SE; UN,BE; SE,1,1,1
+Ultra,Being in a meaningful role for them in life,BE,BE,BE; ST; AC,BE,1,1,1
+Ultra,"Be attentive to the students' academic, social, and emotional needs and act accordingly where possible.",BE,SE,SE; BE; AC,AC; BE; CO; SE; UN,0,1,1
+Ultra,To be for them,BE,BE,BE; SE; FA,BE; FA; SE,1,1,1
+Ultra,To be an address for every student,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Ultra,To be a meaningful teacher for my students,BE,AC,AC; BE; ST,AC; BE,0,1,1
+Ultra,To be connected,BE,SE,SE; BE; HE,BE; SE,0,1,1
+Ultra,To be meaningful to them in life,BE,BE,BE; SE; ST,BE; SE,1,1,1
+Ultra,To accommodate at-risk students......,BE,UN,UN; BE; SE,BE; SE; UN,0,1,1
+Ultra,Preparing my students for life outside,BE,AC,AC; BE; SE,AC; BE; SE; ST,0,1,1
+Ultra,Introducing theater studies into the education system that are tailored to the ultra-Orthodox sector will give expression to many more girls who lack academic abilities.,BE,AC,AC; UN; SD,AC; SD; ST; UN,0,0,0
+Ultra,To impart professional knowledge,BE,AC,AC; SD; UN,AC; BE; SD; UN,0,0,1
+Ultra,To improve the quality of life of my students,BE,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Ultra,To raise a generation of happy women,BE,BE,BE; SE; HE,BE; HE; SE,1,1,1
+Ultra,To provide mental resilience to children,BE,SE,SE; BE; AC,AC; BE; SE,0,1,1
+Ultra,To give students an experience of success.,BE,AC,AC; ST; FA,AC; FA; ST,0,0,0
+Ultra,To empower and include every child,BE,UN,UN; AC; SE,AC; BE; SE; UN,0,0,1
+Ultra,Reduce the number of children in kindergarten,BE,AC,AC; BE; UN,AC; BE; UN,0,1,1
+Ultra,To succeed in introducing them into a social circle,BE,SE,SE; FA; UN,AC; CO; FA; SE; UN,0,0,0
+Ultra,To impart knowledge,BE,AC,AC; SD; UN,AC; BE; SD; UN,0,0,1
+Ultra,To provide them with new knowledge,BE,AC,AC; SD; UN,AC; BE; SD; UN,0,0,1
+Ultra,To provide students with tools to build a happy life.,BE,SE,SE; AC; BE,AC; BE; SE; ST,0,1,1
+Ultra,To instill good values ​​and virtues in students.,BE,TR,TR; CO; BE,AC; BE; CO; FA; TR,0,1,1
+Ultra,To impart learning skills,BE,AC,AC; SD; BE,AC; BE; SD,0,1,1
+Ultra,To provide students with SEL skills,BE,AC,AC; BE; SD,AC; BE; SD,0,1,1
+Ultra,To influence the younger generation,BE,AC,AC; BE; PO,AC; BE; CO; PO; SD; SE; UN,0,1,1
+Ultra,Invest in children,BE,BE,BE; AC; SD,AC; BE; SD,1,1,1
+Ultra,Accompanying professional women,BE,AC,AC; FA; ST,AC; FA; ST,0,0,0
+Ultra,Remember that my word continues to accompany people who heard it for better and for worse.,BE,BE,BE; FA; CO,BE; CO; FA; UN,1,1,1
+Ultra,Connect the students,BE,AC,AC; SE; BE,AC; BE; SE,0,1,1
+Ultra,Strengthen their values ​​and resilience,BE,TR,TR; BE; SE,AC; BE; SE; TR; UN,0,1,1
+Ultra,educate,BE,AC,AC; BE; SD,AC; BE; CO; SD,0,1,1
+Ultra,Educate the future generation with a good education,BE,AC,AC; SE; BE,AC; BE; SE; UN,0,1,1
+Ultra,Educating the next generation,BE,AC,AC; SD; BE,AC; BE; SD,0,1,1
+Ultra,Educate the next generation to be good people today,BE,AC,AC; BE; SE,AC; BE; CO; SE,0,1,1
+Ultra,Educate for inclusion,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Ultra,To educate in the right values,BE,TR,TR; BE; AC,AC; BE; CO; SD; TR,0,1,1
+Ultra,Create a pleasant learning space for students,BE,AC,AC; SE; SD,AC; HE; SD; SE,0,0,0
+Ultra,To create a better and more quality future generation,BE,BE,BE; SE; UN,AC; BE; SE; UN,1,1,1
+Ultra,Create learning experiences,BE,AC,AC; SD; ST,AC; SD; ST,0,0,0
+Ultra,Create a pleasant educational environment for students,BE,SE,SE; AC; HE,AC; BE; HE; SE,0,0,1
+Ultra,Establish a warm and close relationship with the students,BE,SE,SE; BE; FA,BE; CO; FA; SE; TR,0,1,1
+Ultra,"Create a study routine with healthy boundaries, curiosity, encouragement, and joy",BE,AC,AC; SD; ST,AC; HE; SD; ST,0,0,0
+Ultra,"Teach them material, and have them pass their matriculation exams with great success.",BE,AC,AC; SD; UN,AC; SD,0,0,0
+Ultra,To teach my students true values/decency,BE,CO,CO; TR; FA,BE; CO; FA; TR,0,0,1
+Ultra,Teaching children to express emotions and understand what they mean,BE,SE,SE; UN; BE,AC; BE; SD; SE; UN,0,1,1
+Ultra,To work faithfully and honestly,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Ultra,Help others,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Ultra,Helping girls emerge prepared for life,BE,AC,AC; BE; SE,AC; BE; SD; SE,0,1,1
+Ultra,To help my classmates,BE,AC,AC; BE; SE,AC; BE; SE; UN,0,1,1
+Ultra,To do good for our students,BE,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Ultra,To develop in them intelligence and world knowledge,BE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Ultra,Develop additional knowledge circles for students,BE,AC,AC; SD; BE,AC; BE; SD; UN,0,1,1
+Ultra,"Develop an interest in learning, not just a sense of necessity",BE,SD,SD; AC; ST,AC; HE; SD; ST,0,0,0
+Ultra,"To smite him on all levels: cognitive, emotional, social and physical.",BE,SE,SE; CO; AC,AC; CO; SE,0,0,0
+Ultra,To advance students academically,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Promote student communication (Hinuma),BE,AC,AC; SE; BE,AC; BE; FA; SE; UN,0,1,1
+Ultra,Promote children's abilities,BE,AC,AC; SD; BE,AC; BE; SD; ST,0,1,1
+Ultra,To advance all kindergarten children in terms of learning and skills.,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,To truly advance my students and be meaningful to them.,BE,AC,AC; SD; ST,AC; FA; SD; ST,0,0,0
+Ultra,Promote empowerment among students,BE,AC,AC; SD; UN,AC; FA; PO; SD; UN,0,0,0
+Ultra,Promote children,BE,BE,BE; AC; SD,AC; BE; SD,1,1,1
+Ultra,To promote academically weak children,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Ultra,Promote children in every way,BE,AC,AC; BE; SD,AC; BE; SD,0,1,1
+Ultra,To advance each student to the maximum extent possible in all areas,BE,AC,AC; SD; ST,AC; SD,0,0,0
+Ultra,Advance academically as much as possible,BE,AC,AC; SD; ST,AC; SD,0,0,0
+Ultra,Professionally promote staff members,BE,AC,AC; FA; PO,AC; FA; PO,0,0,0
+Ultra,Promote female students,BE,AC,AC; UN; FA,AC; FA; UN,0,0,0
+Ultra,Promote female students,BE,AC,AC; UN; FA,AC; FA; UN,0,0,0
+Ultra,Promote struggling students,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Ultra,To see them succeed and progress,BE,AC,AC; SD; ST,AC; SD,0,0,0
+Ultra,To see in everything first the best interests of the child in front of me,BE,BE,BE; UN; CO,BE; UN,1,1,1
+Ultra,"To hear, understand, and guide students at critical crossroads in their lives.",BE,BE,BE; AC; UN,AC; BE; SE; UN,1,1,1
+Ultra,To give,BE,BE,BE; AC; UN,AC; BE,1,1,1
+Ultra,To lend a listening ear and inclusion to female students (high school),BE,UN,UN; SE; BE,BE; SE; UN,0,1,1
+Ultra,To give my soul to my students,BE,AC,AC; BE; TR,AC; BE; SD; TR,0,1,1
+Ultra,"Give a good feeling of ""I'm here"" and ""I see you""",BE,BE,BE; SE; UN,BE; SE,1,1,1
+Ultra,Give everything that is needed in the emotional sphere,BE,BE,BE; SE; HE,BE; HE; SE,1,1,1
+Ultra,"Give girls strength, encouragement, self-confidence, and emotional support",BE,SE,SE; BE; AC,AC; BE; SE; UN,0,1,1
+Ultra,Give them a sense of success,BE,AC,AC; FA; SE,AC; FA; SE,0,0,0
+Ultra,To give them meaning,BE,BE,BE; UN; SE,BE; UN,1,1,1
+Ultra,"Give them strength, knowledge and profession",BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Provide children with higher education,BE,AC,AC; SE; BE,AC; BE; SE; UN,0,1,1
+Ultra,Let every child know that they are inherently good.,BE,AC,AC; BE; FA,AC; BE; CO; FA,0,1,1
+Ultra,To give each student the best and most for themselves,BE,AC,AC; SD; UN,AC; BE; FA; SD; UN,0,0,1
+Ultra,Give each student a tailored response,BE,AC,AC; UN; BE,AC; BE; UN,0,1,1
+Ultra,Make students feel good,BE,SE,SE; BE; HE,AC; BE; HE; SE; UN,0,1,1
+Ultra,Give students a sense of success,BE,AC,AC; FA; SE,AC; FA; SE,0,0,0
+Ultra,Make room for children,BE,BE,BE; UN; SE,BE; UN,1,1,1
+Ultra,Computers are accessible to students in some classes.,BE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Ultra,"Of all my teachers and my students, I have learned the most from them all - you can always learn something from everyone, but from the students the most.",BE,AC,AC; SD; BE,AC; BE; SD; UN,0,1,1
+Ultra,giving,BE,SE,SE; AC; BE,,0,1,0
+Ultra,giving,BE,SE,SE; AC; BE,,0,1,0
+Ultra,giving,BE,SE,SE; AC; BE,,0,1,0
+Ultra,Infinite giving,BE,AC,AC; BE; UN,AC,0,1,0
+Ultra,help,BE,BE,BE; AC; SE,AC; BE,1,1,1
+Ultra,Help with whatever is needed,BE,BE,BE; AC; SE,AC; BE,1,1,1
+Ultra,Technical help,BE,AC,AC; BE; UN,AC; BE; UN,0,1,1
+Ultra,Help for parents,BE,BE,BE; AC; SE,AC; BE,1,1,1
+Ultra,Help for children,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Ultra,Helping children in need,BE,BE,BE; SE; UN,BE; SE; UN,1,1,1
+Ultra,Help for students,BE,AC,AC; BE; UN,AC; BE,0,1,1
+Ultra,"Developing thinking, creativity, and observation in students",BE,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Ultra,Developing the student's emotional world,BE,SD,SD; SE; BE,AC; BE; SD; SE; ST; UN,0,1,1
+Ultra,Early in children,BE,BE,BE; AC; CO,AC; BE,1,1,1
+Ultra,Promoting children,BE,BE,BE; AC; SD,AC; BE; SD,1,1,1
+Ultra,Student advancement,BE,AC,AC; FA; UN,AC; FA,0,0,0
+Ultra,Promotion of female students,BE,FA,FA; AC; UN,AC; FA; UN,0,0,0
+Ultra,Promoting students emotionally,BE,AC,AC; FA; BE,AC; FA,0,1,0
+Ultra,Mental well-being for my students.,BE,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Ultra,Student welfare,BE,SE,SE; BE; AC,AC; BE; SE; UN,0,1,1
+Ultra,May the girls feel loved.,BE,BE,BE; SE; HE,BE; SE,1,1,1
+Ultra,The children belong,BE,BE,BE; SE; CO,BE; SE,1,1,1
+Ultra,That every student will know and feel that there is someone who truly sees her.,BE,UN,UN; FA; SE,AC; FA; SE; UN,0,0,0
+Ultra,Individual hours for personal attention to students.,BE,AC,AC; BE; CO,AC; BE,0,1,1
+Ultra,That students will leave with values ​​and tools for life,BE,AC,AC; BE; SE,AC; BE; SD; SE; UN,0,1,1
+Ultra,Child support,BE,BE,BE; CO; UN,BE; CO,1,1,1
+Ultra,"Diagnostics, prevention and treatment of abnormalities",BE,SE,SE; UN; BE,BE; SE; UN,0,1,1
+Ultra,Diagnosing problems and referring to a source of help,BE,BE,BE; SE; AC,AC; BE; SE; UN,1,1,1
+Ultra,love,BE,BE,BE; SE; UN,BE,1,1,1
+Ultra,Unconditional love for every child,BE,BE,BE; TR; SE,BE,1,1,1
+Ultra,Love for children,BE,BE,BE; SE; AC,BE,1,1,1
+Ultra,Trust from management,CO,AC,AC; FA; PO,AC; BE; FA; PO,0,0,0
+Ultra,Confidence that I am doing well,CO,AC,AC; SD; SE,AC; SD; SE,0,0,0
+Ultra,Satisfied parents and staff,CO,AC,AC; BE; CO,AC; BE; CO,0,1,1
+Ultra,Employee evaluation,CO,AC,AC; FA; CO,AC; FA,0,1,0
+Ultra,Employee evaluation,CO,AC,AC; FA; CO,AC; FA,0,1,0
+Ultra,It's not up to me.,CO,SD,SD; BE; HU,BE; SD,0,0,0
+Ultra,Good attitude from parents,CO,BE,BE; UN; CO,BE; UN,0,1,0
+Ultra,respect,CO,AC,AC; SE; CO,,0,1,0
+Ultra,To achieve complete discipline,CO,CO,CO; AC; BE,AC; BE; CO,1,1,1
+Ultra,To be relevant,CO,UN,UN; BE; AC,BE; UN,0,0,0
+Ultra,Deepen the bond between parents and children,CO,BE,BE; SE; TR,BE; SE; TR,0,0,0
+Ultra,Teach the required skills,CO,AC,AC; SD; BE,AC; SD,0,0,0
+Ultra,To fulfill my duties,CO,CO,CO; BE; TR,BE; CO; TR,1,1,1
+Ultra,Run the business well - the way the boss wants,CO,AC,AC; PO; BE,AC; BE; PO,0,0,0
+Ultra,Give the customer what they want,CO,SD,SD; PO; UN,PO; SD,0,0,0
+Ultra,Classroom discipline,CO,CO,CO; AC; BE,CO,1,1,1
+Ultra,Strong discipline from contentment and calmness,CO,CO,CO; AC; SD,AC; CO,1,1,1
+Ultra,Self-discipline and respect for parents and teachers,CO,CO,CO; AC; BE,AC; BE; CO; TR,1,1,1
+Ultra,Feedback,CO,UN,UN; AC; SD,AC; BE; SD; UN,0,0,0
+Ultra,Pleasing the parents,CO,BE,BE; HE; SE,BE; HE,0,0,0
+Ultra,Pleasing employers,CO,AC,AC; CO; FA,AC; CO,0,1,1
+Ultra,May the parents be satisfied.,CO,BE,BE; SD; SE,BE; SD,0,0,0
+Ultra,To be made by people who work on it,CO,AC,AC; BE; SD,AC; BE; FA; SD,0,0,0
+Ultra,Maintaining values ​​within the Menorah framework,CO,TR,TR; CO; FA,CO; TR,0,1,1
+Ultra,Interpersonal interaction at a high emotional level,BE,SE,SE; BE; CO,BE; CO; FA; SE,0,1,1
+Ultra,The social issue in offices,BE,UN,UN; CO; SE,CO; FA; SE; UN,0,0,0
+Ultra,Social group,BE,SE,SE; UN; FA,CO; FA; SE; UN,0,0,0
+Ultra,Social formation,BE,SE,SE; UN; CO,CO; SE; UN,0,0,0
+Ultra,Team building,BE,AC,AC; SE; BE,AC,0,1,0
+Ultra,Face lighting,BE,SE,SE; BE; SD,SE,0,1,0
+Ultra,Harmony among the team,BE,SE,SE; TR; HE,HE; SE; TR,0,0,0
+Ultra,Nice treatment,BE,BE,BE; SE; AC,BE; SE,1,1,1
+Ultra,Social progress with the team,BE,AC,AC; SE; FA,AC; FA; SE,0,0,0
+Ultra,Attitude towards people,BE,UN,UN; CO; FA,CO; UN,0,0,0
+Ultra,Good teacher-student relationships,BE,BE,BE; AC; SE,AC; BE; CO; SE,1,1,1
+Ultra,Team building days,BE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Creating collaborations between colleagues,BE,AC,AC; SD; SE,AC; BE; SD; SE; UN,0,0,1
+Ultra,Separate home and work properly,BE,SD,SD; CO; BE,CO; SD,0,1,0
+Ultra,Manage to combine as many requests as possible between family and work,BE,BE,BE; SD; SE,AC; BE; SD; SE,1,1,1
+Ultra,"Create a friendly, happy, and energetic atmosphere among employees.",HE,SE,SE; HE; FA,FA; HE; SE,0,1,1
+Ultra,Create an optimal atmosphere,SE,UN,UN; AC; SE,UN,0,1,0
+Ultra,To support what is needed,BE,BE,BE; SE; PO,AC; BE; PO; SE,1,1,1
+Ultra,To give love,BE,BE,BE; HE; ST,BE; HE,1,1,1
+Ultra,To give out of caring,BE,BE,BE; SE; HU,BE; SE,1,1,1
+Ultra,Pleasant to everyone around me,SE,CO,CO; SE; BE,BE; CO; SE,0,1,1
+Ultra,Pleasant and calm surroundings,SE,SE,SE; HE; BE,BE; HE; SD; SE,1,1,1
+Ultra,A pleasant and inviting work environment,SE,SE,SE; AC; HE,AC; BE; HE; SE,1,1,1
+Ultra,patience,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Ultra,patience,BE,BE,BE; CO; UN,BE; CO; UN,1,1,1
+Ultra,Teamwork,BE,AC,AC; BE; SD,AC; BE,0,1,1
+Ultra,Teamwork,BE,AC,AC; BE; SD,AC; BE,0,1,1
+Ultra,A more cohesive team,BE,SE,SE; AC; UN,AC; SE; UN,0,0,0
+Ultra,A team dedicated to each other,BE,AC,AC; SE; FA,AC; BE; FA; SE,0,0,1
+Ultra,Accepting others while achieving self-success,UN,UN,UN; BE; SD,AC; BE; FA; HU; SD; SE; UN,1,1,1
+Ultra,Emotional promotion,BE,SE,SE; HE; BE,BE; HE; SE,0,1,1
+Ultra,Promoting emotional discourse,BE,UN,UN; SE; SD,BE; SD; SE; UN,0,0,1
+Ultra,Good relationship and mutual understanding between me and the parents.,BE,BE,BE; SE; UN,BE; SE,1,1,1
+Ultra,Good relationship with parents and not from a judgmental place,BE,BE,BE; UN; SE,BE; UN,1,1,1
+Ultra,Optimal communication between employees and management,BE,AC,AC; BE; SE,AC; BE; PO; SE,0,1,1
+Ultra,Contact the director,PO,BE,BE; AC; UN,AC; BE,0,0,0
+Ultra,High value level,TR,PO,PO; SE; AC,PO; SE,0,0,0
+Ultra,"Open and respectful dialogue between everyone, and between management and employees",CO,CO,CO; UN; BE,BE; CO; FA; UN,1,1,1
+Ultra,Belonging,BE,SE,SE; CO; UN,CO; SE,0,0,0
+Ultra,Integrating teamwork,BE,AC,AC; BE; SD,AC; BE; SD,0,1,1
+Ultra,Sharing,BE,BE,BE; AC; SE,AC; BE; SE,1,1,1
+Ultra,Collaboration,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Collaboration,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Collaboration,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,Collaboration between the educational team and parents,BE,AC,AC; BE; SE,AC; BE; SE,0,1,1
+Ultra,Full cooperation with all parents,BE,BE,BE; AC; CO,AC; BE; CO,1,1,1
+Ultra,So that there will be no resentment in the team,SE,BE,BE; UN; CO,BE; CO; FA; SE; UN,0,0,1
+Ultra,Clean and beautiful language and respectful behavior,CO,CO,CO; TR; FA,CO; FA; TR; UN,1,1,1
+Ultra,communion,BE,TR,TR; BE; CO,BE; TR,0,1,1
+Ultra,There will be good social interaction between all students.,BE,SE,SE; CO; FA,CO; FA; SE; UN,0,0,0
+Ultra,Healthy and enabling communication within the team hierarchy as well as between the team and students and parents,SE,SE,SE; AC; BE,AC; BE; CO; SE,1,1,1
+Ultra,"Open and healthy communication, discussion about emotions",BE,SE,SE; BE; UN,BE; SE; UN,0,1,1
+Ultra,Decreasing the load,HE,SE,SE; AC; UN,AC; SE,0,0,0
+Ultra,pleasure,HE,HE,HE; SE; UN,HE; SE,1,1,1
+Ultra,pleasure,HE,HE,HE; SE; UN,HE; SE,1,1,1
+Ultra,pleasure,HE,HE,HE; SE; UN,HE; SE,1,1,1
+Ultra,Enjoyment and experience,HE,HE,HE; ST; SD,AC; HE; SD; SE; ST,1,1,1
+Ultra,Vacation days,HE,SD,SD; ST; HE,HE; SD; SE; ST,0,1,1
+Ultra,Reduce job and increase salary,HE,PO,PO; SE; AC,AC; PO; SE,0,0,0
+Ultra,Enjoy and get satisfaction from the activity,HE,HE,HE; ST; AC,AC; HE; SD; SE; ST,1,1,1
+Ultra,Enjoy work,HE,AC,AC; SD; PO,AC; SD,0,0,0
+Ultra,Enjoy your daily work,HE,AC,AC; SE; HE,AC; HE; SD; SE; ST,0,1,1
+Ultra,To feel satisfied,HE,SE,SE; HE; SD,HE; HU; SD; SE,0,1,1
+Ultra,comfort,HE,SE,SE; BE; UN,BE; SE,0,0,0
+Ultra,Convenience in managing a home at the same time,HE,SE,SE; AC; BE,AC; BE; SD; SE; ST,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Satisfaction,HE,SE,SE; UN; AC,SE; UN,0,0,0
+Ultra,Self-satisfaction,HE,HU,HU; FA; UN,FA; HU,0,0,0
+Ultra,Less responsibility,HE,BE,BE; CO; AC,AC; BE; CO,0,0,0
+Ultra,Happiness and satisfaction in the workplace,HE,SE,SE; AC; HE,AC; HE; SE,0,1,1
+Ultra,"Authenticity - a quality educational approach, to be a model in my conduct",BE,AC,AC; SD; CO,AC; BE; CO; FA; SD,0,0,1
+Ultra,To bridge the gap between employees,BE,SE,SE; UN; AC,AC; BE; SE; UN,0,0,1
+Ultra,To be a personal example to those who listen to me.,AC,AC,AC; CO; FA,AC; BE; CO; FA,1,1,1
+Ultra,Be an excellent personal example.,AC,CO,CO; AC; BE,AC; BE; CO; FA,0,1,1
+Ultra,To be a significant figure for the next generation,BE,AC,AC; BE; SE,AC; BE; FA; PO; SE; UN,0,1,1
+Ultra,"To do my work in the most honest, fair and optimal manner, thereby setting an example",AC,AC,AC; BE; UN,AC; BE; CO; FA; PO; UN,1,1,1
+Ultra,Salary amount,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Raise your salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Raised in salary,PO,PO,PO; SE; AC,AC; PO; SE,1,1,1
+Ultra,money,PO,SE,SE; PO; CO,SE,0,1,0
+Ultra,money,PO,SE,SE; PO; CO,SE,0,1,0
+Ultra,money,PO,SE,SE; PO; CO,SE,0,1,0
+Ultra,monetary,PO,TR,TR; CO; BE,TR,0,0,0
+Ultra,To be a kindergarten director,PO,AC,AC; BE; SE,AC; BE,0,0,0
+Ultra,To earn a lot of money,PO,PO,PO; AC; SE,AC; PO,1,1,1
+Ultra,It is difficult to maintain discipline in one classroom.,PO,CO,CO; AC; SE,AC; CO,0,0,0
+Ultra,To raise the salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Improve wage conditions,PO,PO,PO; SE; AC,AC; PO; SE; UN,1,1,1
+Ultra,Good salaries,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,salary,PO,SE,SE; AC; BE,AC; SE,0,0,0
+Ultra,salary,PO,SE,SE; AC; BE,AC; SE,0,0,0
+Ultra,salary,PO,SE,SE; AC; BE,AC; SE,0,0,0
+Ultra,High salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Higher salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary increase,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Salary promotion,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,Profitability,PO,PO,PO; AC; UN,AC; PO,1,1,1
+Ultra,Improving physical conditions and salaries,PO,SE,SE; PO; AC,AC; PO; SE,0,1,1
+Ultra,wage,PO,CO,CO; SE; AC,,0,0,0
+Ultra,Decent salary,PO,PO,PO; AC; SE,AC; PO; SE,1,1,1
+Ultra,control,PO,AC,AC; SD; BE,,0,0,0
+Ultra,livelihood,SE,BE,BE; SD; SE,BE,0,1,0
+Ultra,Balance,SE,SE,SE; BE; AC,,1,1,0
+Ultra,Better organization and planning,SE,AC,AC; BE; CO,AC; BE; CO,0,0,0
+Ultra,clarity,SE,BE,BE; UN; AC,AC; BE; CO; UN,0,0,0
+Ultra,Constant control,SE,UN,UN; AC; SE,AC; UN,0,1,0
+Ultra,"Due to my age, I would be happy to accept less exhausting and more managerial professions.",SE,AC,AC; CO; SE,AC; CO; SD; SE,0,1,1
+Ultra,Boundries,SE,CO,CO; UN; SE,CO,0,1,0
+Ultra,Boundaries between what I need and what the institution needs,SE,SD,SD; UN; BE,SD,0,0,0
+Ultra,Staff recruitment,SE,AC,AC; BE; SE,AC,0,1,0
+Ultra,Defining roles,SE,BE,BE; AC; UN,AC; BE,0,0,0
+Ultra,School staff's recognition of difficulties,SE,AC,AC; BE; CO,AC; BE; CO,0,0,0
+Ultra,Raising salaries for teaching staff,SE,AC,AC; PO; SE,AC; PO; SE; UN,0,1,1
+Ultra,Emotional resilience,SE,BE,BE; SE; AC,AC; BE; SE; UN,0,1,1
+Ultra,The good of the institution,SE,AC,AC; BE; SE,AC; BE; SE,0,1,1
+Ultra,Fair treatment by the state,SE,UN,UN; BE; CO,BE; UN,0,0,0
+Ultra,Attitude towards employees,SE,CO,CO; FA; AC,AC; CO; FA,0,0,0
+Ultra,Stability and dropout prevention,SE,SE,SE; AC; CO,AC; BE; CO; SE,1,1,1
+Ultra,Bring money home,SE,PO,PO; SE; BE,AC; BE; PO; SE,0,1,1
+Ultra,To be in a state of doing because it is mental health.,SE,SE,SE; CO; BE,SE,1,1,1
+Ultra,To be more physically and mentally free and free from other tasks,SE,SE,SE; HE; SD,HE; SD; SE; ST,1,1,1
+Ultra,Earn a higher amount so I can be hassle-free,SE,PO,PO; SD; SE,AC; PO; SD; SE,0,1,1
+Ultra,Earn more money in the never-ending work of education,SE,AC,AC; PO; SE,AC; PO; SE,0,1,1
+Ultra,Earn a higher salary for working hours.,SE,AC,AC; PO; SD,AC; PO; SD; SE,0,0,1
+Ultra,make a living,SE,PO,PO; SE; AC,AC; PO; SD; SE,0,1,1
+Ultra,To save a house,SE,SE,SE; BE; PO,BE; PO; SE,1,1,1
+Ultra,Manage your daily routine calmly,SE,AC,AC; CO; SD,AC; CO; SD; SE,0,0,1
+Ultra,"Increase the salaries of ultra-Orthodox teaching staff, including assistants.",SE,AC,AC; PO; SE,AC; PO; SE; UN,0,1,1
+Ultra,Raise customer expectations,SE,AC,AC; FA; CO,AC; FA,0,0,0
+Ultra,To provide for my family with dignity,SE,BE,BE; SE; UN,BE; SD; SE; UN,0,1,1
+Ultra,To earn a living and live at a good standard without restrictions,SE,SD,SD; PO; SE,AC; PO; SD; SE,0,1,1
+Ultra,To set boundaries,SE,CO,CO; UN; SD,CO; UN,0,0,0
+Ultra,Cleaning,SE,UN,UN; BE; SE,UN,0,1,0
+Ultra,Agenda,SE,CO,CO; SE; AC,CO,0,1,0
+Ultra,A busy agenda,SE,AC,AC; CO; ST,AC; BE; CO; ST,0,0,0
+Ultra,A job that will allow me to be at home with the children a lot.,SE,BE,BE; SE; AC,AC; BE; SE,0,1,1
+Ultra,Emotional anchor,SE,SE,SE; BE; UN,BE; SE; UN,1,1,1
+Ultra,"Calmness, peace and discipline",SE,CO,CO; TR; BE,AC; BE; CO; TR,0,0,0
+Ultra,Economic well-being,SE,SE,SE; PO; AC,AC; PO; SE,1,1,1
+Ultra,Mental well-being,SE,SE,SE; BE; AC,BE; SE,1,1,1
+Ultra,Mental well-being,SE,SE,SE; BE; AC,BE; SE,1,1,1
+Ultra,Mental well-being,SE,SE,SE; BE; AC,BE; SE,1,1,1
+Ultra,Everything will be run in a more organized and orderly manner.,SE,CO,CO; AC; BE,AC; BE; CO; SE,0,0,1
+Ultra,May the students feel loved and protected.,SE,SE,SE; BE; UN,BE; SE,1,1,1
+Ultra,Combining my duties calmly. Teaching and concentrating on English and being a mother of four.,SE,AC,AC; BE; SE,AC; BE; SE,0,1,1
+Ultra,Improving learning conditions,SE,AC,AC; BE; SD,AC; BE; SD,0,0,0
+Ultra,Self-preservation,SE,HU,HU; SD; SE,HU; SD; SE,0,1,1
+Ultra,Hours that suit the home,SE,SD,SD; HE; BE,HE; SD,0,0,0
+Ultra,"Comfortable physical conditions for the woman (room for pumping milk, comfortable teacher's chair)",SE,SE,SE; BE; SD,BE; SD; SE,1,1,1
+Ultra,"A personal expression of my insights, values, and educational voice",SD,SD,SD; AC; UN,AC; SD; UN,1,1,1
+Ultra,Creativity,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Ultra,Allow them to be who they are.,SD,SD,SD; UN; HE,HE; SD; UN,1,1,1
+Ultra,Add another area of ​​leisure time (working with the mental realm),SD,SD,SD; ST; HE,AC; HE; SD; ST,1,1,1
+Ultra,To expand knowledge and change my approach to a more alternative approach.,SD,SD,SD; AC; UN,AC; SD; ST; UN,1,1,1
+Ultra,Teach them to create and be creative,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Ultra,Learn and progress,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Ultra,Helping students grow and develop their thinking,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Ultra,To practice my field (art),SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Ultra,To do my job willingly,SD,AC,AC; BE; SD,AC; BE; SD,0,1,1
+Ultra,To open something independent,SD,SD,SD; AC; ST,AC; SD,1,1,1
+Ultra,Develop new and interesting ways of learning,SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Ultra,"To promote teaching, wisdom, and the development of talents in various fields",SD,AC,AC; SD; ST,AC; SD; ST; UN,0,1,1
+Ultra,"Promote skills, knowledge and ways of learning.",SD,AC,AC; SD; ST,AC; SD; ST; UN,0,1,1
+Ultra,Promote important skills,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Ultra,Give more voice to inner intuitions,SD,SD,SD; UN; AC,SD; UN,1,1,1
+Ultra,Self-realization,SD,AC,AC; SD; UN,AC; SD,0,1,1
+Ultra,Independence and strength in identity,SD,SD,SD; SE; AC,AC; FA; SD; SE; UN,1,1,1
+Ultra,Developing independent and creative thinking,SD,SD,SD; AC; UN,AC; SD; UN,1,1,1
+Ultra,Mental promotion,SD,SE,SE; AC; BE,AC; BE; CO; SE; UN,0,0,0
+Ultra,Ideas,SD,AC,AC; SE; SD,AC; SE,0,1,0
+Ultra,That the path will be part of the goal and not just the final goal...,SD,AC,AC; SD; BE,AC; SD,0,1,1
+Ultra,Joy and trust in myself and my company,SD,AC,AC; FA; SE,AC; FA; SD; SE,0,0,1
+Ultra,Students left with a high sense of self-worth.,SD,AC,AC; FA; SE,AC; FA; SD; SE,0,0,1
+Ultra,Intelligence,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Ultra,education,SD,AC,AC; BE; SE,AC,0,0,0
+Ultra,To raise a generation of thinking people,SD,AC,AC; SD; UN,AC; SD; SE; UN,0,1,1
+Ultra,Adapting the education system to the 21st century,SD,AC,AC; SD; UN,AC; SD; UN,0,1,1
+Ultra,Strengthen self-identity and love for the person.,SD,SE,SE; BE; UN,BE; FA; SE; UN,0,0,0
+Ultra,learning,SD,AC,AC; UN; BE,AC,0,0,0
+Ultra,Meaningful learning,SD,AC,AC; SD; UN,AC; BE; SD; UN,0,1,1
+Ultra,To give life skills,BE,AC,AC; BE; SD,AC; BE; SD; ST,0,1,1
+Ultra,"Give them the important tools to enter the world of thinking, development, and independence.",SD,SD,SD; AC; ST,AC; SD; ST,1,1,1
+Ultra,Focus on education,BE,AC,AC; SD; BE,AC; SD,0,1,0
+Ultra,A nurturing and enriching educational environment,SD,AC,AC; BE; SD,AC; BE; SD; SE,0,1,1
+Ultra,Innovative pedagogy,SD,AC,AC; SD; BE,AC; BE; SD,0,1,1
+Ultra,Allowing every child to fulfill themselves,BE,SD,SD; AC; UN,AC; BE; SD; SE; ST; UN,0,0,1
+Ultra,Continue to love what I do.,ST,AC,AC; SD; ST,AC; HE; SD; ST,0,1,1
+Ultra,To feel the mission at work beyond being an employee in the educational institution,BE,AC,AC; FA; SE,AC; FA; SD; SE,0,0,0
+Ultra,To feel significant,CO,FA,FA; SE; ST,FA; SE; ST,0,0,0
+Ultra,To feel a sense of mission in my work,BE,AC,AC; FA; SD,AC; FA; SD; ST,0,0,0
+Ultra,To be filled with satisfaction,HE,SE,SE; HE; AC,AC; HE; SD; SE; ST,0,1,1
+Ultra,To realize my abilities,SD,AC,AC; SD; ST,AC; SD; ST,0,1,1
+Ultra,To fulfill all my abilities,SD,AC,AC; ST; SD,AC; FA; SD; ST,0,1,1
+Ultra,Doing my part in the world - feeling satisfied,BE,BE,BE; AC; UN,AC; BE; UN,1,1,1
+Ultra,To do things with meaning,BE,AC,AC; BE; SD,AC; BE,0,1,1
+Ultra,To leave class with satisfaction,HE,AC,AC; FA; SD,AC,0,0,0
+Ultra,Personal satisfaction and fulfillment,HE,SE,SE; HE; SD,AC; HE; SD; SE,0,1,1
+Ultra,Feelings of meaning among students,BE,SE,SE; AC; BE,AC; BE; SE,0,1,1
+Ultra,Always be calm and patient.,SE,BE,BE; CO; AC,AC; BE; CO,0,0,0
+Ultra,"Inner peace, self-understanding",SE,SE,SE; BE; UN,BE; SD; SE; UN,1,1,1
+Ultra,Vigorous,ST,SE,SE; AC; ST,AC; SE,0,1,0
+Ultra,Experience,ST,SE,SE; AC; BE,SE,0,0,0
+Ultra,Make work more digital,ST,AC,AC; SD; ST,AC; SD,0,1,0
+Ultra,To create interest for students in the subject I teach (science),ST,SD,SD; AC; ST,AC; SD; ST,0,1,1
+Ultra,Working with passion and satisfaction,ST,AC,AC; SD; FA,AC; FA; SD,0,0,0
+Ultra,Work that is fun and meaningful to me,ST,SD,SD; AC; HE,AC; HE; SD; ST,0,0,1
+Ultra,Love for people,TR,BE,BE; UN; SE,BE; UN,0,0,0
+Ultra,Love for children,TR,BE,BE; SE; AC,BE,0,0,0
+Ultra,God's love,TR,BE,BE; TR; SE,BE; TR,0,1,1
+Ultra,Love of the Creator and the world,TR,TR,TR; UN; BE,BE; TR; UN,1,1,1
+Ultra,Faith in goodness,TR,TR,TR; BE; SD,BE; TR,1,1,1
+Ultra,In a job that is safe and suitable for my lifestyle,TR,SE,SE; SD; BE,AC; BE; SD; SE; ST,0,0,0
+Ultra,Derech Eretz,TR,TR,TR; BE; UN,BE; TR,1,1,1
+Ultra,Introduction to the values ​​and sacred things of Judaism,TR,TR,TR; UN; SD,TR,1,1,1
+Ultra,The presence of the unique strengths that ultra-Orthodox teachers possess,TR,AC,AC; TR; SD,AC; SD; TR; UN,0,1,1
+Ultra,Mental attitude influence,TR,SE,SE; UN; SD,SE; UN,0,0,0
+Ultra,Spiritual and personal impact on colleagues at work,TR,SE,SE; TR; UN,SE; TR; UN,0,1,1
+Ultra,Positivity towards religion,TR,TR,TR; BE; UN,TR,1,1,1
+Ultra,Strengthening community,TR,SE,SE; BE; UN,BE; SE; UN,0,0,0
+Ultra,"Education for a ""human being"" - good virtues",TR,AC,AC; SD; UN,AC; SD; UN,0,0,0
+Ultra,Education for faith in the Creator - trust in the kindergarten staff (warm and loving relationship with everyone),TR,TR,TR; BE; SE,BE; SE; TR,1,1,1
+Ultra,Jewish education,TR,AC,AC; TR; BE,AC; TR,0,1,1
+Ultra,Education for the fear of God,TR,TR,TR; AC; SD,AC; TR,1,1,1
+Ultra,Moral education,TR,CO,CO; TR; BE,BE; CO; TR,0,1,1
+Ultra,Education for observing the mitzvot from an inner and true connection,TR,TR,TR; CO; AC,CO; TR,1,1,1
+Ultra,Traditional education,TR,AC,AC; TR; SD,AC; SD; TR,0,1,1
+Ultra,Education with tradition,TR,TR,TR; AC; BE,AC; TR,1,1,1
+Ultra,Judaism,TR,TR,TR; SD; UN,TR,1,1,1
+Ultra,Fear of God for Children,TR,BE,BE; TR; CO,BE; TR,0,1,1
+Ultra,piety,TR,HE,HE; HU; CO,,0,0,0
+Ultra,Respecting parents,TR,CO,CO; TR; BE,BE; CO; TR,0,1,1
+Ultra,Don't take everything for granted.,TR,AC,AC; SD; ST,AC; SD,0,0,0
+Ultra,To instill a love of Torah in children,TR,TR,TR; SD; BE,BE; SD; TR,1,1,1
+Ultra,To get another Jewish child to fulfill a mitzvah (I teach at Kirov School),TR,TR,TR; CO; BE,BE; CO; TR,1,1,1
+Ultra,To make my students fear God,TR,TR,TR; CO; SD,CO; TR,1,1,1
+Ultra,To love the path of Torah and mitzvot for girls,TR,TR,TR; CO; SD,CO; TR,1,1,1
+Ultra,To instill in girls a love for the service of God and the commandments,TR,TR,TR; CO; BE,BE; CO; TR,1,1,1
+Ultra,To instill fear of God and impart Torah knowledge,TR,TR,TR; AC; CO,AC; CO; SD; TR,1,1,1
+Ultra,To be a better person in all areas - and for me that means a Jew who does the will of God in full. And that is the ultimate goal that encompasses everything.,TR,TR,TR; CO; BE,CO; TR,1,1,1
+Ultra,To be a representative of Judaism to the staff and students,TR,TR,TR; FA; UN,FA; SE; TR; UN,1,1,1
+Ultra,Prepare girls for a full married life,TR,BE,BE; ST; SD,BE; ST,0,0,0
+Ultra,To convey good values ​​according to the Torah to students.,TR,TR,TR; CO; AC,AC; CO; TR,1,1,1
+Ultra,To succeed in instilling in the students a sense of Jewish pride out of true joy.,TR,SE,SE; TR; FA,FA; SE; TR; UN,0,1,1
+Ultra,To be able to support a Torah household through work that I enjoy.,TR,SE,SE; BE; AC,AC; BE; PO; SD; SE,0,0,0
+Ultra,To connect girls to the service of God with joy and meaning,TR,TR,TR; ST; SE,AC; BE; HE; SE; ST; TR,1,1,1
+Ultra,To connect my beloved students with tradition,TR,TR,TR; SE; BE,BE; SE; TR,1,1,1
+Ultra,Strengthen them with faith and fear of God,TR,TR,TR; SD; PO,TR,1,1,1
+Ultra,To educate the daughters of Israel in the right way,TR,TR,TR; BE; CO,AC; BE; CO; TR,1,1,1
+Ultra,To educate the daughters of Israel on the paved path of the Torah,TR,TR,TR; AC; CO,AC; BE; CO; TR,1,1,1
+Ultra,"To educate the daughters of Israel in the way of the Torah, to instill values, good qualities, and the worship of God with joy and faith.",TR,TR,TR; SD; CO,TR,1,1,1
+Ultra,Educate children to have extensive knowledge of Judaism,TR,AC,AC; TR; SD,AC; SD; TR; UN,0,1,1
+Ultra,Educate children to serve God with true joy and calmness.,TR,TR,TR; BE; SE,TR,1,1,1
+Ultra,To educate students according to Jewish values,TR,TR,TR; AC; CO,AC; TR,1,1,1
+Ultra,To educate my students to be good people with good values ​​and virtues.,TR,TR,TR; CO; BE,AC; BE; CO; FA; TR,1,1,1
+Ultra,To educate in the right way,TR,AC,AC; BE; SD,AC; BE; CO; SD,0,0,0
+Ultra,To educate the daughters of Israel to fear God and to be virtuous.,TR,TR,TR; CO; BE,BE; CO; TR,1,1,1
+Ultra,To educate a generation on the values ​​of Torah study and observance of mitzvot,TR,TR,TR; AC; SD,AC; CO; SD; TR,1,1,1
+Ultra,To educate children in piety and good morals,TR,TR,TR; CO; BE,CO; TR,1,1,1
+Ultra,To educate in good manners and virtues,TR,CO,CO; TR; BE,AC; BE; CO; FA; TR,0,1,1
+Ultra,"To educate in good manners, sensitivity to others",TR,CO,CO; BE; UN,BE; CO; UN,0,0,0
+Ultra,To educate in the values ​​of the Jewish religion,TR,TR,TR; SD; UN,SD; TR,1,1,1
+Ultra,Create a connection between everyone and the place,TR,SE,SE; BE; UN,BE; SE; UN,0,0,0
+Ultra,To do my mission faithfully,TR,TR,TR; CO; BE,BE; CO; TR,1,1,1
+Ultra,To do the will of our Father in heaven,TR,TR,TR; BE; PO,BE; CO; PO; TR,1,1,1
+Ultra,To support a house of Torah,TR,TR,TR; SE; BE,BE; SE; TR,1,1,1
+Ultra,To promote a connection and love for the Torah and the mitzvot among the children of the Haredi community,TR,TR,TR; BE; CO,BE; TR,1,1,1
+Ultra,To sanctify the name of heaven,TR,TR,TR; CO; BE,CO; TR,1,1,1
+Ultra,To bring students closer to our Father in Heaven and to fulfill the commandments,TR,TR,TR; CO; BE,CO; TR,1,1,1
+Ultra,Rejoice in being a good Jew who obeys the Torah of God.,TR,TR,TR; CO; BE,CO; TR,1,1,1
+Ultra,To preserve the tradition and the charedi spirit,TR,TR,TR; UN; BE,TR; UN,1,1,1
+Ultra,Giving students the tools to be a better person and Jew,TR,AC,AC; BE; UN,AC; BE; SD; UN,0,0,0
+Ultra,Give them a faith that will give them confidence for life,TR,TR,TR; SE; AC,AC; BE; SE; TR,1,1,1
+Ultra,"To give women pride and strength for being Jewish women, who can choose truth and goodness.",TR,SD,SD; AC; UN,AC; BE; FA; SD; TR; UN,0,0,1
+Ultra,Provide emotional support to youth in order to prevent dropout,TR,SE,SE; BE; AC,AC; BE; SE,0,0,0
+Ultra,Manners and etiquette,TR,CO,CO; FA; TR,CO; FA; TR,0,1,1
+Ultra,Values ​​and education,TR,AC,AC; SD; TR,AC; SD; TR,0,1,1
+Ultra,Good and humane virtues,TR,BE,BE; UN; CO,BE,0,0,0
+Ultra,Dropout prevention,TR,CO,CO; AC; BE,AC; BE; CO; SE,0,0,0
+Ultra,tradition,TR,TR,TR; UN; HU,TR,1,1,1
+Ultra,"Individual, professional and Torah-based response to each student",TR,AC,AC; BE; SD,AC; BE; SD,0,0,0
+Ultra,Measurement work,TR,UN,UN; AC; BE,AC; UN,0,0,0
+Ultra,Help to establish a Haredi home to broaden the mind of every student,TR,SD,SD; AC; UN,AC; SD; SE; ST; UN,0,0,0
+Ultra,Values ​​Dimensions,TR,UN,UN; AC; BE,UN,0,0,0
+Ultra,Spiritual leader on the team,TR,TR,TR; SD; CO,TR,1,1,1
+Ultra,Spiritual advancement,TR,TR,TR; SD; UN,SD; TR,1,1,1
+Ultra,Fulfilling the mitzvah with joy,TR,HE,HE; TR; BE,BE; HE; TR,0,1,1
+Ultra,Approximation,TR,UN,UN; AC; BE,AC; UN,0,0,0
+Ultra,proximity,TR,SE,SE; BE; UN,SE,0,0,0
+Ultra,The closeness of God,TR,TR,TR; SE; BE,BE; SE; TR,1,1,1
+Ultra,The closeness of God among my students,TR,TR,TR; SE; BE,SE; TR,1,1,1
+Ultra,spirituality,TR,TR,TR; UN; SD,TR; UN,1,1,1
+Ultra,Aspiration for values,TR,AC,AC; SD; SE,AC; SD; SE,0,0,0
+Ultra,Mission to educate the children of Israel,TR,AC,AC; BE; TR,AC; BE; SD; TR,0,1,1
+Ultra,Students will continue to attend good seminars.,TR,AC,AC; SD; FA,AC; SD,0,0,0
+Ultra,A proper prayer,TR,TR,TR; BE; SE,TR,1,1,1
+Ultra,Love for music,UN,HE,HE; SD; ST,HE; SD,0,0,0
+Ultra,Trust in children,UN,BE,BE; AC; CO,AC; BE; CO,0,0,0
+Ultra,Concern for a better future,UN,BE,BE; SE; AC,BE; SE,0,0,0
+Ultra,Acceptince,UN,UN,UN; BE; TR,,1,1,0
+Ultra,Inclusion and integration of people with different difficulties,UN,UN,UN; SE; BE,AC; BE; SE; UN,1,1,1
+Ultra,The inclusion and integration of the special child in a regular kindergarten,UN,UN,UN; SE; AC,AC; BE; SE; UN,1,1,1
+Ultra,Inclusiveness for all sectors in Israel,UN,UN,UN; SE; FA,SE; UN,1,1,1
+Ultra,Embracing the different and the other,UN,UN,UN; SD; ST,SD; ST; UN,1,1,1
+Ultra,Embracing the different,UN,UN,UN; SE; ST,SD; SE; ST; UN,1,1,1
+Ultra,Integration into society,UN,SE,SE; UN; AC,AC; SE; UN,0,1,1
+Ultra,"And love your neighbor as yourself, to respect the other, mutual respect.",UN,TR,TR; CO; BE,BE; CO; TR; UN,0,0,1
+Ultra,Education based on tolerance for others,UN,UN,UN; CO; BE,CO; UN,1,1,1
+Ultra,Equal treatment for all,UN,UN,UN; CO; BE,UN,1,1,1
+Ultra,Equal treatment for everyone,UN,UN,UN; CO; BE,UN,1,1,1
+Ultra,Creating a better world,UN,BE,BE; UN; AC,AC; BE; UN,0,1,1
+Ultra,Mutual respect,UN,CO,CO; FA; UN,CO; FA; UN,0,1,1
+Ultra,Respect for others,UN,CO,CO; FA; UN,CO; FA; UN,0,1,1
+Ultra,Respect for others,UN,CO,CO; FA; UN,CO; FA; UN,0,1,1
+Ultra,To put into action the desire to do good,UN,AC,AC; BE; ST,AC; BE,0,0,0
+Ultra,Recognize that people differ in their way of life and the ideals they believe in.,UN,SD,SD; UN; TR,SD; TR; UN,0,1,1
+Ultra,"Get to know more people, understand their living conditions and ideals",UN,SE,SE; UN; SD,BE; SD; SE; UN,0,1,1
+Ultra,To raise a generation of people who are considerate of others and the environment,UN,UN,UN; BE; CO,BE; UN,1,1,1
+Ultra,Present women from the ultra-Orthodox sector in a positive light,UN,UN,UN; FA; BE,BE; FA; TR; UN,1,1,1
+Ultra,To treat the weak and outcast girls,UN,UN,UN; SE; FA,FA; SE; UN,1,1,1
+Ultra,"Treat them as people (hearing, seeing, experiencing emotions)",UN,UN,UN; SE; BE,BE; CO; SE; UN,1,1,1
+Ultra,liberalism,UN,SD,SD; UN; SE,SD; SE; UN,0,1,1
+Ultra,To do good to create an atmosphere of love and respect between people.,UN,BE,BE; SE; UN,BE; CO; SE; TR; UN,0,1,1
+Ultra,"To work with children to promote inclusion and acceptance of every person, wherever they are.",UN,UN,UN; SE; BE,BE; SE; UN,1,1,1
+Ultra,To promote empowerment among ultra-Orthodox women in general,UN,SD,SD; UN; AC,AC; FA; PO; SD; UN,0,1,1
+Ultra,To uplift and empower each and every one,UN,AC,AC; UN; SE,AC; BE; SD; SE; UN,0,1,1
+Ultra,Giving more voice to working Haredi women,UN,UN,UN; SE; FA,AC; FA; SD; SE; UN,1,1,1
+Ultra,To treat everyone fairly,UN,UN,UN; BE; CO,BE; CO; UN,1,1,1
+Ultra,Give every child equal opportunities,UN,UN,UN; AC; SE,AC; UN,1,1,1
+Ultra,To give the world some of the knowledge I have that also comes from the heart.,UN,AC,AC; SD; BE,AC; BE; SD; UN,0,0,1
+Ultra,Also give value to helpers,UN,AC,AC; BE; UN,AC; BE; FA; UN,0,1,1
+Ultra,Provide equal opportunities for all students,UN,UN,UN; AC; SE,AC; UN,1,1,1
+Ultra,Awareness and acceptance of difference,UN,UN,UN; SE; CO,SE; UN,1,1,1
+Ultra,Finding strength in everyone,UN,BE,BE; AC; UN,AC; BE; SE; UN,0,1,1
+Ultra,Providing solutions for students with different needs,UN,AC,AC; UN; BE,AC; BE; SD; SE; UN,0,1,1
+Ultra,tolerance,UN,CO,CO; BE; UN,BE; CO,0,1,0
+Ultra,Tolerance and patience towards people and society,UN,BE,BE; CO; UN,BE; CO; UN,0,1,1
+Ultra,Tolerance after,UN,SE,SE; CO; UN,CO; SE,0,1,0
+Ultra,A benevolent world,UN,BE,BE; UN; SE,BE; UN,0,1,1
+Ultra,Social assistance for children from families in need.,UN,BE,BE; SE; UN,BE; SE; UN,0,1,1
+Ultra,openness,UN,BE,BE; CO; UN,BE; CO; SD; UN,0,1,1
+Ultra,Openness to difference,UN,UN,UN; SD; AC,SD; UN,1,1,1
+Ultra,Accepting the other,UN,BE,BE; UN; SD,BE; SD; UN,0,1,1
+Ultra,Social promotion,UN,FA,FA; SE; AC,AC; CO; FA; SE,0,0,0
+Ultra,Child promotion,UN,BE,BE; CO; UN,BE; CO,0,1,0
+Ultra,Promoting educational goals,UN,AC,AC; SD; BE,AC; SD,0,0,0
+Ultra,Promoting employment for more women,UN,AC,AC; UN; SE,AC; PO; SE; UN,0,1,1
+Ultra,Calm and peace among the children and in general,UN,SE,SE; CO; BE,BE; CO; SE,0,0,0
+Ultra,To know how to recognize the difference,UN,AC,AC; BE; UN,AC; BE; UN,0,1,1
+Ultra,"There will be a change in the approach to education, so that there will be room for the human soul.",UN,SD,SD; UN; AC,AC; BE; SD; ST; UN,0,1,1
+Ultra,That they recognize the needs of the ultra-Orthodox public,UN,UN,UN; TR; SE,SE; TR; UN,1,1,1
+Ultra,Inclusion of children with difficulties,UN,UN,UN; BE; AC,AC; BE; SE; UN,1,1,1
+Ultra,Adapted integration in regular classrooms,UN,AC,AC; UN; BE,AC,0,1,0
+Ultra,That every child would know and want to give strength to others and see the other succeed.,UN,BE,BE; AC; SE,AC; BE; SE; UN,0,0,1
+Ultra,Life's mission,UN,TR,TR; BE; AC,BE; TR,0,0,0
+Ultra,Life's mission,UN,TR,TR; BE; AC,BE; TR,0,0,0

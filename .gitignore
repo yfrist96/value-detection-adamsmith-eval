@@ -23,10 +23,30 @@ models/
 
 # Data (optional – depends if you want to share it)
 data/
-experiments/
 
-# Paper draft (managed separately)
+# Experiment outputs: checkpoints and prediction dumps are far too large to
+# version, but the metric logs that every number in the paper is computed from
+# are small (well under a megabyte) and are tracked, so the reported results can
+# be checked without re-running any training.
+experiments/*
+!experiments/results/
+experiments/results/*
+!experiments/results/*.csv
+!experiments/results/*.json
+!experiments/results/*/
+experiments/results/*/*
+!experiments/results/*/metrics.csv
+!experiments/results/*/seed_*/
+experiments/results/*/seed_*/*
+!experiments/results/*/seed_*/metrics.csv
+
+# Paper drafts (managed separately, and deliberately kept out of the artifact repo)
 Paper/
 paper_arr/
 paper_arr_long/
 paper_arr_no_ijh/
+paper_arr_v2/
+
+# LaTeX and tooling scratch
+*.log
+errors-paper.json

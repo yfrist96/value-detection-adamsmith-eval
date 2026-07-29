@@ -473,7 +473,38 @@ experiments/results/register_distance.csv
 experiments/results/register_distance_correlations.json
 ```
 
-With n = 6 pairs this establishes an ordering, not a significance claim.
+A fourth measure works in embedding space instead of over word counts, as a
+check on whether register distance is just semantic distance:
+
+```bash
+python -m src.register_distance_embed
+python -m src.register_distance_embed --model sentence-transformers/all-mpnet-base-v2
+```
+
+Each training response is encoded with a general-purpose sentence encoder, and
+the populations are compared by centroid cosine distance and by energy distance
+between the embedding samples. Both give Spearman ρ = −0.60, identical under the
+two encoders above. The script refuses to run with Adam-Smith or one of its
+checkpoints as the encoder, since measuring register distance in the
+representation space of the model under study would reintroduce the circularity
+the analysis exists to break.
+
+The interesting part is where it misses. It ranks Asian–Indian closest, matching
+their transfer, but puts IJH–Ultra only fourth in distance although that pair
+transfers worst of the six. Topic is held fixed by the elicitation prompt, so
+what separates IJH from Ultra is vocabulary rather than subject matter. The four
+measures order themselves by how heavily they weight frequent words: −0.93,
+−0.60, −0.26, +0.03.
+
+Outputs:
+
+```
+experiments/results/register_distance_embeddings.csv
+experiments/results/register_distance_embeddings.json
+```
+
+With n = 6 pairs and four measures this establishes an ordering, not a
+significance claim.
 
 ---
 

@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: WEALTH
+    Result: {"value": "PO"}
+  - Statement: Gain Properties
+    Result: {"value": "PO"}
+  - Statement: Superiority
+    Result: {"value": "PO"}
+  - Statement: Money
+    Result: {"value": "PO"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Establishment
+    Result: {"value": "SE"}
+  - Statement: I want to have a stable job.
+    Result: {"value": "SE"}
+  - Statement: Safety
+    Result: {"value": "SE"}
+  - Statement: Secure
+    Result: {"value": "SE"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: Dedication
+    Result: {"value": "BE"}
+  - Statement: Honest
+    Result: {"value": "BE"}
+  - Statement: Helpful
+    Result: {"value": "BE"}
+  - Statement: My intention has been to ensure customer gets best service possible
+    Result: {"value": "BE"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: you should be humble
+    Result: {"value": "TR"}
+  - Statement: Faithfulness
+    Result: {"value": "TR"}
+  - Statement: Purity
+    Result: {"value": "TR"}
+  - Statement: Realizing to god
+    Result: {"value": "TR"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Creative ideas to increase efficiency
+    Result: {"value": "SD"}
+  - Statement: to be creative at work
+    Result: {"value": "SD"}
+  - Statement: Creativity
+    Result: {"value": "SD"}
+  - Statement: freedom
+    Result: {"value": "SD"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: EQUALITY
+    Result: {"value": "UN"}
+  - Statement: Equality
+    Result: {"value": "UN"}
+  - Statement: Helping the weak to achieve target
+    Result: {"value": "UN"}
+  - Statement: Positive thinking
+    Result: {"value": "UN"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: dignity
+    Result: {"value": "CO"}
+  - Statement: I am always Disciplined with my work
+    Result: {"value": "CO"}
+  - Statement: Adhere to senior
+    Result: {"value": "CO"}
+  - Statement: Discipline
+    Result: {"value": "CO"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Upgrade skillsets
+    Result: {"value": "AC"}
+  - Statement: Capable
+    Result: {"value": "AC"}
+  - Statement: Business
+    Result: {"value": "AC"}
+  - Statement: Increase level of potential
+    Result: {"value": "AC"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Have new experiences
+    Result: {"value": "ST"}
+  - Statement: Work experiences
+    Result: {"value": "ST"}
+  - Statement: Innovative
+    Result: {"value": "ST"}
+  - Statement: Accept the challenges and Implementing new things
+    Result: {"value": "ST"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: Enjoyment and long-term employment
+    Result: {"value": "HE"}
+  - Statement: Stay peaceful and enjoy my work
+    Result: {"value": "HE"}
+  - Statement: Pleasure
+    Result: {"value": "HE"}
+  - Statement: I have to purchase new home
+    Result: {"value": "HE"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

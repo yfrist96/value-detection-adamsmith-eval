@@ -1,0 +1,29 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

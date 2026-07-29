@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Learn and progress
+    Result: {"value": "SD"}
+  - Statement: Creativity
+    Result: {"value": "SD"}
+  - Statement: Teach them to create and be creative
+    Result: {"value": "SD"}
+  - Statement: That the path will be part of the goal and not just the final goal...
+    Result: {"value": "SD"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Feedback
+    Result: {"value": "CO"}
+  - Statement: Self-discipline and respect for parents and teachers
+    Result: {"value": "CO"}
+  - Statement: Employee evaluation
+    Result: {"value": "CO"}
+  - Statement: Good attitude from parents
+    Result: {"value": "CO"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: To earn a lot of money
+    Result: {"value": "PO"}
+  - Statement: Salary increase
+    Result: {"value": "PO"}
+  - Statement: To raise the salary
+    Result: {"value": "PO"}
+  - Statement: Higher salary
+    Result: {"value": "PO"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: professionalism
+    Result: {"value": "AC"}
+  - Statement: Conditions and promotion
+    Result: {"value": "AC"}
+  - Statement: to do a master's degree
+    Result: {"value": "AC"}
+  - Statement: To influence wider circles, beyond the boundaries of the classroom
+    Result: {"value": "AC"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: patience
+    Result: {"value": "BE"}
+  - Statement: Promote female students
+    Result: {"value": "BE"}
+  - Statement: Believe in the child and in the child, and instill mutual trust in him/her
+    Result: {"value": "BE"}
+  - Statement: giving
+    Result: {"value": "BE"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Economic well-being
+    Result: {"value": "SE"}
+  - Statement: Raise customer expectations
+    Result: {"value": "SE"}
+  - Statement: Manage your daily routine calmly
+    Result: {"value": "SE"}
+  - Statement: Earn a higher amount so I can be hassle-free
+    Result: {"value": "SE"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Make work more digital
+    Result: {"value": "ST"}
+  - Statement: Working with passion and satisfaction
+    Result: {"value": "ST"}
+  - Statement: Vigorous
+    Result: {"value": "ST"}
+  - Statement: Work that is fun and meaningful to me
+    Result: {"value": "ST"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: To give the world some of the knowledge I have that also comes from the heart.
+    Result: {"value": "UN"}
+  - Statement: Providing solutions for students with different needs
+    Result: {"value": "UN"}
+  - Statement: To raise a generation of people who are considerate of others and the environment
+    Result: {"value": "UN"}
+  - Statement: Present women from the ultra-Orthodox sector in a positive light
+    Result: {"value": "UN"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: Values ​​and education
+    Result: {"value": "TR"}
+  - Statement: Spiritual advancement
+    Result: {"value": "TR"}
+  - Statement: Fulfilling the mitzvah with joy
+    Result: {"value": "TR"}
+  - Statement: Rejoice in being a good Jew who obeys the Torah of God.
+    Result: {"value": "TR"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: pleasure
+    Result: {"value": "HE"}
+  - Statement: Enjoyment and experience
+    Result: {"value": "HE"}
+  - Statement: Personal satisfaction and fulfillment
+    Result: {"value": "HE"}
+  - Statement: Satisfaction
+    Result: {"value": "HE"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

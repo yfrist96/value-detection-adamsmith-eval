@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Stability
+    Result: {"value": "SE"}
+  - Statement: Stability
+    Result: {"value": "SE"}
+  - Statement: Knowing that things are being done correctly and accompanied correctly in all aspects
+    Result: {"value": "SE"}
+  - Statement: Emotional resilience
+    Result: {"value": "SE"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: pleasure
+    Result: {"value": "HE"}
+  - Statement: Good lifestyle
+    Result: {"value": "HE"}
+  - Statement: Have fun
+    Result: {"value": "HE"}
+  - Statement: Create a friendly, happy, and energetic atmosphere among employees.
+    Result: {"value": "HE"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: To educate the daughters of Israel in the way of the Torah, to instill values, good qualities, and the worship of God with joy and faith.
+    Result: {"value": "TR"}
+  - Statement: Purity
+    Result: {"value": "TR"}
+  - Statement: God-centeredness
+    Result: {"value": "TR"}
+  - Statement: To educate my students to be good people with good values ​​and virtues.
+    Result: {"value": "TR"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Innovator
+    Result: {"value": "ST"}
+  - Statement: Varied challenges
+    Result: {"value": "ST"}
+  - Statement: Working with passion and satisfaction
+    Result: {"value": "ST"}
+  - Statement: Connection to global, technological and business trends at the division level
+    Result: {"value": "ST"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Achieve goal
+    Result: {"value": "AC"}
+  - Statement: To advance professionally and do what I do best.
+    Result: {"value": "AC"}
+  - Statement: Professional growth and development, realization of abilities and skills
+    Result: {"value": "AC"}
+  - Statement: Reorganize structures
+    Result: {"value": "AC"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Respectful
+    Result: {"value": "CO"}
+  - Statement: Strong discipline from contentment and calmness
+    Result: {"value": "CO"}
+  - Statement: dignity
+    Result: {"value": "CO"}
+  - Statement: Providing service with kindness
+    Result: {"value": "CO"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: company
+    Result: {"value": "BE"}
+  - Statement: very attentive to my work.
+    Result: {"value": "BE"}
+  - Statement: Give full attention to people I'm assisting and don't just brush them off to save time.
+    Result: {"value": "BE"}
+  - Statement: Quality social services
+    Result: {"value": "BE"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Maintain employees efficacy
+    Result: {"value": "PO"}
+  - Statement: Making sure my team understands what to do
+    Result: {"value": "PO"}
+  - Statement: Salary increase
+    Result: {"value": "PO"}
+  - Statement: Building new capabilities in the Joint Eshel team
+    Result: {"value": "PO"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: involvement
+    Result: {"value": "SD"}
+  - Statement: To raise a generation of thinking people
+    Result: {"value": "SD"}
+  - Statement: independence
+    Result: {"value": "SD"}
+  - Statement: freedom
+    Result: {"value": "SD"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Promoting equality between sectors
+    Result: {"value": "UN"}
+  - Statement: Don't sell out by doing work that goes against my morals just for more money.
+    Result: {"value": "UN"}
+  - Statement: To raise a generation of people who are considerate of others and the environment
+    Result: {"value": "UN"}
+  - Statement: Equal opportunity for all
+    Result: {"value": "UN"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

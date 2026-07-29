@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Vigorous
+    Result: {"value": "ST"}
+  - Statement: Working with passion and satisfaction
+    Result: {"value": "ST"}
+  - Statement: Experience
+    Result: {"value": "ST"}
+  - Statement: Work that is fun and meaningful to me
+    Result: {"value": "ST"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Raise customer expectations
+    Result: {"value": "SE"}
+  - Statement: To save a house
+    Result: {"value": "SE"}
+  - Statement: Healthy and enabling communication within the team hierarchy as well as between the team and students and parents
+    Result: {"value": "SE"}
+  - Statement: Mental well-being
+    Result: {"value": "SE"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: To love the students
+    Result: {"value": "BE"}
+  - Statement: Empowering girls and helping them believe in themselves
+    Result: {"value": "BE"}
+  - Statement: To provide students with tools to build a happy life.
+    Result: {"value": "BE"}
+  - Statement: A more cohesive team
+    Result: {"value": "BE"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Teach the required skills
+    Result: {"value": "CO"}
+  - Statement: To be made by people who work on it
+    Result: {"value": "CO"}
+  - Statement: Self-discipline and respect for parents and teachers
+    Result: {"value": "CO"}
+  - Statement: Maintaining values ​​within the Menorah framework
+    Result: {"value": "CO"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Accepting others while achieving self-success
+    Result: {"value": "UN"}
+  - Statement: Life's mission
+    Result: {"value": "UN"}
+  - Statement: Providing solutions for students with different needs
+    Result: {"value": "UN"}
+  - Statement: Embracing the different and the other
+    Result: {"value": "UN"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Good manager
+    Result: {"value": "AC"}
+  - Statement: Professionalization - Progress
+    Result: {"value": "AC"}
+  - Statement: To advance professionally and do what I do best.
+    Result: {"value": "AC"}
+  - Statement: Conditions and promotion
+    Result: {"value": "AC"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: Enjoy work
+    Result: {"value": "HE"}
+  - Statement: To leave class with satisfaction
+    Result: {"value": "HE"}
+  - Statement: Convenience in managing a home at the same time
+    Result: {"value": "HE"}
+  - Statement: comfort
+    Result: {"value": "HE"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: It is difficult to maintain discipline in one classroom.
+    Result: {"value": "PO"}
+  - Statement: money
+    Result: {"value": "PO"}
+  - Statement: Salary increase
+    Result: {"value": "PO"}
+  - Statement: salary
+    Result: {"value": "PO"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: A personal expression of my insights, values, and educational voice
+    Result: {"value": "SD"}
+  - Statement: To practice my field (art)
+    Result: {"value": "SD"}
+  - Statement: Add another area of ​​leisure time (working with the mental realm)
+    Result: {"value": "SD"}
+  - Statement: Learn and progress
+    Result: {"value": "SD"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: Rejoice in being a good Jew who obeys the Torah of God.
+    Result: {"value": "TR"}
+  - Statement: In a job that is safe and suitable for my lifestyle
+    Result: {"value": "TR"}
+  - Statement: To educate the daughters of Israel in the right way
+    Result: {"value": "TR"}
+  - Statement: To be able to support a Torah household through work that I enjoy.
+    Result: {"value": "TR"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

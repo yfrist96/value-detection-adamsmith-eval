@@ -1,0 +1,117 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Efficiency
+    Result: {"value": "AC"}
+  - Statement: Perfection
+    Result: {"value": "AC"}
+  - Statement: Perform excellent work
+    Result: {"value": "AC"}
+  - Statement: Presentable work
+    Result: {"value": "AC"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Lending aid to those in need
+    Result: {"value": "UN"}
+  - Statement: Don't sell out by doing work that goes against my morals just for more money.
+    Result: {"value": "UN"}
+  - Statement: Making a difference
+    Result: {"value": "UN"}
+  - Statement: Creating an impact in healthcare
+    Result: {"value": "UN"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: Avoiding office drama and gossip
+    Result: {"value": "TR"}
+  - Statement: God-centeredness
+    Result: {"value": "TR"}
+  - Statement: balance
+    Result: {"value": "TR"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Varied challenges
+    Result: {"value": "ST"}
+  - Statement: Encourage new ideas
+    Result: {"value": "ST"}
+  - Statement: Apply new methods
+    Result: {"value": "ST"}
+  - Statement: being challenged
+    Result: {"value": "ST"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: operate in complete integrity
+    Result: {"value": "BE"}
+  - Statement: Helping others
+    Result: {"value": "BE"}
+  - Statement: student progress
+    Result: {"value": "BE"}
+  - Statement: Helping
+    Result: {"value": "BE"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: work-life balance
+    Result: {"value": "HE"}
+  - Statement: Work-life balance
+    Result: {"value": "HE"}
+  - Statement: To enjoy work to its fullest extent
+    Result: {"value": "HE"}
+  - Statement: Good work life balance
+    Result: {"value": "HE"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: independence
+    Result: {"value": "SD"}
+  - Statement: Being creative
+    Result: {"value": "SD"}
+  - Statement: be creative and think of new ways to do things
+    Result: {"value": "SD"}
+  - Statement: Creativity
+    Result: {"value": "SD"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: respect
+    Result: {"value": "CO"}
+  - Statement: courtesy
+    Result: {"value": "CO"}
+  - Statement: Always be polite to both colleagues and clients.
+    Result: {"value": "CO"}
+  - Statement: Effort is being recognized
+    Result: {"value": "CO"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Monetary Incentives (Raises)
+    Result: {"value": "PO"}
+  - Statement: making a lot of money
+    Result: {"value": "PO"}
+  - Statement: Getting paid higher
+    Result: {"value": "PO"}
+  - Statement: Make more money
+    Result: {"value": "PO"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: financial stability
+    Result: {"value": "SE"}
+  - Statement: safety of myself and others
+    Result: {"value": "SE"}
+  - Statement: Financial stability
+    Result: {"value": "SE"}
+  - Statement: Job security
+    Result: {"value": "SE"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

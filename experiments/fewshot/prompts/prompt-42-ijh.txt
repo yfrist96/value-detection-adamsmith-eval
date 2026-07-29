@@ -1,0 +1,101 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Ability to make decisions independently, based on considerations based on my understanding and experience
+    Result: {"value": "SD"}
+  - Statement: Be involved in a variety of areas
+    Result: {"value": "SD"}
+  - Statement: In the organization itself: A diverse workplace that respects, promotes, encourages creativity and enjoyment at work
+    Result: {"value": "SD"}
+  - Statement: creativity
+    Result: {"value": "SD"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: That the more senior team in the organization will also know me
+    Result: {"value": "CO"}
+  - Statement: GWENT support
+    Result: {"value": "CO"}
+  - Statement: Providing quality and personal service to citizens
+    Result: {"value": "CO"}
+  - Statement: assessment
+    Result: {"value": "CO"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: Continued monitoring of the program after implementation
+    Result: {"value": "BE"}
+  - Statement: Transparency
+    Result: {"value": "BE"}
+  - Statement: Encouraging growth and learning in the team
+    Result: {"value": "BE"}
+  - Statement: responsibility
+    Result: {"value": "BE"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Linkage between the field and the office
+    Result: {"value": "SE"}
+  - Statement: Raise wages
+    Result: {"value": "SE"}
+  - Statement: Organizational happiness
+    Result: {"value": "SE"}
+  - Statement: Treat the JDC employees as a humane social organization.
+    Result: {"value": "SE"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Connection to global, technological and business trends at the division level
+    Result: {"value": "ST"}
+  - Statement: Positioning Tevet as an engine of innovation
+    Result: {"value": "ST"}
+  - Statement: I want to be challenged and aim high in my work.
+    Result: {"value": "ST"}
+  - Statement: Innovation, dynamism and professional development
+    Result: {"value": "ST"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Management improvement in the social field
+    Result: {"value": "PO"}
+  - Statement: Optimal and empathetic management of the team
+    Result: {"value": "PO"}
+  - Statement: Building new capabilities in the Joint Eshel team
+    Result: {"value": "PO"}
+  - Statement: Management
+    Result: {"value": "PO"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Help my personal manager with his time management to give him the opportunity to deal with all the tasks he has.
+    Result: {"value": "AC"}
+  - Statement: Increasing brand awareness among strategic target audiences
+    Result: {"value": "AC"}
+  - Statement: Success in carrying out the mission of the group I lead
+    Result: {"value": "AC"}
+  - Statement: Promoting the field
+    Result: {"value": "AC"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Change at the individual, family, community level
+    Result: {"value": "UN"}
+  - Statement: Equal opportunities
+    Result: {"value": "UN"}
+  - Statement: Advancing disadvantaged populations in a changing labor market
+    Result: {"value": "UN"}
+  - Statement: To produce clarity and vision
+    Result: {"value": "UN"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

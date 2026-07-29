@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: Satisfaction
+    Result: {"value": "HE"}
+  - Statement: Enjoy work
+    Result: {"value": "HE"}
+  - Statement: pleasure
+    Result: {"value": "HE"}
+  - Statement: Enjoyment and experience
+    Result: {"value": "HE"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Strong discipline from contentment and calmness
+    Result: {"value": "CO"}
+  - Statement: Deepen the bond between parents and children
+    Result: {"value": "CO"}
+  - Statement: To be relevant
+    Result: {"value": "CO"}
+  - Statement: To achieve complete discipline
+    Result: {"value": "CO"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: Promoting students emotionally
+    Result: {"value": "BE"}
+  - Statement: Allowing every child to fulfill themselves
+    Result: {"value": "BE"}
+  - Statement: Understand the students' world and connect with their academic and emotional needs
+    Result: {"value": "BE"}
+  - Statement: Building ones stature
+    Result: {"value": "BE"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: professionalism
+    Result: {"value": "AC"}
+  - Statement: who want to be more professional
+    Result: {"value": "AC"}
+  - Statement: Develop professionally
+    Result: {"value": "AC"}
+  - Statement: Be professional
+    Result: {"value": "AC"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Salary increase
+    Result: {"value": "PO"}
+  - Statement: It is difficult to maintain discipline in one classroom.
+    Result: {"value": "PO"}
+  - Statement: control
+    Result: {"value": "PO"}
+  - Statement: Salary increase
+    Result: {"value": "PO"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: Dropout prevention
+    Result: {"value": "TR"}
+  - Statement: Traditional education
+    Result: {"value": "TR"}
+  - Statement: Values ​​and education
+    Result: {"value": "TR"}
+  - Statement: Faith in goodness
+    Result: {"value": "TR"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Strengthen self-identity and love for the person.
+    Result: {"value": "SD"}
+  - Statement: Learn and progress
+    Result: {"value": "SD"}
+  - Statement: Meaningful learning
+    Result: {"value": "SD"}
+  - Statement: Adapting the education system to the 21st century
+    Result: {"value": "SD"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Work that is fun and meaningful to me
+    Result: {"value": "ST"}
+  - Statement: Experience
+    Result: {"value": "ST"}
+  - Statement: Make work more digital
+    Result: {"value": "ST"}
+  - Statement: Vigorous
+    Result: {"value": "ST"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Fair treatment by the state
+    Result: {"value": "SE"}
+  - Statement: Attitude towards employees
+    Result: {"value": "SE"}
+  - Statement: Boundries
+    Result: {"value": "SE"}
+  - Statement: Raising salaries for teaching staff
+    Result: {"value": "SE"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Also give value to helpers
+    Result: {"value": "UN"}
+  - Statement: Child promotion
+    Result: {"value": "UN"}
+  - Statement: Mutual respect
+    Result: {"value": "UN"}
+  - Statement: Acceptince
+    Result: {"value": "UN"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

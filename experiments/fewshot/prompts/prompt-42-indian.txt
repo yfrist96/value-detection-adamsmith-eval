@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: Faithful
+    Result: {"value": "TR"}
+  - Statement: Realizing to god
+    Result: {"value": "TR"}
+  - Statement: Purity
+    Result: {"value": "TR"}
+  - Statement: you should be humble
+    Result: {"value": "TR"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Wisdom
+    Result: {"value": "UN"}
+  - Statement: speak up to increase visibility
+    Result: {"value": "UN"}
+  - Statement: Maintaining peace.
+    Result: {"value": "UN"}
+  - Statement: Positive thinking
+    Result: {"value": "UN"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Challenges
+    Result: {"value": "ST"}
+  - Statement: To be flexible
+    Result: {"value": "ST"}
+  - Statement: Accept the challenges and Implementing new things
+    Result: {"value": "ST"}
+  - Statement: Innovative ideas
+    Result: {"value": "ST"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: And enjoy full work
+    Result: {"value": "HE"}
+  - Statement: I would have fun to do my job
+    Result: {"value": "HE"}
+  - Statement: I have to purchase new home
+    Result: {"value": "HE"}
+  - Statement: Live your life like a monk
+    Result: {"value": "HE"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Stock management
+    Result: {"value": "AC"}
+  - Statement: Concentration
+    Result: {"value": "AC"}
+  - Statement: Good service
+    Result: {"value": "AC"}
+  - Statement: Implementation productivity and profitability
+    Result: {"value": "AC"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Discipline
+    Result: {"value": "CO"}
+  - Statement: Disciplined
+    Result: {"value": "CO"}
+  - Statement: dignity
+    Result: {"value": "CO"}
+  - Statement: Dignity
+    Result: {"value": "CO"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Family security
+    Result: {"value": "SE"}
+  - Statement: Establishment
+    Result: {"value": "SE"}
+  - Statement: Confident
+    Result: {"value": "SE"}
+  - Statement: Safety
+    Result: {"value": "SE"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: Honest
+    Result: {"value": "BE"}
+  - Statement: Honesty
+    Result: {"value": "BE"}
+  - Statement: To be honest and trustworthy in work
+    Result: {"value": "BE"}
+  - Statement: Dedication
+    Result: {"value": "BE"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Salary
+    Result: {"value": "PO"}
+  - Statement: Authority
+    Result: {"value": "PO"}
+  - Statement: To have a nice salary.
+    Result: {"value": "PO"}
+  - Statement: Employee Benefits
+    Result: {"value": "PO"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Sense of autonomy.
+    Result: {"value": "SD"}
+  - Statement: Able to generate and enact on my ideas on business
+    Result: {"value": "SD"}
+  - Statement: creativity
+    Result: {"value": "SD"}
+  - Statement: Don't depend on others
+    Result: {"value": "SD"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

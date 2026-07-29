@@ -40,6 +40,16 @@ experiments/results/*/*
 experiments/results/*/seed_*/*
 !experiments/results/*/seed_*/metrics.csv
 
+# Few-shot LLM experiment: the generation scripts and the exact prompt templates
+# are tracked, because they are what makes the few-shot results reproducible. The
+# per-item prediction dumps are co-author-owned interim data and stay untracked
+# until they are released with the paper.
+!experiments/fewshot/
+experiments/fewshot/*
+!experiments/fewshot/*.py
+!experiments/fewshot/prompts/
+!experiments/fewshot/prompts/*.txt
+
 # Paper drafts (managed separately, and deliberately kept out of the artifact repo)
 Paper/
 paper_arr/

@@ -1,0 +1,119 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: To bring out the worker's skills
+    Result: {"value": "BE"}
+  - Statement: Dedication
+    Result: {"value": "BE"}
+  - Statement: helping others
+    Result: {"value": "BE"}
+  - Statement: Fairness
+    Result: {"value": "BE"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+  Examples:
+  - Statement: Enjoy and get satisfaction from the activity
+    Result: {"value": "HE"}
+  - Statement: Work life balance
+    Result: {"value": "HE"}
+  - Statement: Having space/alone time
+    Result: {"value": "HE"}
+  - Statement: pleasure
+    Result: {"value": "HE"}
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Good salary
+    Result: {"value": "PO"}
+  - Statement: Leadership
+    Result: {"value": "PO"}
+  - Statement: monetary
+    Result: {"value": "PO"}
+  - Statement: Managing a field within the division's finance department
+    Result: {"value": "PO"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Challenges
+    Result: {"value": "ST"}
+  - Statement: Challenge myself by learning different tasks and expanding my scope of work.
+    Result: {"value": "ST"}
+  - Statement: Working with passion and satisfaction
+    Result: {"value": "ST"}
+  - Statement: Connection to global, technological and business trends at the division level
+    Result: {"value": "ST"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+  Examples:
+  - Statement: God's love
+    Result: {"value": "TR"}
+  - Statement: Faithful
+    Result: {"value": "TR"}
+  - Statement: God-centeredness
+    Result: {"value": "TR"}
+  - Statement: Education for faith in the Creator - trust in the kindergarten staff (warm and loving relationship with everyone)
+    Result: {"value": "TR"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Involvement
+    Result: {"value": "AC"}
+  - Statement: Promote the school
+    Result: {"value": "AC"}
+  - Statement: To advance professionally
+    Result: {"value": "AC"}
+  - Statement: Provide accurate data
+    Result: {"value": "AC"}
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Greater team involvement in choosing their key tasks
+    Result: {"value": "SD"}
+  - Statement: Learn and progress
+    Result: {"value": "SD"}
+  - Statement: Creativity
+    Result: {"value": "SD"}
+  - Statement: Creativity
+    Result: {"value": "SD"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: courtesy
+    Result: {"value": "CO"}
+  - Statement: Clean and beautiful language and respectful behavior
+    Result: {"value": "CO"}
+  - Statement: Be respected at my workplace
+    Result: {"value": "CO"}
+  - Statement: GWENT support
+    Result: {"value": "CO"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Making the world right
+    Result: {"value": "UN"}
+  - Statement: Having a positive impact
+    Result: {"value": "UN"}
+  - Statement: To promote empowerment among ultra-Orthodox women in general
+    Result: {"value": "UN"}
+  - Statement: Maintaining peace.
+    Result: {"value": "UN"}
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: Economic stability (fair salary/wages with benefits)
+    Result: {"value": "SE"}
+  - Statement: GOOD FUTURE
+    Result: {"value": "SE"}
+  - Statement: Comprehensive organizational vision (vertical and horizontal)
+    Result: {"value": "SE"}
+  - Statement: Hours that suit the home
+    Result: {"value": "SE"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

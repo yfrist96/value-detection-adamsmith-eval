@@ -1,0 +1,101 @@
+You are annotating short free-text statements in which employees describe goals they want to advance at their workplace. Label the statement below with the single Schwartz basic value that is its dominant motivation. Use as output format a JSON object with single property "value" and the two letter code of the Schwartz basic value (as below) as its value.
+
+The Schwartz basic values:
+
+- PO (Power): social status and prestige; control or dominance over people and resources.
+  Examples:
+  - Statement: Managing a field within the division's finance department
+    Result: {"value": "PO"}
+  - Statement: Optimal and empathetic management of the team
+    Result: {"value": "PO"}
+  - Statement: Management
+    Result: {"value": "PO"}
+  - Statement: Building new capabilities in the Joint Eshel team
+    Result: {"value": "PO"}
+
+- AC (Achievement): personal success through demonstrating competence according to social standards.
+  Examples:
+  - Statement: Effectiveness
+    Result: {"value": "AC"}
+  - Statement: Ability to execute quickly and thoroughly
+    Result: {"value": "AC"}
+  - Statement: Efficient and early planning of work (to avoid putting out fires all the time)
+    Result: {"value": "AC"}
+  - Statement: To advance professionally
+    Result: {"value": "AC"}
+
+- TR (Tradition): respect, commitment, and acceptance of the customs and ideas of one's culture or religion.
+
+- SE (Security): safety, harmony, and stability of society, of relationships, and of self.
+  Examples:
+  - Statement: order
+    Result: {"value": "SE"}
+  - Statement: To earn a decent wage
+    Result: {"value": "SE"}
+  - Statement: Treat the JDC employees as a humane social organization.
+    Result: {"value": "SE"}
+  - Statement: Raise wages
+    Result: {"value": "SE"}
+
+- BE (Benevolence): preserving and enhancing the welfare of those with whom one is in frequent personal contact.
+  Examples:
+  - Statement: Quality social services
+    Result: {"value": "BE"}
+  - Statement: Integrity
+    Result: {"value": "BE"}
+  - Statement: Employee development
+    Result: {"value": "BE"}
+  - Statement: reliability
+    Result: {"value": "BE"}
+
+- HE (Hedonism): pleasure and sensuous gratification for oneself.
+
+- SD (Self-Direction): independent thought and action: choosing, creating, exploring.
+  Examples:
+  - Statement: Freedom to create and promote issues that are important to me
+    Result: {"value": "SD"}
+  - Statement: Wake up in the morning with motivation
+    Result: {"value": "SD"}
+  - Statement: Innovation
+    Result: {"value": "SD"}
+  - Statement: Innovative thinking in solving social problems
+    Result: {"value": "SD"}
+
+- UN (Universalism): understanding, appreciation, tolerance, and protection for the welfare of all people and for nature.
+  Examples:
+  - Statement: Change at the individual, family, community level
+    Result: {"value": "UN"}
+  - Statement: Reducing social gaps
+    Result: {"value": "UN"}
+  - Statement: Equality and opportunities for all
+    Result: {"value": "UN"}
+  - Statement: Creating change
+    Result: {"value": "UN"}
+
+- CO (Conformity): restraint of actions and impulses likely to upset or harm others or violate social norms.
+  Examples:
+  - Statement: Providing service with kindness
+    Result: {"value": "CO"}
+  - Statement: assessment
+    Result: {"value": "CO"}
+  - Statement: That the more senior team in the organization will also know me
+    Result: {"value": "CO"}
+  - Statement: GWENT support
+    Result: {"value": "CO"}
+
+- ST (Stimulation): excitement, novelty, and challenge in life.
+  Examples:
+  - Statement: Innovation, dynamism and professional development
+    Result: {"value": "ST"}
+  - Statement: Positioning Tevet as an engine of innovation
+    Result: {"value": "ST"}
+  - Statement: I want to be challenged and aim high in my work.
+    Result: {"value": "ST"}
+  - Statement: Connection to global, technological and business trends at the division level
+    Result: {"value": "ST"}
+
+
+
+Your task:
+- Statement: {{text}}
+  Result: 

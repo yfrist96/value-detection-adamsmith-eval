@@ -112,6 +112,8 @@ ValueDetection/
 │   │   ├── ablation_achievement_ijh_finetuned_train/   # IJH epoch-10, IJH train split
 │   │   └── ablation_summary_per_setting.csv         # cross-setting AC-share / F1 deltas
 │   ├── train.txt     # Training CLI output
+│   ├── train_seeds_43_44.log    # timing log, 6 runs, 292.3 min total (see Compute)
+│   ├── train_ultra_45_46.log    # Ultra seeds 45/46, incl. the excluded diverged run
 │   └── plots/        # Evaluation plots and charts
 │
 ├── .gitignore
@@ -692,6 +694,15 @@ Re-running the fine-tuning itself takes roughly 18 hours across the 17 runs on a
 single Apple M4 (MPS backend): Asian ~25 min, Indian ~74 min, IJH ~26 min, Ultra
 ~46 min, and Combined ~163 min per seed. The analyses in sections 4️⃣–🔟 run in
 minutes on a laptop.
+
+Those wall-clock figures are not an estimate. `experiments/train_seeds_43_44.log`
+is the timing log for six of the runs and reports 292.3 min total, from which the
+18-hour figure across all 17 is reconstructible, and
+`experiments/train_ultra_45_46.log` records the Ultra seeds 45 and 46 including the
+one run in seventeen that diverged at the first epoch and is excluded from the
+reported means. Both are committed. The few-shot generation figure of approximately
+45 GPU-hours has no equivalent log: it was reported by the collaborator who ran
+those models on separate hardware, and the paper states it as an approximation.
 
 ---
 

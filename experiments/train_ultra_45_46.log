@@ -1,0 +1,36 @@
+Plan: 1 dataset(s) x 2 seed(s) = 2 fine-tuning run(s)
+  datasets: ['ultra']
+  seeds:    [45, 46]
+
+
+=== [1/2] dataset=ultra | seed=45 ===
+[ultra] Epoch 0 (base) | in_test_f1=0.3221
+[ultra] Epoch 1/10 | loss=0.0329 | in_test_f1=0.4123
+[ultra] Epoch 2/10 | loss=0.0198 | in_test_f1=0.5805
+[ultra] Epoch 3/10 | loss=0.0112 | in_test_f1=0.5499
+[ultra] Epoch 4/10 | loss=0.0061 | in_test_f1=0.6053
+[ultra] Epoch 5/10 | loss=0.0036 | in_test_f1=0.6156
+[ultra] Epoch 6/10 | loss=0.0022 | in_test_f1=0.6694
+[ultra] Epoch 7/10 | loss=0.0026 | in_test_f1=0.6535
+[ultra] Epoch 8/10 | loss=0.0037 | in_test_f1=0.6793
+[ultra] Epoch 9/10 | loss=0.0018 | in_test_f1=0.5916
+[ultra] Epoch 10/10 | loss=0.0015 | in_test_f1=0.6067
+[ultra] Complete! Saved results to: experiments/results/ultra/seed_45
+=== [1/2] done in 48.0 min ===
+
+=== [2/2] dataset=ultra | seed=46 ===
+[ultra] Epoch 0 (base) | in_test_f1=0.3221
+[ultra] Epoch 1/10 | loss=0.0302 | in_test_f1=0.4675
+[ultra] Epoch 2/10 | loss=0.0179 | in_test_f1=0.5457
+[ultra] Epoch 3/10 | loss=0.0109 | in_test_f1=0.6411
+[ultra] Epoch 4/10 | loss=0.0055 | in_test_f1=0.5879
+[ultra] Epoch 5/10 | loss=0.0033 | in_test_f1=0.6489
+[ultra] Epoch 6/10 | loss=0.0025 | in_test_f1=0.6054
+[ultra] Epoch 7/10 | loss=0.0030 | in_test_f1=0.5852
+[ultra] Epoch 8/10 | loss=0.0017 | in_test_f1=0.5719
+[ultra] Epoch 9/10 | loss=0.0010 | in_test_f1=0.5962
+[ultra] Epoch 10/10 | loss=0.0009 | in_test_f1=0.5779
+[ultra] Complete! Saved results to: experiments/results/ultra/seed_46
+=== [2/2] done in 46.1 min ===
+
+[ALL DONE] total wall-clock: 94.2 min

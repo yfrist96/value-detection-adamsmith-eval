@@ -60,3 +60,12 @@ paper_arr_v2/
 # LaTeX and tooling scratch
 *.log
 errors-paper.json
+
+# Training timing logs, re-included after the *.log rule above (last match wins, so
+# these must stay below it). They are the only evidence behind the wall-clock figures
+# the paper reports: train_seeds_43_44.log gives 292.3 min for six runs, from which the
+# "roughly 18 hours across 17 runs" figure is reconstructible, and train_ultra_45_46.log
+# is the record of the one run in seventeen that diverged and is excluded. Both are a few
+# kilobytes, contain no participant data, and use repository-relative paths only.
+!experiments/train_seeds_43_44.log
+!experiments/train_ultra_45_46.log

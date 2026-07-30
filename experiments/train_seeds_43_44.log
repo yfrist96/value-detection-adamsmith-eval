@@ -1,0 +1,96 @@
+Plan: 3 dataset(s) x 2 seed(s) = 6 fine-tuning run(s)
+  datasets: ['asian', 'indian', 'ultra']
+  seeds:    [43, 44]
+
+
+=== [1/6] dataset=asian | seed=43 ===
+[asian] Epoch 0 (base) | in_test_f1=0.3956
+[asian] Epoch 1/10 | loss=0.0286 | in_test_f1=0.6610
+[asian] Epoch 2/10 | loss=0.0125 | in_test_f1=0.6739
+[asian] Epoch 3/10 | loss=0.0068 | in_test_f1=0.8127
+[asian] Epoch 4/10 | loss=0.0035 | in_test_f1=0.8033
+[asian] Epoch 5/10 | loss=0.0024 | in_test_f1=0.8370
+[asian] Epoch 6/10 | loss=0.0020 | in_test_f1=0.8519
+[asian] Epoch 7/10 | loss=0.0015 | in_test_f1=0.8226
+[asian] Epoch 8/10 | loss=0.0014 | in_test_f1=0.8226
+[asian] Epoch 9/10 | loss=0.0013 | in_test_f1=0.8179
+[asian] Epoch 10/10 | loss=0.0012 | in_test_f1=0.8226
+[asian] Complete! Saved results to: experiments/results/asian/seed_43
+=== [1/6] done in 27.0 min ===
+
+=== [2/6] dataset=asian | seed=44 ===
+[asian] Epoch 0 (base) | in_test_f1=0.3956
+[asian] Epoch 1/10 | loss=0.0335 | in_test_f1=0.4565
+[asian] Epoch 2/10 | loss=0.0217 | in_test_f1=0.5710
+[asian] Epoch 3/10 | loss=0.0134 | in_test_f1=0.8033
+[asian] Epoch 4/10 | loss=0.0072 | in_test_f1=0.7951
+[asian] Epoch 5/10 | loss=0.0039 | in_test_f1=0.8064
+[asian] Epoch 6/10 | loss=0.0029 | in_test_f1=0.8125
+[asian] Epoch 7/10 | loss=0.0023 | in_test_f1=0.8153
+[asian] Epoch 8/10 | loss=0.0030 | in_test_f1=0.8456
+[asian] Epoch 9/10 | loss=0.0020 | in_test_f1=0.8389
+[asian] Epoch 10/10 | loss=0.0019 | in_test_f1=0.8426
+[asian] Complete! Saved results to: experiments/results/asian/seed_44
+=== [2/6] done in 27.2 min ===
+
+=== [3/6] dataset=indian | seed=43 ===
+[indian] Epoch 0 (base) | in_test_f1=0.3363
+[indian] Epoch 1/10 | loss=0.0212 | in_test_f1=0.6494
+[indian] Epoch 2/10 | loss=0.0087 | in_test_f1=0.7248
+[indian] Epoch 3/10 | loss=0.0038 | in_test_f1=0.8399
+[indian] Epoch 4/10 | loss=0.0021 | in_test_f1=0.8132
+[indian] Epoch 5/10 | loss=0.0022 | in_test_f1=0.8405
+[indian] Epoch 6/10 | loss=0.0012 | in_test_f1=0.8547
+[indian] Epoch 7/10 | loss=0.0009 | in_test_f1=0.8042
+[indian] Epoch 8/10 | loss=0.0006 | in_test_f1=0.8602
+[indian] Epoch 9/10 | loss=0.0005 | in_test_f1=0.8291
+[indian] Epoch 10/10 | loss=0.0006 | in_test_f1=0.8538
+[indian] Complete! Saved results to: experiments/results/indian/seed_43
+=== [3/6] done in 74.0 min ===
+
+=== [4/6] dataset=indian | seed=44 ===
+[indian] Epoch 0 (base) | in_test_f1=0.3363
+[indian] Epoch 1/10 | loss=0.0194 | in_test_f1=0.6198
+[indian] Epoch 2/10 | loss=0.0082 | in_test_f1=0.6834
+[indian] Epoch 3/10 | loss=0.0039 | in_test_f1=0.8180
+[indian] Epoch 4/10 | loss=0.0030 | in_test_f1=0.8174
+[indian] Epoch 5/10 | loss=0.0018 | in_test_f1=0.8288
+[indian] Epoch 6/10 | loss=0.0011 | in_test_f1=0.8540
+[indian] Epoch 7/10 | loss=0.0024 | in_test_f1=0.7616
+[indian] Epoch 8/10 | loss=0.0026 | in_test_f1=0.7766
+[indian] Epoch 9/10 | loss=0.0015 | in_test_f1=0.8695
+[indian] Epoch 10/10 | loss=0.0010 | in_test_f1=0.8569
+[indian] Complete! Saved results to: experiments/results/indian/seed_44
+=== [4/6] done in 72.9 min ===
+
+=== [5/6] dataset=ultra | seed=43 ===
+[ultra] Epoch 0 (base) | in_test_f1=0.3221
+[ultra] Epoch 1/10 | loss=0.0388 | in_test_f1=0.0550
+[ultra] Epoch 2/10 | loss=0.0362 | in_test_f1=0.0550
+[ultra] Epoch 3/10 | loss=0.0358 | in_test_f1=0.0550
+[ultra] Epoch 4/10 | loss=0.0360 | in_test_f1=0.0550
+[ultra] Epoch 5/10 | loss=0.0358 | in_test_f1=0.0550
+[ultra] Epoch 6/10 | loss=0.0355 | in_test_f1=0.0550
+[ultra] Epoch 7/10 | loss=0.0357 | in_test_f1=0.0550
+[ultra] Epoch 8/10 | loss=0.0356 | in_test_f1=0.0550
+[ultra] Epoch 9/10 | loss=0.0357 | in_test_f1=0.0550
+[ultra] Epoch 10/10 | loss=0.0357 | in_test_f1=0.0550
+[ultra] Complete! Saved results to: experiments/results/ultra/seed_43
+=== [5/6] done in 45.6 min ===
+
+=== [6/6] dataset=ultra | seed=44 ===
+[ultra] Epoch 0 (base) | in_test_f1=0.3221
+[ultra] Epoch 1/10 | loss=0.0296 | in_test_f1=0.5564
+[ultra] Epoch 2/10 | loss=0.0175 | in_test_f1=0.5778
+[ultra] Epoch 3/10 | loss=0.0109 | in_test_f1=0.6564
+[ultra] Epoch 4/10 | loss=0.0055 | in_test_f1=0.6232
+[ultra] Epoch 5/10 | loss=0.0039 | in_test_f1=0.6236
+[ultra] Epoch 6/10 | loss=0.0027 | in_test_f1=0.7113
+[ultra] Epoch 7/10 | loss=0.0018 | in_test_f1=0.6214
+[ultra] Epoch 8/10 | loss=0.0015 | in_test_f1=0.5926
+[ultra] Epoch 9/10 | loss=0.0015 | in_test_f1=0.5767
+[ultra] Epoch 10/10 | loss=0.0013 | in_test_f1=0.6324
+[ultra] Complete! Saved results to: experiments/results/ultra/seed_44
+=== [6/6] done in 45.6 min ===
+
+[ALL DONE] total wall-clock: 292.3 min

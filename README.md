@@ -585,6 +585,12 @@ The same transfer matrix, with in-context prompting in place of fine-tuning: a
 row per population the exemplars are drawn from, the same four test splits as
 columns, plus a zero-shot row standing in for the base row.
 
+Four open-weight models were run: **Qwen2.5-14B, Qwen3-8B, Qwen3-14B and
+Qwen3-32B**, all served through ollama at its default Q4_K_M 4-bit quantization,
+each over 18 prompt templates, giving 9,756 classifications per model and 39,024
+in total. Qwen3-14B is the model featured in the paper's body matrix; the other
+three carry the across-model comparison, which is what the result rests on.
+
 ```bash
 python -m src.score_fewshot                  # every model found
 python -m src.score_fewshot --model qwen3:14b
@@ -601,7 +607,8 @@ The generation side lives in `experiments/fewshot/`:
 
 ```
 experiments/fewshot/create_prompts.py     # builds the prompt templates from the train splits
-experiments/fewshot/prompts/*.txt         # the 20 templates the models actually saw
+experiments/fewshot/prompts/*.txt         # the 18 templates the models actually saw
+                                          #   (5 exemplar sources + zero-shot) x 3 seeds
 experiments/fewshot/run_fewshot.py        # runs one template over the combined test set
 ```
 
@@ -626,6 +633,11 @@ reproduces every delivered template's exemplar set exactly.
 
 The per-item prediction dumps that `score_fewshot.py` reads are co-author-owned
 interim data and are not in the repository yet. They are released with the paper.
+
+Generation ran on separate hardware, one NVIDIA Quadro RTX 8000 (48 GB) at a
+collaborating institution, at approximately 45 GPU-hours across the four models.
+Unlike the fine-tuning wall-clock figure, that number is a reported estimate with
+no timing log behind it; see Compute below.
 
 ---
 

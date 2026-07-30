@@ -722,6 +722,15 @@ those models on separate hardware, and the paper states it as an approximation.
 
 Code in this repository is released under the **MIT license** ([LICENSE](LICENSE)).
 
+The MIT license covers the code only. The annotated corpus is distributed
+separately, on Zenodo, under **CC-BY-4.0**
+([record 20324552](https://zenodo.org/records/20324552)). The Adam-Smith
+checkpoint is third-party and carries its own terms: it is released on
+HuggingFace under **OpenRAIL++**, whose responsible-AI use restrictions apply to
+anyone who downloads it, and it is not redistributed here. The Qwen models used
+for the few-shot comparison are **Apache-2.0** and are likewise not
+redistributed.
+
 The annotated corpus is distributed separately, on Zenodo, under
 **CC-BY-4.0**. The Adam-Smith checkpoint is third-party and carries its own
 **OpenRAIL++** license.

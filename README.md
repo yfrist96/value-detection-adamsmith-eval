@@ -86,7 +86,12 @@ ValueDetection/
 │   ├── results/      # Metrics, logs, JSON summaries
 │   │   ├── <dataset>/
 │   │   │   ├── metrics.csv         # epoch-0 baseline (legacy flat layout, kept
-│   │   │   │                       #   for the cross-domain heatmap's base row)
+│   │   │   │                       #   for the cross-domain heatmap's base row).
+│   │   │   │                       #   ONLY row epoch=0 is current. Rows 1..N are
+│   │   │   │                       #   a superseded pre-multi-seed run and differ
+│   │   │   │                       #   from seed_42/metrics.csv for asian, ijh,
+│   │   │   │                       #   ultra and combined. Read per-epoch numbers
+│   │   │   │                       #   from seed_<seed>/metrics.csv, never here.
 │   │   │   └── seed_<seed>/        # one subdir per training seed
 │   │   │       ├── metrics.csv     #   per-epoch in/OOD F1 for that seed
 │   │   │       └── epoch_<N>/      #   model checkpoint per epoch
@@ -241,6 +246,15 @@ The default `python -m src.train` entry point uses `seed=42`. A small flat-layou
 provide the epoch-0 (pre-fine-tuning) baseline that
 `cross_domain_heatmaps.py` reads for the heatmap's `base` row; the per-epoch
 fine-tuned numbers always come from the seed-aware paths.
+
+**Only the `epoch=0` row of that flat file is current.** Its rows 1..N are a
+superseded pre-multi-seed execution and do not match
+`seed_42/metrics.csv` for `asian`, `ijh`, `ultra` or `combined` (in-domain macro
+F1 at epoch 10: 0.835 vs 0.759, 0.350 vs 0.469, 0.619 vs 0.551, 0.736 vs 0.723;
+`indian` is identical). Nothing in the paper is derived from them:
+`plot_f1_curve` splices in the `epoch=0` row alone, and every reported cell comes
+from `transfer_per_seed.csv` and the per-seed logs. Do not read a per-epoch number
+from the flat file.
 
 To produce plots that include epoch 0 (pre-fine-tuning), execute:
 

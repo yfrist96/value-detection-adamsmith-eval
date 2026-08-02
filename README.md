@@ -73,9 +73,11 @@ ValueDetection/
 │   ├── circumplex_error_analysis.py        # Schwartz circumplex distance scoring
 │   ├── lexical_exhibits.py                 # log-odds distinctive vocabulary per cell
 │   ├── register_distance.py                # lexical distance per population pair vs transfer
+│   ├── register_distance_embed.py          # the same, in sentence-embedding space
 │   ├── dump_predictions.py                 # per-item predictions + macro-F1 convention check
 │   ├── score_fewshot.py                    # few-shot LLM matrix, scored against the fine-tuned one
 │   ├── ablate_achievement_vocab.py
+│   ├── aggregate_ablation.py               # collates the five ablation settings into one table
 │   ├── split_datasets.py
 │   ├── data_analysis.py
 │   ├── run_merged_base_adamsmith_eval.py
@@ -473,14 +475,23 @@ transfer matrix:
 python -m src.register_distance
 ```
 
-Three measures are reported, and they disagree. Over the six population pairs,
-the share of the 100 most frequent content words two populations do *not* share
-tracks transfer closely (Spearman ρ = −0.93), while Jensen–Shannon divergence
-between unigram distributions (−0.26) and Jaccard distance over word types
-(+0.03) do not — with fewer than 2,000 content tokens per population, both
-whole-vocabulary measures are dominated by the rare tail. Two alternative
-accounts are checked on the same pairs: shared nationality (−0.66, i.e. the
-wrong direction for cultural proximity) and relative training-set size (+0.37).
+Four measures come out of this script, and they disagree. Over the six population
+pairs, the share of the 100 most frequent content words two populations do *not*
+share tracks transfer closely (Spearman ρ = −0.93). The difference in mean
+response length tracks it loosely (−0.60). Jensen–Shannon divergence between
+unigram distributions (−0.26) and Jaccard distance over word types (+0.03) do not
+— with fewer than 2,000 content tokens per population, both whole-vocabulary
+measures are dominated by the rare tail. Two alternative accounts are checked on
+the same pairs: shared nationality (−0.66, i.e. the wrong direction for cultural
+proximity) and relative training-set size (+0.37).
+
+Response length is worth singling out, because it is the most mundane alternative
+to a register account: the populations that fail to transfer are also the long
+ones (median 2 words for Indian, 3 Asian, 4 Ultra, 5 IJH). It gets the decisive
+pair wrong. Asian and IJH are two median words apart and transfer at 0.35, while
+IJH and Ultra are one word apart and transfer at 0.22 — the pair that is closer in
+length transfers worse. The frequent-word measure gets that pair right, and it is
+the pair the register account is built on.
 
 Outputs:
 
@@ -489,7 +500,7 @@ experiments/results/register_distance.csv
 experiments/results/register_distance_correlations.json
 ```
 
-A fourth measure works in embedding space instead of over word counts, as a
+A fifth measure works in embedding space instead of over word counts, as a
 check on whether register distance is just semantic distance:
 
 ```bash
@@ -500,7 +511,8 @@ python -m src.register_distance_embed --model sentence-transformers/all-mpnet-ba
 Each training response is encoded with a general-purpose sentence encoder, and
 the populations are compared by centroid cosine distance and by energy distance
 between the embedding samples. Both give Spearman ρ = −0.60, identical under the
-two encoders above. The script refuses to run with Adam-Smith or one of its
+two encoders above: `all-MiniLM-L6-v2` (384-dimensional, the default) and
+`all-mpnet-base-v2` (768-dimensional). The script refuses to run with Adam-Smith or one of its
 checkpoints as the encoder, since measuring register distance in the
 representation space of the model under study would reintroduce the circularity
 the analysis exists to break.
@@ -508,9 +520,11 @@ the analysis exists to break.
 The interesting part is where it misses. It ranks Asian–Indian closest, matching
 their transfer, but puts IJH–Ultra only fourth in distance although that pair
 transfers worst of the six. Topic is held fixed by the elicitation prompt, so
-what separates IJH from Ultra is vocabulary rather than subject matter. The four
-measures order themselves by how heavily they weight frequent words: −0.93,
-−0.60, −0.26, +0.03.
+what separates IJH from Ultra is vocabulary rather than subject matter. The five
+measures order themselves by how heavily they weight frequent words: −0.93 for
+frequent-word overlap, −0.60 for the embedding distance, −0.60 for the response-length
+difference, −0.26 for the whole unigram distribution, and +0.03 for a measure over
+types that ignores frequency altogether.
 
 Outputs:
 
